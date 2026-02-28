@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">	
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+ body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        h2 { color: #2c3e50; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+        code { color: #c0392b; }
+        .section { margin-bottom: 40px; }	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:45px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">	
+	
+</head>
+<body >
+
+<div Class="D"><a href="index1.html"><img src="Knowledge.jpg" class="logo"></a><P Class="V">Knowledge Check Demonstration</P></div><BR>
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+<div id="syllabus-content-area">
+
+    <div class="menu-buttons">
+        <button class="menu-btn" data-content-id="prerequisites-content">Prerequisites</button>
+        <button class="menu-btn" data-content-id="ai-intro-content">AI Fundamentals</button>
+        <button class="menu-btn" data-content-id="ml-content">Machine Learning</button>
+        <button class="menu-btn" data-content-id="dl-content">Deep Learning</button>
+        <button class="menu-btn" data-content-id="nlp-content">Natural Language Processing</button>
+        <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+        <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+    </div>
+
+    <div class="syllabus-container">
+        <h2>Course Syllabus: Artificial Intelligence</h2>
+
+        <!-- Prerequisites -->
+        <div id="prerequisites-content" class="content-panel active">
+            <h3>Module: Prerequisites</h3>
+            <ul>
+                <li><strong>Programming Proficiency:</strong> Strong foundation in a language like Python, including basic data structures, control flow, and functions.</li>
+                <li><strong>Mathematical Foundations:</strong> Basics of Linear Algebra (vectors, matrices), Calculus (derivatives, gradients), Probability, and Statistics.</li>
+                <li><strong>Data Fundamentals:</strong> Understanding of data structures, algorithms, and how to perform basic Data Analysis (e.g., using libraries like Pandas).</li>
+            </ul>
+        </div>
+
+        <!-- AI Fundamentals -->
+        <div id="ai-intro-content" class="content-panel hidden">
+            <h3>Module: AI Fundamentals & Core Concepts</h3>
+            <p>This module introduces the foundations of Artificial Intelligence.</p>
+            <hr>
+            <ul>
+                <li><strong>Introduction to AI:</strong> Definition, history, types of AI (Narrow, General, Superintelligence), and philosophical issues.</li>
+                <li><strong>AI Ethics and Responsible AI:</strong> Bias, fairness, transparency, and the societal impact of AI systems.</li>
+                <li><strong>Computer Vision (CV):</strong> Image processing basics, Convolutional Neural Networks (CNNs), and applications like object detection and image classification.</li>
+            </ul>
+        </div>
+
+        <!-- Machine Learning -->
+        <div id="ml-content" class="content-panel hidden">
+            <h3>Module: Machine Learning</h3>
+            <ul>
+                <li><strong>Supervised Learning:</strong> Regression, classification, and evaluation metrics.</li>
+                <li><strong>Unsupervised Learning:</strong> Clustering, dimensionality reduction, and anomaly detection.</li>
+                <li><strong>Reinforcement Learning:</strong> Agents, environments, rewards, and policies.</li>
+                <li><strong>Model Lifecycle:</strong> Training, validation, testing, and deployment.</li>
+            </ul>
+        </div>
+
+        <!-- Deep Learning -->
+        <div id="dl-content" class="content-panel hidden">
+            <h3>Module: Deep Learning & Neural Networks</h3>
+            <ul>
+                <li><strong>Artificial Neural Networks (ANNs):</strong> Perceptrons, activation functions, and backpropagation.</li>
+                <li><strong>Deep Architectures:</strong> Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), and Transformers.</li>
+                <li><strong>Frameworks:</strong> TensorFlow, PyTorch, and Keras.</li>
+                <li><strong>Applications:</strong> Image recognition, speech processing, and generative models.</li>
+            </ul>
+        </div>
+
+        <!-- Natural Language Processing -->
+        <div id="nlp-content" class="content-panel hidden">
+            <h3>Module: Natural Language Processing (NLP)</h3>
+            <ul>
+                <li><strong>Text Representation:</strong> Bag-of-Words, TF-IDF, Word Embeddings.</li>
+                <li><strong>Core Tasks:</strong> Sentiment Analysis, Named Entity Recognition, Machine Translation.</li>
+                <li><strong>Large Language Models (LLMs):</strong> Transformers, GPT-style models, and applications in text generation.</li>
+                <li><strong>Ethical Considerations:</strong> Bias in language models, misinformation, and responsible NLP use.</li>
+            </ul>
+        </div>
+
+        <!-- Assessment -->
+        <div id="assessment-content" class="content-panel hidden">
+            <h3>Assessment</h3>
+            <p>Test your knowledge through quizzes on mathematical foundations and AI concepts, practical coding assignments in Python, and a final <strong>Capstone Project</strong> applying ML/Deep Learning techniques to a real-world dataset (e.g., building an image classifier or a text summarizer).</p>
+        </div>
+
+        <!-- Summary -->
+        <div id="summary-content" class="content-panel hidden">
+            <h3>Summary</h3>
+            <p>Artificial Intelligence is a broad field of Computer Science focused on creating intelligent agents that perceive their environment and take actions that maximize their chance of successfully achieving their goals. It encompasses core techniques like Machine Learning and Deep Learning, which enable systems to learn from data, driving innovation in areas like computer vision, NLP, and decision-making.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<BR><BR>
+<div class="U">
+<P>
+
+
+<Center style="font-family:monospace;color:Orange;font-size:31px">Introduction AI And Its Core Techniques</Center><BR>
+
+<div id="ml-content" class="content-panel active">
+    <h3>Module: Machine Learning (ML)</h3>
+    <p>
+        Machine Learning (ML) is a core branch of Artificial Intelligence that enables systems to 
+        <strong>learn patterns from data</strong> and improve performance on tasks without being explicitly programmed. 
+        It is widely used across industries for prediction, automation, and intelligent decision-making.
+    </p>
+    <hr>
+
+    <!-- Introduction -->
+    <h4>1. Introduction to Machine Learning</h4>
+    <ul>
+        <li><strong>Definition:</strong> ML is the study of algorithms that improve automatically through experience and data.</li>
+        <li><strong>Goal:</strong> Build models that generalize well to unseen data.</li>
+        <li><strong>Key Components:</strong> Data, Features, Algorithms, Model, Evaluation.</li>
+    </ul>
+
+    <!-- Types of ML -->
+    <h4>2. Types of Machine Learning</h4>
+    <ul>
+        <li><strong>Supervised Learning:</strong> Models learn from labeled data.
+            <ul>
+                <li>Tasks: Regression (predict continuous values), Classification (predict categories).</li>
+                <li>Examples: Spam detection, house price prediction.</li>
+            </ul>
+        </li>
+        <li><strong>Unsupervised Learning:</strong> Models discover hidden patterns in unlabeled data.
+            <ul>
+                <li>Tasks: Clustering, Dimensionality Reduction, Anomaly Detection.</li>
+                <li>Examples: Customer segmentation, topic modeling.</li>
+            </ul>
+        </li>
+        <li><strong>Reinforcement Learning:</strong> Agents learn by interacting with environments and receiving rewards.
+            <ul>
+                <li>Tasks: Policy optimization, exploration vs. exploitation.</li>
+                <li>Examples: Game-playing AI, robotics navigation.</li>
+            </ul>
+        </li>
+        <li><strong>Semi-Supervised Learning:</strong> Combines small labeled datasets with large unlabeled datasets.</li>
+        <li><strong>Online Learning:</strong> Models update continuously as new data arrives.</li>
+    </ul>
+
+    <!-- ML Workflow -->
+    <h4>3. Machine Learning Workflow</h4>
+    <ul>
+        <li><strong>Data Collection:</strong> Gather raw data from sensors, databases, or APIs.</li>
+        <li><strong>Data Preprocessing:</strong> Cleaning, normalization, feature engineering.</li>
+        <li><strong>Model Selection:</strong> Choosing algorithms (e.g., decision trees, SVM, neural networks).</li>
+        <li><strong>Training:</strong> Feeding data into the model to learn parameters.</li>
+        <li><strong>Validation:</strong> Tuning hyperparameters and preventing overfitting.</li>
+        <li><strong>Testing:</strong> Evaluating performance on unseen data.</li>
+        <li><strong>Deployment:</strong> Integrating the model into real-world applications.</li>
+        <li><strong>Monitoring:</strong> Tracking performance and retraining with new data.</li>
+    </ul>
+
+    <!-- Common Algorithms -->
+    <h4>4. Common ML Algorithms</h4>
+    <ul>
+        <li><strong>Linear Regression:</strong> Predicts continuous values using linear relationships.</li>
+        <li><strong>Logistic Regression:</strong> Used for binary classification problems.</li>
+        <li><strong>Decision Trees & Random Forests:</strong> Tree-based models for classification/regression.</li>
+        <li><strong>Support Vector Machines (SVM):</strong> Finds optimal hyperplanes for classification.</li>
+        <li><strong>K-Nearest Neighbors (KNN):</strong> Classifies based on similarity to nearest data points.</li>
+        <li><strong>K-Means Clustering:</strong> Groups data into clusters based on similarity.</li>
+        <li><strong>Naive Bayes:</strong> Probabilistic classifier based on Bayes’ theorem.</li>
+        <li><strong>Gradient Boosting (XGBoost, LightGBM):</strong> Ensemble methods for high accuracy.</li>
+    </ul>
+
+    <!-- Evaluation Metrics -->
+    <h4>5. Model Evaluation Metrics</h4>
+    <ul>
+        <li><strong>Classification:</strong> Accuracy, Precision, Recall, F1-Score, ROC-AUC.</li>
+        <li><strong>Regression:</strong> Mean Squared Error (MSE), Mean Absolute Error (MAE), R² Score.</li>
+        <li><strong>Clustering:</strong> Silhouette Score, Davies–Bouldin Index.</li>
+    </ul>
+
+    <!-- Applications -->
+    <h4>6. Applications of Machine Learning</h4>
+    <ul>
+        <li><strong>Healthcare:</strong> Disease prediction, medical image analysis.</li>
+        <li><strong>Finance:</strong> Fraud detection, credit scoring, algorithmic trading.</li>
+        <li><strong>Retail:</strong> Recommendation systems, customer segmentation.</li>
+        <li><strong>Transportation:</strong> Predictive maintenance, autonomous vehicles.</li>
+        <li><strong>Cybersecurity:</strong> Intrusion detection, malware classification.</li>
+        <li><strong>Natural Language Processing:</strong> Text classification, sentiment analysis.</li>
+    </ul>
+
+    <!-- Challenges -->
+    <h4>7. Challenges in Machine Learning</h4>
+    <ul>
+        <li><strong>Data Quality:</strong> Noisy, incomplete, or biased datasets.</li>
+        <li><strong>Overfitting:</strong> Model performs well on training data but poorly on new data.</li>
+        <li><strong>Interpretability:</strong> Complex models (e.g., deep learning) are hard to explain.</li>
+        <li><strong>Scalability:</strong> Handling large-scale datasets efficiently.</li>
+        <li><strong>Ethical Concerns:</strong> Bias, fairness, and responsible use of ML systems.</li>
+    </ul>
+</div>
+
+</div>
+
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="Artificial_Intelligence.html" class="I">Back</a>
+  <a href="Artificial_Intelligence3.html" class="I" Style="margin-left:700px;">Next</a>
+    
+ 
+</body>
+</html>
+
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+
+body{background-image:url("data-sciences.jpg");Background-Attachment:Fixed;}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>	
+</head>
+<body >
+<BR><BR><div class="D">
+  <a href="index1.html"><img src="Knowledge.jpg" class="logo" alt="Knowledge Logo"></a>
+  <p class="V">Knowledge Check Demonstration</p>
+</div>
+<br>
+
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+  <div id="syllabus-content-area">
+  <div class="menu-buttons">
+      <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+      <button class="menu-btn" data-content-id="html-content">HTML Fundamentals</button>
+      <button class="menu-btn" data-content-id="css-content">CSS Fundamentals</button>
+      <button class="menu-btn" data-content-id="advanced-css-content">Advanced CSS</button>
+      <button class="menu-btn" data-content-id="js-content">JavaScript Fundamentals</button>
+      <button class="menu-btn" data-content-id="advanced-js-content">Advanced JavaScript</button>
+      <button class="menu-btn" data-content-id="browser-js-content">JavaScript in Browser</button>
+      <button class="menu-btn" data-content-id="projects-content">Projects</button>
+      <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+      <button class="menu-btn" data-content-id="summary-content">Summary</button>
+    </div>
+
+    <div class="syllabus-container">
+      <h2>Course Syllabus: HTML, CSS & JavaScript</h2>
+
+      <div id="prerequisites-content" class="content-panel active">
+        <h3>Module: Prerequisites (5m)</h3>
+        <ul>
+          <li>Basic computer knowledge: OS, browsers, file management</li>
+          <li>Programming fundamentals: variables, loops, functions</li>
+          <li>Environment setup: VS Code, browser dev tools</li>
+        </ul>
+      </div>
+
+      <div id="html-content" class="content-panel hidden">
+        <h3>Module: HTML Fundamentals</h3>
+        <p>Learn structure of HTML documents, headings, paragraphs, lists, links, images, forms, semantic tags, multimedia, and accessibility basics.</p>
+      </div>
+
+      <div id="css-content" class="content-panel hidden">
+        <h3>Module: CSS Fundamentals</h3>
+        <p>Understand selectors, box model, colors, fonts, positioning, Flexbox basics, and Grid introduction.</p>
+      </div>
+
+      <div id="advanced-css-content" class="content-panel hidden">
+        <h3>Module: Advanced CSS</h3>
+        <p>Responsive design, media queries, animations, transformations, CSS variables, and frameworks overview (Bootstrap, Tailwind).</p>
+      </div>
+
+      <div id="js-content" class="content-panel hidden">
+        <h3>Module: JavaScript Fundamentals</h3>
+        <p>Variables, data types, operators, control structures, functions, DOM manipulation, events, and form validation basics.</p>
+      </div>
+
+      <div id="advanced-js-content" class="content-panel hidden">
+        <h3>Module: Advanced JavaScript</h3>
+        <p>ES6+ features, objects, arrays, classes, closures, promises, async/await, Fetch API, error handling, and storage APIs.</p>
+      </div>
+
+      <div id="browser-js-content" class="content-panel hidden">
+        <h3>Module: JavaScript in Browser</h3>
+        <p>DOM traversal, event delegation, dynamic content, JSON handling, and API integration.</p>
+      </div>
+
+      <div id="projects-content" class="content-panel hidden">
+        <h3>Module: Projects</h3>
+        <p>Build responsive webpages, interactive apps like To-do list, image slider, form validation, and quiz app.</p>
+      </div>
+
+      <div id="assessment-content" class="content-panel hidden">
+        <h3>Assessment</h3>
+        <p>MCQs on HTML, CSS, JS basics and coding exercises to validate knowledge.</p>
+      </div>
+
+      <div id="summary-content" class="content-panel hidden">
+        <h3>Summary</h3>
+        <p>HTML provides structure, CSS adds style, and JavaScript brings interactivity — together forming the foundation of modern web development.</p>
+      </div>
+    </div>
+</div>
+
+<div class="U">
+
+
+
+
+
+
+ <Center style="font-family:monospace;color:Orange;font-size:31px">Introduction to CSS</Center><BR>
+<h1>CSS Fundamentals: From Basic to Advanced</h1>
+
+  <h2>Introduction</h2>
+  <p>
+    CSS (Cascading Style Sheets) is used to style and layout HTML documents. It controls colors, fonts, spacing, and positioning, 
+    making web pages visually appealing and responsive across devices.
+  </p>
+
+  <h2>Basic Concepts</h2>
+  <p>
+    CSS can be applied inline, internally within a <code>&lt;style&gt;</code> tag, or externally via a linked stylesheet. 
+    Selectors target HTML elements, and properties define styles such as <code>color</code>, <code>font-size</code>, and <code>margin</code>.
+  </p>
+
+  <h2>Box Model</h2>
+  <p>
+    Every element is a rectangular box consisting of content, padding, border, and margin. Understanding the box model is crucial 
+    for precise layout control.
+  </p>
+
+  <h2>Positioning and Layout</h2>
+  <p>
+    CSS provides positioning schemes: static, relative, absolute, fixed, and sticky. Flexbox and Grid are modern layout systems 
+    that simplify responsive design by aligning and distributing space efficiently.
+  </p>
+
+  <h2>Typography and Colors</h2>
+  <p>
+    CSS controls text styling with properties like <code>font-family</code>, <code>line-height</code>, and <code>text-align</code>. 
+    Colors can be defined using names, HEX, RGB, or HSL values, and backgrounds can include gradients or images.
+  </p>
+
+  <h2>Responsive Design</h2>
+  <p>
+    Media queries allow developers to adapt layouts for different screen sizes. Mobile-first design ensures accessibility and usability 
+    across devices.
+  </p>
+
+  <h2>Advanced Features</h2>
+  <p>
+    CSS supports transitions, animations, and transformations for interactive effects. Variables (<code>--main-color</code>) 
+    enable reusable values. Frameworks like Bootstrap and Tailwind provide prebuilt styles for rapid development.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    CSS transforms plain HTML into visually engaging, responsive websites. Mastering selectors, layout systems, and advanced features 
+    empowers developers to create modern, user-friendly designs.
+  </p>
+</div>
+
+
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="HtmlCSSScript.html" class="I">Back</a>
+  <a href="HtmlCSSScript3.html" class="I" Style="margin-left:700px;">Next</a>
+    
+    </div>
+ 
+</body>
+</html>
+
+

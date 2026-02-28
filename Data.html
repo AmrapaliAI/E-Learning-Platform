@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+ body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        h2 { color: #2c3e50; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+        code { color: #c0392b; }
+        .section { margin-bottom: 40px; }	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:45px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">	
+	
+</head>
+<body >
+
+<div Class="D"><a href="index1.html"><img src="Knowledge.jpg" class="logo"></a><P Class="V">Knowledge Check Demonstration</P></div><BR>
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+<div id="syllabus-content-area">
+
+
+    <div class="menu-buttons">
+    <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+    <button class="menu-btn" data-content-id="dbms-intro-content">DBMS Introduction</button>
+    <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+    <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+</div>
+
+<div class="syllabus-container">
+    <h2>Course Syllabus: Database Management Systems</h2>
+
+    <div id="prerequisites-content" class="content-panel active">
+        <h3>Module: Prerequisites (5m)</h3>
+        <ul>
+            <li><b>Basic Computer Knowledge:</b> Understanding operating systems and file systems.</li>
+            <li><b>Programming Fundamentals:</b> Familiarity with basic programming concepts (loops, functions, data types).</li>
+            <li><b>Mathematical Foundation:</b> Sets, relations, and logic basics.</li>
+        </ul>
+    </div>
+
+    <div id="dbms-intro-content" class="content-panel hidden">
+        <h3>Module: DBMS Fundamentals</h3>
+        <p>Exploring database concepts, architecture, data models, and the role of DBMS in applications.</p>
+    </div>
+
+    <div id="assessment-content" class="content-panel hidden">
+        <h3>Assessment</h3>
+        <p>Test your knowledge of DBMS concepts, SQL queries, and normalization techniques.</p>
+    </div>
+
+    <div id="summary-content" class="content-panel hidden">
+        <h3>Summary</h3>
+        <p>DBMS is software that manages databases, enabling efficient storage, retrieval, and manipulation of data. 
+        It supports data integrity, security, and concurrent access, forming the backbone of modern applications.</p>
+    </div>
+</div></div>
+<BR><BR>
+<div class="U">
+<P>
+
+
+<Center style="font-family:monospace;color:Orange;font-size:31px">Database Management System</Center><BR>
+
+
+<BR><BR>
+<U>Introduction to Sql</U><BR>
+<audio controls>
+  <source src="Sql.mp3" type="audio/mpeg">
+ 
+  
+</audio><BR><BR>
+
+A database is an organized collection of data that allows efficient storage, retrieval, and management. Unlike simple file systems, databases are structured in a way that supports large volumes of information and multiple users accessing the data simultaneously. They are widely used in applications ranging from banking systems to social media platforms because they ensure consistency and reliability of information.
+<BR><BR>
+A Database Management System, or DBMS, is the software that controls and manages databases. It provides an interface between the user and the data, making it possible to store, update, and query information without worrying about the physical details of how data is kept on disk. Examples of DBMS include MySQL, Oracle, and Microsoft SQL Server. A DBMS also ensures important features such as concurrency control, backup, recovery, and security.
+
+<BR><BR>
+Data models define how data is logically represented. The hierarchical model organizes data in a tree-like structure, the network model represents records connected by links, and the relational model stores data in tables with rows and columns. The relational model is the most widely used today because of its simplicity and flexibility. It allows relationships between tables to be defined using keys.
+<BR><BR>
+A schema is the overall design or blueprint of a database, describing tables, attributes, and relationships. It remains fixed unless the database is redesigned. An instance, on the other hand, refers to the actual data stored in the database at a particular moment. For example, a student database schema defines attributes such as name, roll number, and course, while the instance is the current list of students enrolled.
+
+<BR><BR>
+Keys are essential for uniquely identifying records and maintaining relationships. A primary key uniquely identifies each record in a table. A foreign key establishes a link between two tables. Candidate keys are attributes that could serve as primary keys. Keys prevent duplication and maintain data integrity.
+
+
+<BR><BR>
+Normalization is the process of organizing data to reduce redundancy and improve efficiency. It involves breaking large tables into smaller ones and defining relationships between them. Different normal forms, such as first normal form, second normal form, and third normal form, progressively eliminate problems like duplicate data, insertion anomalies, and deletion anomalies.
+<BR><BR>
+Transactions are sequences of operations performed as a single logical unit of work. They follow the ACID properties: atomicity ensures that either all operations are executed or none at all, consistency ensures that the database remains valid after the transaction, isolation ensures that transactions do not interfere with each other, and durability ensures that the results of a transaction persist even after system failures.
+<BR>
+Indexing is a technique used to speed up data retrieval. Instead of scanning entire tables, indexes create pointers to records based on key values. Common types of indexes include B-tree and hash indexes. While indexes improve performance, they require additional storage space.
+<BR><BR>
+Backup and recovery are essential for protecting databases against failures. Backup involves creating copies of data, while recovery restores data after crashes or corruption. Techniques include full backups, incremental backups, and transaction log recovery. These processes ensure that data is not permanently lost and that business operations can continue smoothly.
+<BR><BR>
+Database security ensures that only authorized users can access or modify data. It involves authentication, encryption, and access control. Modern DBMS systems provide role-based permissions to protect sensitive information from unauthorized access or breaches.
+<BR><BR>
+</P>
+</Div>
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="Frame.jsp" class="I">Back</a>
+  <a href="Data1.html" class="I" Style="margin-left:700px;">Next</a>
+    
+ 
+</body>
+</html>
+
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+
+body{background-image:url("data-sciences.jpg");Background-Attachment:Fixed;}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>	
+</head>
+<body >
+<BR><BR><div class="D">
+  <a href="index1.html"><img src="Knowledge.jpg" class="logo" alt="Knowledge Logo"></a>
+  <p class="V">Knowledge Check Demonstration</p>
+</div>
+<br>
+
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+  <div id="syllabus-content-area">
+  <div class="menu-buttons">
+      <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+      <button class="menu-btn" data-content-id="html-content">HTML Fundamentals</button>
+      <button class="menu-btn" data-content-id="css-content">CSS Fundamentals</button>
+      <button class="menu-btn" data-content-id="advanced-css-content">Advanced CSS</button>
+      <button class="menu-btn" data-content-id="js-content">JavaScript Fundamentals</button>
+      <button class="menu-btn" data-content-id="advanced-js-content">Advanced JavaScript</button>
+      <button class="menu-btn" data-content-id="browser-js-content">JavaScript in Browser</button>
+      <button class="menu-btn" data-content-id="projects-content">Projects</button>
+      <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+      <button class="menu-btn" data-content-id="summary-content">Summary</button>
+    </div>
+
+    <div class="syllabus-container">
+      <h2>Course Syllabus: HTML, CSS & JavaScript</h2>
+
+      <div id="prerequisites-content" class="content-panel active">
+        <h3>Module: Prerequisites (5m)</h3>
+        <ul>
+          <li>Basic computer knowledge: OS, browsers, file management</li>
+          <li>Programming fundamentals: variables, loops, functions</li>
+          <li>Environment setup: VS Code, browser dev tools</li>
+        </ul>
+      </div>
+
+      <div id="html-content" class="content-panel hidden">
+        <h3>Module: HTML Fundamentals</h3>
+        <p>Learn structure of HTML documents, headings, paragraphs, lists, links, images, forms, semantic tags, multimedia, and accessibility basics.</p>
+      </div>
+
+      <div id="css-content" class="content-panel hidden">
+        <h3>Module: CSS Fundamentals</h3>
+        <p>Understand selectors, box model, colors, fonts, positioning, Flexbox basics, and Grid introduction.</p>
+      </div>
+
+      <div id="advanced-css-content" class="content-panel hidden">
+        <h3>Module: Advanced CSS</h3>
+        <p>Responsive design, media queries, animations, transformations, CSS variables, and frameworks overview (Bootstrap, Tailwind).</p>
+      </div>
+
+      <div id="js-content" class="content-panel hidden">
+        <h3>Module: JavaScript Fundamentals</h3>
+        <p>Variables, data types, operators, control structures, functions, DOM manipulation, events, and form validation basics.</p>
+      </div>
+
+      <div id="advanced-js-content" class="content-panel hidden">
+        <h3>Module: Advanced JavaScript</h3>
+        <p>ES6+ features, objects, arrays, classes, closures, promises, async/await, Fetch API, error handling, and storage APIs.</p>
+      </div>
+
+      <div id="browser-js-content" class="content-panel hidden">
+        <h3>Module: JavaScript in Browser</h3>
+        <p>DOM traversal, event delegation, dynamic content, JSON handling, and API integration.</p>
+      </div>
+
+      <div id="projects-content" class="content-panel hidden">
+        <h3>Module: Projects</h3>
+        <p>Build responsive webpages, interactive apps like To-do list, image slider, form validation, and quiz app.</p>
+      </div>
+
+      <div id="assessment-content" class="content-panel hidden">
+        <h3>Assessment</h3>
+        <p>MCQs on HTML, CSS, JS basics and coding exercises to validate knowledge.</p>
+      </div>
+
+      <div id="summary-content" class="content-panel hidden">
+        <h3>Summary</h3>
+        <p>HTML provides structure, CSS adds style, and JavaScript brings interactivity — together forming the foundation of modern web development.</p>
+      </div>
+    </div>
+</div>
+
+<div class="U">
+
+
+
+
+
+
+ <Center style="font-family:monospace;color:Orange;font-size:31px">Introduction to Html</Center><BR>
+<h1>HTML Fundamentals: From Basic to Advanced</h1>
+
+  <h2>Introduction</h2>
+  <p>
+    HTML (HyperText Markup Language) is the backbone of the web. It provides the structure and meaning of content on webpages. 
+    From simple text formatting to advanced semantic structures, HTML evolves to make websites accessible, interactive, and easy to maintain.
+  </p>
+
+  <h2>Basic Structure</h2>
+  <p>
+    Every HTML document begins with a <code>&lt;!DOCTYPE html&gt;</code> declaration, followed by the root <code>&lt;html&gt;</code> element. 
+    Inside, the <code>&lt;head&gt;</code> contains metadata such as the title, character encoding, and linked stylesheets or scripts. 
+    The <code>&lt;body&gt;</code> holds all visible content like headings, paragraphs, images, and links.
+  </p>
+
+  <h2>Text and Formatting</h2>
+  <p>
+    HTML provides tags for structuring text. Headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) define importance levels. 
+    Paragraphs (<code>&lt;p&gt;</code>) group sentences, while emphasis tags like <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> 
+    convey meaning beyond visual styling. Lists (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;dl&gt;</code>) organize information clearly.
+  </p>
+
+  <h2>Links and Images</h2>
+  <p>
+    Hyperlinks (<code>&lt;a&gt;</code>) connect documents and resources, forming the web’s network. 
+    Images (<code>&lt;img&gt;</code>) enrich content visually and must include descriptive <code>alt</code> text for accessibility. 
+    Modern HTML also supports responsive images with the <code>&lt;picture&gt;</code> element.
+  </p>
+
+  <h2>Forms and User Input</h2>
+  <p>
+    Forms (<code>&lt;form&gt;</code>) collect user data through inputs like text fields, checkboxes, radio buttons, and dropdowns. 
+    Labels improve accessibility by linking descriptions to inputs. HTML5 introduced new input types such as <code>email</code>, <code>date</code>, and <code>number</code>, 
+    enabling built-in validation without extra scripts.
+  </p>
+
+  <h2>Semantic HTML</h2>
+  <p>
+    Semantic elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code> 
+    give meaning to content, improving accessibility and SEO. They help browsers, search engines, and assistive technologies understand the role of each section.
+  </p>
+
+  <h2>Multimedia</h2>
+  <p>
+    HTML5 introduced native support for audio and video through <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> tags. 
+    These elements allow embedding media without plugins. The <code>&lt;canvas&gt;</code> element enables dynamic graphics, while <code>&lt;svg&gt;</code> supports scalable vector images.
+  </p>
+
+  <h2>Tables</h2>
+  <p>
+    Tables (<code>&lt;table&gt;</code>) organize tabular data with rows (<code>&lt;tr&gt;</code>), headers (<code>&lt;th&gt;</code>), and cells (<code>&lt;td&gt;</code>). 
+    Captions and scope attributes improve accessibility by clarifying relationships between headers and data.
+  </p>
+
+  <h2>Attributes</h2>
+  <p>
+    Attributes provide additional information about elements. Global attributes like <code>id</code>, <code>class</code>, and <code>style</code> 
+    apply to most elements. Specific attributes such as <code>src</code> for images or <code>href</code> for links define element behavior. 
+    HTML5 also introduced custom <code>data-*</code> attributes for embedding metadata.
+  </p>
+
+  <h2>Advanced Features</h2>
+  <p>
+    Advanced HTML includes APIs and integration with JavaScript. Elements like <code>&lt;canvas&gt;</code> and <code>&lt;svg&gt;</code> 
+    enable interactive graphics. The <code>&lt;input&gt;</code> element supports attributes like <code>pattern</code> and <code>required</code> for validation. 
+    Accessibility is enhanced with ARIA roles, ensuring inclusive design for all users.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    HTML has grown from a simple markup language to a powerful foundation for modern web applications. 
+    Mastering its basics—document structure, text, links, forms—and advancing to semantic elements, multimedia, and accessibility ensures 
+    developers can build robust, user-friendly, and future-proof websites.
+  </p>
+</div>
+
+
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="Frame.jsp" class="I">Back</a>
+  <a href="HtmlCSSScript2.html" class="I" Style="margin-left:700px;">Next</a>
+    
+    </div>
+ 
+</body>
+</html>
+
+

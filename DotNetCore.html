@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;}.V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        }
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">	
+	
+</head>
+<body >
+<BR><BR>
+<div Class="D"><a href="index1.html"><img src="Knowledge.jpg" class="logo"></a><P Class="V">Knowledge Check Demonstration</P></div>
+            
+          
+            <BR><BR><button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+<div id="syllabus-content-area">
+
+    <div class="menu-buttons">
+    <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+    <button class="menu-btn" data-content-id="dotnet-intro-content">Dot Net Core Introduction</button>
+    <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+    <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+</div>
+
+<div class="syllabus-container">
+    <h2>Course Syllabus: Dot Net Core</h2>
+
+    <div id="prerequisites-content" class="content-panel active">
+        <h3>Module: Prerequisites (5m)</h3>
+        <ul>
+            <li>*Basic C# Knowledge:* Variables, loops, classes, and methods.</li>
+            <li>*Environment Setup:* Install Visual Studio / VS Code, .NET SDK.</li>
+            <li>*Review:* Understanding CLR, Common Language Runtime, and basic OOP concepts.</li>
+        </ul>
+    </div>
+
+    <div id="dotnet-intro-content" class="content-panel hidden">
+        <h3>Module: Dot Net Core Fundamentals</h3>
+        <p>Exploring .NET Core architecture, cross-platform capabilities, and project structure.</p>
+    </div>
+
+    <div id="assessment-content" class="content-panel hidden">
+        <h3>Assessment</h3>
+        <p>Test your knowledge with quizzes.</p>
+    </div>
+
+    <div id="summary-content" class="content-panel hidden">
+        <h3>Summary</h3>
+        <p>.NET Core is a free, open-source, cross-platform framework for building modern, scalable, and high-performance applications.</p>
+    </div>
+</div>
+
+</div>
+
+
+		<BR>
+<div class="U">
+<P>
+
+
+<Center style="font-family:monospace;color:Orange;font-size:31px">Dot Net Core</Center><BR>
+
+1. Introduction  
+.NET Core is a free, open-source, cross-platform framework developed by Microsoft. It was designed to overcome the limitations of the traditional .NET Framework, which was restricted to Windows. With .NET Core, developers can build applications that run on Windows, Linux, and macOS, making it a versatile choice for modern software development.  
+
+
+
+<BR><BR>
+2. Evolution of .NET Core  
+The journey began with .NET Core 1.0 in 2016, which focused on modularity and cross-platform support. Later versions added performance improvements, better tooling, and expanded APIs. In 2020, Microsoft unified the ecosystem into a single platform called **.NET 5**, merging .NET Core, .NET Framework, and Xamarin. Today, the latest versions (like .NET 8 and beyond) continue to enhance speed, diagnostics, and developer productivity.  
+
+
+
+Cross-Platform Capabilities  
+Unlike the Windows-only .NET Framework, .NET Core runs seamlessly across operating systems. Developers can write code once and deploy it on servers running Linux, containers orchestrated by Kubernetes, or macOS desktops. This flexibility makes .NET Core especially valuable for cloud-native applications.  
+
+
+<BR><BR>
+
+3. Performance and Efficiency  
+.NET Core is optimized for speed. Its runtime, **CoreCLR**, includes advanced Just-In-Time (JIT) compilation and garbage collection. Benchmarks consistently show **ASP.NET Core** as one of the fastest web frameworks available. This performance advantage is critical for high-traffic websites and APIs.  
+
+Modular Design  
+Unlike the monolithic .NET Framework, .NET Core is modular. Developers can include only the libraries they need via **NuGet packages**, reducing application size and improving maintainability. This modularity also makes it easier to update specific components without affecting the entire system.  
+
+
+
+<BR><BR>4. Language Support  
+.NET Core supports multiple programming languages:  
+C#: The most widely used language for .NET Core applications.  
+F#: A functional-first language.  
+VB.NET: Supported but less commonly used in modern projects.  
+
+
+
+ASP.NET Core for Web Development  
+ASP.NET Core is the web framework built on .NET Core. It supports MVC, Razor Pages, and Blazor. Developers can build REST APIs, dynamic websites, and even interactive client-side apps using C# with Blazor WebAssembly.  
+
+Example: A simple ASP.NET Core API <BR><BR>
+
+
+using Microsoft.AspNetCore.Mvc;<BR>
+
+namespace MyApi.Controllers<BR>
+{<BR>
+    [ApiController]<BR>
+    [Route("api/[controller]")]<BR>
+    public class HelloController : ControllerBase<BR>
+    {
+    <BR>
+        [HttpGet]<BR>
+        public string Get()<BR>
+        {<BR>
+            return "Hello from .NET Core API!";<BR>
+        }<BR>
+    }
+    <BR>
+}
+
+<BR><BR>
+
+
+ 5. Entity Framework Core (EF Core)  
+EF Core is the Object-Relational Mapper (ORM) for .NET Core. It allows developers to interact with databases using LINQ instead of raw SQL.  
+
+Example: EF Core Model and Query  <BR>
+
+
+public class Product<BR>
+{<BR>
+    public int Id { get; set; }<BR>
+    public string Name { get; set; }<BR>
+    public decimal Price { get; set; }<BR>
+}<BR>
+
+public class AppDbContext : DbContext<BR>
+{<BR>
+    public DbSet<Product> Products { get; set; }<BR>
+}
+
+<BR>
+
+
+Querying data:  <BR>
+
+using (var context = new AppDbContext())<BR>
+{<BR>
+    var cheapProducts = context.Products.Where(p => p.Price < 100).ToList();<BR>
+
+    foreach (var product in cheapProducts)
+    <BR>
+    {<BR>
+        Console.WriteLine($"{product.Name} - {product.Price}");<BR>
+    }<BR>
+}
+<BR>
+Deployment Flexibility  
+.NET Core supportsself-contained deployments, meaning applications can ship with their own runtime. This avoids dependency conflicts and ensures consistent behavior across environments. It also supports **side-by-side versioning**, allowing multiple versions of .NET Core to coexist on the same machine.  
+
+
+<BR><BR>
+6. Cloud and Microservices  
+.NET Core integrates seamlessly with Docker andKubernetes, making it ideal for microservices architectures. Developers can build lightweight services that scale horizontally in cloud environments like Azure or AWS.  
+Example: Minimal API for Microservices <BR>
+
+
+var builder = WebApplication.CreateBuilder(args);<BR>
+var app = builder.Build();<BR>
+
+app.MapGet("/weather", () =><BR>
+{<BR>
+    return new { Temp = 25, Condition = "Sunny" };<BR>
+});<BR>
+
+app.Run();
+
+
+
+
+Security Features  
+.NET Core includes built-in support for HTTPS, authentication, and authorization. Developers can integrate with **Azure Active Directory** or use **IdentityServer** for advanced identity management.  
+
+<BR><BR>
+
+ 7. Advanced Programming with .NET Core  
+Beyond basic apps, .NET Core supports advanced scenarios like:  
+- gRPCfor high-performance communication between microservices.  
+- ML.NET for machine learning and predictive analytics.  
+- SignalR for real-time communication (e.g., chat apps).  
+
+Example: SignalR Hub  
+<BR>
+
+using Microsoft.AspNetCore.SignalR;<BR>
+
+public class ChatHub : Hub<BR>
+{<BR>
+    public async Task SendMessage(string user, string message)<BR>
+    {<BR>
+        await Clients.All.SendAsync("ReceiveMessage", user, message);<BR>
+    }<BR>
+}<BR>
+
+<BR><BR>
+Observability and Diagnostics  
+Modern .NET Core apps integrate with **OpenTelemetry** for distributed tracing and monitoring. Developers can track performance across microservices and quickly identify bottlenecks.  
+
+<BR><BR>
+
+ 8. Real-World Applications  
+.NET Core is used in:  
+- Web app: E-commerce platforms, SaaS solutions.  
+-Desktop app: Cross-platform apps using .NET MAUI.  
+- IoT solutions: Lightweight apps running on devices.  
+-Game developmen: Unity engine uses C# and integrates with .NET.  
+
+
+<BR><BR>
+Conclusion  
+.NET Core has transformed the way developers build applications. With its cross-platform support, modular design, high performance, and integration with modern technologies, it is a powerful framework for building everything from web APIs to cloud-native microservices. Its evolution into the unified **.NET platform** ensures that developers can rely on it for years to come.  
+
+ 
+</P>
+</Div>
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="Frame.jsp" class="I">Back</a>
+  <a href="DotNetCore2.html" class="I" Style="margin-left:700px;">Next</a>
+    
+    </div>
+</body>
+</html>
+
+

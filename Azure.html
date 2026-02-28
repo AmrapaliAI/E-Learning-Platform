@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Azure Fundamentals Course</title>
+
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+
+<style>
+.D { display: flex; }
+.logo { height: 111px; width: 100px; }
+
+.V {
+    color: HotPink;
+    border-color: Yellow;
+    outline-color: Violet;
+    font-size: 21px;
+    text-shadow: 3px 2px 4px grey;
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+.V:hover {
+    color: Blue;
+    text-shadow: 3px 2px 4px grey;
+}
+
+.U {
+    border: 4px solid orange;
+    width: 840px;
+    font-size: 26px;
+    padding: 78px 21px 21px 67px;
+    font-family: monospace;
+    background-color: White;
+    margin-left: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-image: url("data-sciences.jpg");
+    background-attachment: fixed;
+}
+
+h2 { color: #2c3e50; }
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+code { color: #c0392b; }
+.section { margin-bottom: 40px; }
+
+.U::-webkit-scrollbar {
+    display: none;
+}
+
+.I {
+    border: 4px solid Blue;
+    background-color: lightBlue;
+    text-align: center;
+    color: white;
+    height: 45px;
+    width: 140px;
+    text-decoration: none;
+    font-size: 41px;
+}
+</style>
+
+<script>
+function toggleVisibility() {
+    var box = document.getElementById("syllabus-content-area");
+    box.style.display = (box.style.display === "none") ? "block" : "none";
+}
+
+// Menu button switching
+window.onload = function() {
+    const buttons = document.querySelectorAll(".menu-btn");
+    const panels = document.querySelectorAll(".content-panel");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            panels.forEach(p => p.classList.add("hidden"));
+            const activePanel = document.getElementById(btn.dataset.contentId);
+            activePanel.classList.remove("hidden");
+        });
+    });
+};
+</script>
+
+</head>
+
+<body>
+
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Azure Syllabus</button>
+
+<div id="syllabus-content-area">
+
+    <div class="menu-buttons">
+        <button class="menu-btn" data-content-id="prerequisites-content">Prerequisites</button>
+        <button class="menu-btn" data-content-id="azure-intro-content">Azure Fundamentals</button>
+        <button class="menu-btn" data-content-id="compute-content">Compute</button>
+        <button class="menu-btn" data-content-id="storage-content">Storage</button>
+        <button class="menu-btn" data-content-id="networking-content">Networking</button>
+        <button class="menu-btn" data-content-id="database-content">Databases</button>
+        <button class="menu-btn" data-content-id="security-content">Security</button>
+        <button class="menu-btn" data-content-id="monitoring-content">Monitoring</button>
+        <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+        <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+    </div>
+
+    <div class="syllabus-container">
+        <h2>Course Syllabus: Azure Fundamentals</h2>
+
+        <div id="prerequisites-content" class="content-panel active">
+            <h3>Module: Prerequisites</h3>
+            <ul>
+                <li><strong>Cloud Basics:</strong> Understanding of IaaS, PaaS, SaaS models.</li>
+                <li><strong>Networking Fundamentals:</strong> IP addressing, DNS, firewalls, routing basics.</li>
+                <li><strong>Programming Knowledge:</strong> Familiarity with scripting (Python, PowerShell) and APIs.</li>
+            </ul>
+        </div>
+
+        <div id="azure-intro-content" class="content-panel hidden">
+            <h3>Module: Azure Fundamentals & Core Concepts</h3>
+            <p>This module introduces Microsoft Azure cloud platform.</p>
+            <hr>
+            <ul>
+                <li><strong>Global Infrastructure:</strong> Regions, Availability Zones, Edge Locations.</li>
+                <li><strong>Shared Responsibility Model:</strong> Security responsibilities between Azure and customers.</li>
+                <li><strong>Core Services:</strong> Compute, Storage, Networking, Databases, Security, Monitoring.</li>
+            </ul>
+        </div>
+
+        <div id="compute-content" class="content-panel hidden">
+            <h3>Module: Compute</h3>
+            <ul>
+                <li><strong>Azure Virtual Machines:</strong> Scalable virtual servers.</li>
+                <li><strong>Azure Functions:</strong> Serverless compute service.</li>
+                <li><strong>Azure App Services:</strong> Managed web apps hosting.</li>
+                <li><strong>Azure Kubernetes Service (AKS):</strong> Container orchestration.</li>
+            </ul>
+        </div>
+
+        <div id="storage-content" class="content-panel hidden">
+            <h3>Module: Storage</h3>
+            <ul>
+                <li><strong>Azure Blob Storage:</strong> Object storage service.</li>
+                <li><strong>Azure Disk Storage:</strong> Managed disks for VMs.</li>
+                <li><strong>Azure File Storage:</strong> Fully managed file shares.</li>
+                <li><strong>Azure Archive Storage:</strong> Long-term archival.</li>
+            </ul>
+        </div>
+
+        <div id="networking-content" class="content-panel hidden">
+            <h3>Module: Networking</h3>
+            <ul>
+                <li><strong>Azure Virtual Network (VNet):</strong> Isolated networks for resources.</li>
+                <li><strong>Azure DNS:</strong> Domain management and resolution.</li>
+                <li><strong>VPN Gateway:</strong> Secure connections to on-premises networks.</li>
+                <li><strong>Azure Front Door:</strong> Global content delivery.</li>
+            </ul>
+        </div>
+
+        <div id="database-content" class="content-panel hidden">
+            <h3>Module: Databases</h3>
+            <ul>
+                <li><strong>Azure SQL Database:</strong> Managed relational DB.</li>
+                <li><strong>Cosmos DB:</strong> Globally distributed NoSQL DB.</li>
+                <li><strong>Azure Synapse Analytics:</strong> Data warehousing and analytics.</li>
+                <li><strong>Azure Cache for Redis:</strong> In-memory caching.</li>
+            </ul>
+        </div>
+
+        <div id="security-content" class="content-panel hidden">
+            <h3>Module: Security</h3>
+            <ul>
+                <li><strong>Azure Active Directory:</strong> Identity & access management.</li>
+                <li><strong>Azure Security Center:</strong> Security management and threat detection.</li>
+                <li><strong>Azure Key Vault:</strong> Secrets & key management.</li>
+                <li><strong>Azure Sentinel:</strong> Cloud-native SIEM.</li>
+            </ul>
+        </div>
+
+        <div id="monitoring-content" class="content-panel hidden">
+            <h3>Module: Monitoring</h3>
+            <ul>
+                <li><strong>Azure Monitor:</strong> Metrics and logs monitoring.</li>
+                <li><strong>Azure Application Insights:</strong> Application performance monitoring.</li>
+                <li><strong>Azure Log Analytics:</strong> Query and analyze logs.</li>
+            </ul>
+        </div>
+
+        <div id="assessment-content" class="content-panel hidden">
+            <h3>Assessment</h3>
+            <p>Test your knowledge through quizzes on Azure services, hands-on labs deploying VMs and Storage, and a final <strong>Capstone Project</strong>.</p>
+        </div>
+
+        <div id="summary-content" class="content-panel hidden">
+            <h3>Summary</h3>
+            <p>Microsoft Azure offers a full cloud platform with services for compute, storage, networking, databases, security, and monitoring, enabling scalable and secure cloud solutions.</p>
+        </div>
+
+    </div>
+</div>
+
+<br><br>
+
+<div class="U">
+  
+    <center style="font-family:monospace;color:Orange;font-size:31px">
+        Azure Fundamentals - Core Overview
+    </center>
+    <br>
+
+    <h3>What is Microsoft Azure?</h3>
+    <p>
+        Microsoft Azure is a cloud computing platform and infrastructure provided by Microsoft.
+        It enables organizations to build, deploy, and manage applications through a global network of data centers.
+    </p>
+
+    <h3>Why Use Azure?</h3>
+    <ul>
+        <li><strong>Scalability:</strong> Easily scale resources up or down based on demand.</li>
+        <li><strong>Cost Effective:</strong> Pay only for what you use, no upfront hardware cost.</li>
+        <li><strong>High Availability:</strong> Applications run across multiple Availability Zones.</li>
+        <li><strong>Security:</strong> Built-in security services and compliance standards.</li>
+        <li><strong>Global Reach:</strong> Data centers available worldwide.</li>
+    </ul>
+
+    <h3>Azure Global Infrastructure</h3>
+    <ul>
+        <li><strong>Regions:</strong> Separate geographic areas like East US, West Europe, Southeast Asia.</li>
+        <li><strong>Availability Zones:</strong> Multiple isolated data centers inside a region.</li>
+        <li><strong>Edge Locations:</strong> Used for faster content delivery via Azure Front Door and CDN.</li>
+    </ul>
+
+    <h3>Azure Shared Responsibility Model</h3>
+    <p>
+        Azure follows a shared responsibility model where security responsibilities are divided:
+    </p>
+    <ul>
+        <li><strong>Azure Responsibility:</strong> Security of the cloud (hardware, data centers, networking).</li>
+        <li><strong>Customer Responsibility:</strong> Security in the cloud (data, OS, applications, IAM).</li>
+    </ul>
+
+    <h3>Core Azure Service Categories</h3>
+    <ul>
+        <li><strong>Compute:</strong> Virtual Machines, Functions, App Services, AKS</li>
+        <li><strong>Storage:</strong> Blob Storage, Disk Storage, File Storage, Archive</li>
+        <li><strong>Networking:</strong> VNet, DNS, Front Door, VPN Gateway</li>
+        <li><strong>Databases:</strong> SQL Database, Cosmos DB, Synapse, Redis Cache</li>
+        <li><strong>Security:</strong> Azure AD, Key Vault, Security Center, Sentinel</li>
+        <li><strong>Monitoring:</strong> Monitor, Application Insights, Log Analytics</li>
+    </ul>
+
+    <h3>Key Azure Concepts</h3>
+    <ul>
+        <li><strong>Elasticity:</strong> Automatic scaling of resources.</li>
+        <li><strong>Fault Tolerance:</strong> System continues working even after failures.</li>
+        <li><strong>High Availability:</strong> Minimal downtime using multi-AZ design.</li>
+        <li><strong>Pay-As-You-Go:</strong> No long-term contracts.</li>
+    </ul>
+
+    <h3>Common Azure Use Cases</h3>
+    <ul>
+        <li>Web and application hosting</li>
+        <li>Backup and disaster recovery</li>
+        <li>Big data processing and analytics</li>
+        <li>Machine learning and AI applications</li>
+        <li>Mobile and game development</li>
+    </ul>
+</div>
+
+<div style="display:inline-block; padding-top:21px;">
+    <a href="Frame.jsp" class="I">Back</a>
+    <a href="Azure2.html" class="I" style="margin-left:700px;">Next</a>
+</div>
+
+</body>
+</html>

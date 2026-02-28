@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+
+<style>
+.D { display: flex; }
+.logo { height: 111px; width: 100px; }
+
+.V {
+    color: HotPink;
+    border-color: Yellow;
+    outline-color: Violet;
+    font-size: 21px;
+    text-shadow: 3px 2px 4px grey;
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+.V:hover {
+    color: Blue;
+    text-shadow: 3px 2px 4px grey;
+}
+
+.U {
+    border: 4px solid orange;
+    width: 840px;
+    font-size: 26px;
+    padding: 78px 21px 21px 67px;
+    font-family: monospace;
+    background-color: White;
+    margin-left: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-image: url("data-sciences.jpg");
+    background-attachment: fixed;
+}
+
+h2 { color: #2c3e50; }
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+code { color: #c0392b; }
+.section { margin-bottom: 40px; }
+
+.U::-webkit-scrollbar {
+    display: none;
+}
+
+.I {
+    border: 4px solid Blue;
+    background-color: lightBlue;
+    text-align: center;
+    color: white;
+    height: 45px;
+    width: 140px;
+    text-decoration: none;
+    font-size: 41px;
+}
+</style>
+
+<script>
+function toggleVisibility() {
+    var box = document.getElementById("syllabus-content-area");
+    box.style.display = (box.style.display === "none") ? "block" : "none";
+}
+</script>
+
+</head>
+
+<body>
+
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show AWS Syllabus</button>
+
+<div id="syllabus-content-area">
+
+    <div class="menu-buttons">
+        <button class="menu-btn" data-content-id="prerequisites-content">Prerequisites</button>
+        <button class="menu-btn" data-content-id="aws-intro-content">AWS Fundamentals</button>
+        <button class="menu-btn" data-content-id="compute-content">Compute</button>
+        <button class="menu-btn" data-content-id="storage-content">Storage</button>
+        <button class="menu-btn" data-content-id="networking-content">Networking</button>
+        <button class="menu-btn" data-content-id="database-content">Databases</button>
+        <button class="menu-btn" data-content-id="security-content">Security</button>
+        <button class="menu-btn" data-content-id="monitoring-content">Monitoring</button>
+        <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+        <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+    </div>
+
+    <div class="syllabus-container">
+        <h2>Course Syllabus: AWS Fundamentals</h2>
+
+        <div id="prerequisites-content" class="content-panel active">
+            <h3>Module: Prerequisites</h3>
+            <ul>
+                <li><strong>Cloud Basics:</strong> Understanding of IaaS, PaaS, SaaS models.</li>
+                <li><strong>Networking Fundamentals:</strong> IP addressing, DNS, firewalls, routing basics.</li>
+                <li><strong>Programming Knowledge:</strong> Familiarity with scripting (Python, Bash) and APIs.</li>
+            </ul>
+        </div>
+
+        <div id="aws-intro-content" class="content-panel hidden">
+            <h3>Module: AWS Fundamentals & Core Concepts</h3>
+            <p>This module introduces the foundations of Amazon Web Services.</p>
+            <hr>
+            <ul>
+                <li><strong>Global Infrastructure:</strong> Regions, Availability Zones, Edge Locations.</li>
+                <li><strong>Shared Responsibility Model:</strong> Security responsibilities between AWS and customers.</li>
+                <li><strong>Core Services:</strong> Compute, Storage, Networking, Databases, Security, Monitoring.</li>
+            </ul>
+        </div>
+
+        <div id="compute-content" class="content-panel hidden">
+            <h3>Module: Compute</h3>
+            <ul>
+                <li><strong>Amazon EC2:</strong> Virtual servers in the cloud.</li>
+                <li><strong>AWS Lambda:</strong> Serverless compute service.</li>
+                <li><strong>Amazon Lightsail:</strong> Simplified compute for small workloads.</li>
+                <li><strong>Amazon ECS/EKS:</strong> Container orchestration services.</li>
+            </ul>
+        </div>
+
+        <div id="storage-content" class="content-panel hidden">
+            <h3>Module: Storage</h3>
+            <ul>
+                <li><strong>Amazon S3:</strong> Object storage service.</li>
+                <li><strong>Amazon EBS:</strong> Block storage volumes for EC2.</li>
+                <li><strong>Amazon EFS:</strong> Managed file storage.</li>
+                <li><strong>Amazon Glacier:</strong> Archival storage.</li>
+            </ul>
+        </div>
+
+        <div id="networking-content" class="content-panel hidden">
+            <h3>Module: Networking</h3>
+            <ul>
+                <li><strong>Amazon VPC:</strong> Create isolated virtual networks.</li>
+                <li><strong>AWS Route 53:</strong> DNS and domain registration.</li>
+                <li><strong>AWS VPN:</strong> Secure connections to on-premises networks.</li>
+                <li><strong>Amazon CloudFront:</strong> Content delivery network.</li>
+            </ul>
+        </div>
+
+        <div id="database-content" class="content-panel hidden">
+            <h3>Module: Databases</h3>
+            <ul>
+                <li><strong>Amazon RDS:</strong> Managed relational database service.</li>
+                <li><strong>Amazon DynamoDB:</strong> NoSQL database.</li>
+                <li><strong>Amazon Redshift:</strong> Data warehousing.</li>
+                <li><strong>Amazon ElastiCache:</strong> In-memory caching.</li>
+            </ul>
+        </div>
+
+        <div id="security-content" class="content-panel hidden">
+            <h3>Module: Security</h3>
+            <ul>
+                <li><strong>AWS IAM:</strong> Identity and access management.</li>
+                <li><strong>AWS Shield:</strong> DDoS protection.</li>
+                <li><strong>AWS KMS:</strong> Key management service.</li>
+                <li><strong>AWS CloudTrail:</strong> Logging and auditing.</li>
+            </ul>
+        </div>
+
+        <div id="monitoring-content" class="content-panel hidden">
+            <h3>Module: Monitoring</h3>
+            <ul>
+                <li><strong>Amazon CloudWatch:</strong> Monitoring and metrics.</li>
+                <li><strong>AWS Config:</strong> Resource configuration tracking.</li>
+                <li><strong>AWS X-Ray:</strong> Application performance monitoring.</li>
+            </ul>
+        </div>
+
+        <div id="assessment-content" class="content-panel hidden">
+            <h3>Assessment</h3>
+            <p>Test your knowledge through quizzes on AWS services, hands-on labs deploying EC2 and S3, and a final <strong>Capstone Project</strong>.</p>
+        </div>
+
+        <div id="summary-content" class="content-panel hidden">
+            <h3>Summary</h3>
+            <p>Amazon Web Services (AWS) provides a comprehensive cloud platform offering compute, storage, networking, databases, and security services.</p>
+        </div>
+
+    </div>
+</div>
+
+<br><br>
+
+<div class="U">
+  
+    <center style="font-family:monospace;color:Orange;font-size:31px">
+        AWS Fundamentals - Core Overview
+    </center>
+    <br>
+
+    <h3>What is Amazon Web Services (AWS)?</h3>
+    <p>
+        Amazon Web Services (AWS) is a secure and scalable cloud computing platform provided by Amazon.
+        It offers on-demand access to computing power, storage, networking, databases, and many other
+        services over the internet with a pay-as-you-go pricing model.
+    </p>
+
+    <h3>Why Use AWS?</h3>
+    <ul>
+        <li><strong>Scalability:</strong> Easily scale resources up or down based on demand.</li>
+        <li><strong>Cost Effective:</strong> Pay only for what you use, no upfront hardware cost.</li>
+        <li><strong>High Availability:</strong> Applications run across multiple Availability Zones.</li>
+        <li><strong>Security:</strong> Built-in security services and compliance standards.</li>
+        <li><strong>Global Reach:</strong> Data centers available worldwide.</li>
+    </ul>
+
+    <h3>AWS Global Infrastructure</h3>
+    <ul>
+        <li><strong>Regions:</strong> Separate geographic areas like Mumbai, Virginia, London.</li>
+        <li><strong>Availability Zones:</strong> Multiple isolated data centers inside a region.</li>
+        <li><strong>Edge Locations:</strong> Used for faster content delivery via CloudFront.</li>
+    </ul>
+
+    <h3>AWS Shared Responsibility Model</h3>
+    <p>
+        AWS follows a shared responsibility model where security responsibilities are divided:
+    </p>
+    <ul>
+        <li><strong>AWS Responsibility:</strong> Security of the cloud (hardware, data centers, networking).</li>
+        <li><strong>Customer Responsibility:</strong> Security in the cloud (data, OS, applications, IAM).</li>
+    </ul>
+
+    <h3>Core AWS Service Categories</h3>
+    <ul>
+        <li><strong>Compute:</strong> EC2, Lambda, ECS, EKS</li>
+        <li><strong>Storage:</strong> S3, EBS, EFS, Glacier</li>
+        <li><strong>Networking:</strong> VPC, Route 53, CloudFront</li>
+        <li><strong>Databases:</strong> RDS, DynamoDB, Redshift</li>
+        <li><strong>Security:</strong> IAM, KMS, Shield, CloudTrail</li>
+        <li><strong>Monitoring:</strong> CloudWatch, AWS Config, X-Ray</li>
+    </ul>
+
+    <h3>Key AWS Concepts</h3>
+    <ul>
+        <li><strong>Elasticity:</strong> Automatic scaling of resources.</li>
+        <li><strong>Fault Tolerance:</strong> System continues working even after failures.</li>
+        <li><strong>High Availability:</strong> Minimal downtime using multi-AZ design.</li>
+        <li><strong>Pay-As-You-Go:</strong> No long-term contracts.</li>
+    </ul>
+
+    <h3>Common AWS Use Cases</h3>
+    <ul>
+        <li>Website and application hosting</li>
+        <li>Backup and disaster recovery</li>
+        <li>Big data processing and analytics</li>
+        <li>Machine learning and AI applications</li>
+        <li>Mobile and game development</li>
+    </ul>
+</div>
+
+
+
+<div style="display:inline-block; padding-top:21px;">
+    <a href="Frame.jsp" class="I">Back</a>
+    <a href="AWS2.html" class="I" style="margin-left:700px;">Next</a>
+</div>
+
+</body>
+</html>

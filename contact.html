@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Knowledge Check Demonstration</title>
+    <style>
+        /* Basic CSS for an attractive contact form */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .contact-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+            overflow: hidden; /* Ensures border-radius applies nicely */
+        }
+        .contact-info, .contact-form {
+            padding: 40px;
+            flex: 1; /* Makes them share space */
+            min-width: 300px; /* Ensures they don't get too small */
+        }
+        .contact-info {
+            background-color: #2C3E50; /* Dark background for info */
+            color: #ecf0f1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .contact-info h2 {
+            color: #3498DB; /* Accent color for heading */
+            margin-top: 0;
+            font-size: 2em;
+        }
+        .contact-info p {
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .info-item i { /* For icons, if you use Font Awesome or similar */
+            margin-right: 15px;
+            color: #E74C3C; /* Icon accent color */
+            font-size: 1.2em;
+            width: 25px; /* Fixed width for alignment */
+        }
+        .contact-info a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-info a:hover {
+            color: #3498DB;
+        }
+
+        .contact-form h2 {
+            color: #34495E;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea,
+        .form-group select { /* Added select for subject dropdown */
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 1em;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #3498DB;
+            box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+            outline: none;
+        }
+        .form-group textarea {
+            resize: vertical; /* Allow vertical resizing */
+            min-height: 120px;
+        }
+        button[type="submit"] {
+            background-color: #E74C3C; /* Action button color */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%;
+            font-weight: bold;
+        }
+        button[type="submit"]:hover {
+            background-color: #C0392B; /* Darker on hover */
+            transform: translateY(-2px);
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.85em;
+            margin-top: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                margin: 20px;
+            }
+            .contact-info, .contact-form {
+                padding: 30px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>We're here to help! Whether you have questions about our courses, need technical support, or want to explore partnership opportunities, feel free to reach out. Our team is ready to assist you.</p>
+
+            <div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Knowledge Check Demonstration.org tal.:=Sangola Dist.:=Solapur India 413317</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:support@Knowledge Check Demonstration.com">support@Knowledge Check Demonstration.com</a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+1234567890">[+1 (234) 567-890]</a> (Optional)
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-globe"></i>
+                    <a href="http://www.Knowledge Check Demonstration.com" target="_blank">www.Knowledge Check Demonstration.com</a>
+                </div>
+            </div>
+
+            <p style="font-size: 0.85em; margin-top: 30px;">
+                We aim to respond to all inquiries within 24-48 business hours.
+            </p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="User_Contact" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a Subject</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Technical Support">Technical Support</option>
+                        <option value="Course Enrollment">Course Enrollment</option>
+                        <option value="Partnership Opportunities">Partnership Opportunities</option>
+                        <option value="Feedback">Feedback / Suggestions</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Knowledge Check Demonstration. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

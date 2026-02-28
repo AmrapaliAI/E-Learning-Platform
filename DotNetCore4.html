@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;}.V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        }
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:49px;width:340px;text-Decoration:None;font-Size:41px;}
+</style><script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">	
+</head>
+<body >
+<BR><BR><div Class="D"><a href="index1.html"><img src="Knowledge.jpg" class="logo"></a><P Class="V">Knowledge Check Demonstration</P></div>
+            
+          
+            <BR><BR><button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+<div id="syllabus-content-area">
+
+    <div class="menu-buttons">
+    <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+    <button class="menu-btn" data-content-id="dotnet-intro-content">Dot Net Core Introduction</button>
+    <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+    <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+</div>
+
+<div class="syllabus-container">
+    <h2>Course Syllabus: Dot Net Core</h2>
+
+    <div id="prerequisites-content" class="content-panel active">
+        <h3>Module: Prerequisites (5m)</h3>
+        <ul>
+            <li>*Basic C# Knowledge:* Variables, loops, classes, and methods.</li>
+            <li>*Environment Setup:* Install Visual Studio / VS Code, .NET SDK.</li>
+            <li>*Review:* Understanding CLR, Common Language Runtime, and basic OOP concepts.</li>
+        </ul>
+    </div>
+
+    <div id="dotnet-intro-content" class="content-panel hidden">
+        <h3>Module: Dot Net Core Fundamentals</h3>
+        <p>Exploring .NET Core architecture, cross-platform capabilities, and project structure.</p>
+    </div>
+
+    <div id="assessment-content" class="content-panel hidden">
+        <h3>Assessment</h3>
+        <p>Test your knowledge with quizzes.</p>
+    </div>
+
+    <div id="summary-content" class="content-panel hidden">
+        <h3>Summary</h3>
+        <p>.NET Core is a free, open-source, cross-platform framework for building modern, scalable, and high-performance applications.</p>
+    </div>
+</div>
+
+</div>
+<div class="U">
+<P>
+
+
+<Center style="font-family:monospace;color:Orange;font-size:31px">Dot Net Core</Center><BR>
+
+
+ Interface
+- An **interface** defines a contract that classes or structs must implement.  
+- It contains **method signatures, properties, events, or indexers** but no implementation.  
+- Interfaces support **multiple inheritance** in C#.  
+
+**Example:**<BR>
+public interface IAnimal<BR>
+{<BR>
+    void Speak();<BR>
+}<BR>
+
+public class Dog : IAnimal<BR>
+{<BR>
+    public void Speak()<BR>
+    {<BR>
+        Console.WriteLine("Woof Woof");<BR>
+    }<BR>
+}
+<BR>
+
+
+
+Types of Classes
+1. **Concrete Class**  <BR>
+   - A normal class with full implementation.  <BR>
+
+   public class Car<BR>
+   {<BR>
+       public void Drive() => Console.WriteLine("Car is driving");<BR>
+   }
+<BR>
+
+2. **Abstract Class**  <BR>
+   - Cannot be instantiated directly. <BR> 
+   - May contain abstract methods (no body) and implemented methods.  <BR>
+
+   public abstract class Shape
+   {<BR>
+       public abstract void Draw();<BR>
+   }<BR>
+
+   public class Circle : Shape<BR>
+   {<BR>
+       public override void Draw() => Console.WriteLine("Drawing Circle");<BR>
+   }<BR>
+
+
+3. **Sealed Class**  
+   - Cannot be inherited.  
+   ```csharp
+   public sealed class FinalClass
+   {
+       public void Show() => Console.WriteLine("Sealed class method");
+   }
+   ```
+
+4. **Static Class** <BR> 
+   - Cannot be instantiated or inherited.  <BR>
+   - Contains only static members.  
+
+   <BR>public static class MathHelper
+   {<BR>
+       public static int Add(int a, int b) => a + b;<BR>
+   }<BR>
+
+
+---
+
+ Access Specifiers<BR>
+Access specifiers control **visibility** of classes and members:  <BR>
+
+| Specifier   		| Meaning 																			   
+
+<BR>
+| public    		| Accessible everywhere. 															   <BR>
+| private   		| Accessible only within the class.										 			   <BR>
+| protected 		| Accessible within the class and derived classes. 									   <BR>
+| internal  		| Accessible within the same assembly. 												<BR>
+| protected internal| Accessible within the same assembly or derived classes. 							   <BR>
+| private protected | Accessible only within the containing class or derived classes in the same assembly. <BR>
+
+**Example:**
+<BR>
+public class Example<BR>
+{<BR>
+    private int x = 10;  <BR>        // Only inside this class
+    public int y = 20;  <BR>         // Accessible everywhere
+    protected int z = 30; <BR>       // Accessible in derived classes
+}<BR>
+
+
+ Delegat
+<BR>- A **delegate** is a type that represents references to methods with a specific signature.  
+<BR>- It allows methods to be passed as parameters.  
+<BR>- Delegates are the foundation of **events** in C#.  
+
+**Example:**
+public delegate void MyDelegate(string message);
+
+
+<BR>class Program
+<BR>{
+    <BR>static void ShowMessage(string msg)
+    <BR>{
+        <BR>Console.WriteLine(msg);
+    <BR>}
+
+   <BR> static void Main()
+    <BR>{
+       <BR> MyDelegate del = ShowMessage;
+        <BR>del("Hello from delegate");
+    <BR>}
+}<BR>
+
+
+**Output:**
+
+Hello from delegate
+
+
+
+
+## 🔹 Types of Delegates
+1. **Single-cast Delegate**  
+   - Points to a single method.  
+   (Example above is single-cast.)
+
+2. **Multi-cast Delegate**  
+   - Can reference multiple methods.  <BR>
+
+   public delegate void MultiDelegate();<BR>
+
+   class Program
+  <BR> {
+       <BR>static void Method1() => Console.WriteLine("Method1");
+       <BR>static void Method2() => Console.WriteLine("Method2");
+
+       static void Main()
+       <BR>{
+           <BR>MultiDelegate del = Method1;
+           <BR>del += Method2;
+           <BR>del(); // Calls both methods
+      <BR> }
+  <BR> }
+
+
+   **Output:**
+
+  <BR> Method1
+   Method2
+
+
+3. **Generic Delegate (Func, Action, Predicate)**  
+   - Built-in delegates for common scenarios.  
+
+   <BR>Func<int, int, int> add = (a, b) => a + b;
+   <BR>Action<string> print = msg => Console.WriteLine(msg);
+   <BR>Predicate<int> isPositive = num => num > 0;
+
+   <BR>Console.WriteLine(add(5, 3));   // 8
+   <BR>print("Hello Action");          // Hello Action
+   <BR>Console.WriteLine(isPositive(10)); // True
+ 
+
+<BR>
+
+ In summary:  
+- **Interfaces** define contracts.  
+- **Classes** can be concrete, abstract, sealed, or static.  
+- **Access specifiers** control visibility.  
+- **Delegates** allow methods to be treated as objects, with types like single-cast, multi-cast, and generic.  
+
+</P>
+</div>
+
+
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="DotNetCore3.html" class="I">Back</a>
+  <a href="test1.html" class="I" Style="margin-left:700px;">Take Assessment</a>
+    
+    </div>
+
+ 
+
+
+
+</body>
+</html>
+
+

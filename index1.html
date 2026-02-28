@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Programming with Knowledge Check Demonstration - Learn, Assess, Certify</title>
+    <style>
+    /* ---------------------------------------------------- */
+/* CSS for the Modal Pop-up Effect */
+/* ---------------------------------------------------- */
+
+/* The Modal (background overlay) */
+.modal {
+    display: none;        /* This hides the modal by default */
+    position: fixed;      /* Stays in place relative to the viewport */
+    z-index: 100;         /* Ensures it's on top of all other elements */
+    left: 0;
+    top: 0;
+    width: 100%;          /* Full width */
+    height: 100%;         /* Full height */
+    overflow: auto;       /* Allows scrolling if content is too tall */
+    background-color: rgba(0,0,0,0.6); /* Semi-transparent black background */
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;     /* 10% from the top and centered horizontally */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 450px;     /* Set a maximum width for the form */
+    position: relative;
+}
+
+/* Close Button (the 'x') */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+}.I
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .I:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+        /* General Body & Typography */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            color: #2C3E50;
+            font-weight: 700;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        a {
+            color: #3498DB;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #2980B9;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            
+            height:141px;width:103px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 25px;
+        }
+        nav ul li a {
+            color: white;
+            font-weight: 500;
+            padding: 5px 0;
+            position: relative;
+        }
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #3498DB;
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s ease-in-out;
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        .nav-button {
+            background-color: #E74C3C;
+            padding: 8px 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #C0392B;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #3498DB, #2980B9);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before { /* Subtle background pattern */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.1;
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            color: white;
+            font-size: 3.2em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero .btn {
+            background-color: #E74C3C;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .hero .btn:hover {
+            background-color: #C0392B;
+            transform: translateY(-3px);
+        }
+
+        /* Key Features / How it Works */
+        .features {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .features h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .feature-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .feature-item {
+            background-color: #fcfcfc;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 30px;
+            flex-basis: calc(33% - 20px); /* 3 items per row */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+        .feature-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .feature-item i { /* For icons */
+            font-size: 3em;
+            color: #3498DB;
+            margin-bottom: 20px;
+            display: block;
+            text-align: center;
+        }
+        .feature-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .feature-item p {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        /* Call to Action Section */
+        .cta {
+            background-color: #E74C3C;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 40px;
+        }
+        .cta h2 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta .btn {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .cta .btn:hover {
+            background-color: #34495E;
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .footer-col {
+            flex-basis: calc(33% - 40px); /* Adjust as needed */
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .footer-col h4 {
+            color: #3498DB;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+        .footer-col a {
+            color: #ecf0f1;
+            transition: color 0.3s ease;
+        }
+        .footer-col a:hover {
+            color: #3498DB;
+        }
+        .footer-bottom {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .feature-item {
+                flex-basis: calc(50% - 20px); /* 2 items per row */
+            }
+            .footer-col {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 5px 15px;
+            }
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .hero .btn {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+            .features h2, .cta h2 {
+                font-size: 2em;
+            }
+            .feature-item {
+                flex-basis: 100%; /* 1 item per row */
+            }
+            .footer-col {
+                flex-basis: 100%;
+                text-align: center;
+            }
+            .footer-col h4 {
+                text-align: center;
+            }
+            .footer-col ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .footer-col ul li {
+                margin: 0 10px 10px 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.5em;
+            }
+            nav ul li {
+                margin: 5px 10px;
+            }
+            .nav-button {
+                margin-top: 15px;
+            }
+            .hero {
+                padding: 60px 15px;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+        }
+       /* --- Navigation Button Styling --- */
+/* (This targets the new span elements) */
+.nav-button-js {
+    color: white; /* Match your other nav links */
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer; /* Important: shows it's clickable */
+    transition: background-color 0.3s;
+    display: inline-block; /* Allows padding/margin to work correctly */
+}
+.nav-button-js:hover {
+    background-color: #555; /* Slight hover effect */
+}
+
+/* --- Modal Pop-up Styling --- */
+/* This is essential to make the forms appear as overlays */
+
+/* The Modal (background overlay) */
+.modal {
+    /* Initially hidden */
+    display: none;       
+    /* Position fixed to cover the whole viewport */
+    position: fixed;     
+    z-index: 100;        /* Always on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;         /* Full width */
+    height: 100%;        /* Full height */
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); /* Dark semi-transparent background */
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe; /* White background for the form box */
+    margin: 10% auto;    /* 10% from the top and centered */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 450px;    /* Standard form size */
+    position: relative;
+}
+
+/* Close Button (the 'x') */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+}#Content-frame{DiSplay:NoNe;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="Knowledge.jpg" class="logo"></a><H1 Class="I">Knowledge Check Demonstration</H1>
+            
+            <ul>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="openLoginBtn" class="nav-Button-js">LogIn</li>
+                <li><a href="Register.jsp"  id="openRegisterBtn" class="nav-Button-js">Register</a></li>
+            </ul> 
+            
+  </nav>    
+
+<div class="main-content">
+    <h2>Welcome to the Platform</h2>
+</div>
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+    <a href="index.jsp">login</a>
+        <span class="close">&times;</span>
+        </div>
+</div>
+
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        </div>
+</div> </header>
+           
+           
+           
+          <script>
+    // Get the modal elements by ID (from your image, lines 488-489)
+    var loginModal = document.getElementById("loginModal");
+    var registerModal = document.getElementById("registerModal");
+
+    // Get the buttons that open the modals (from your corrected navigation structure)
+    var loginBtn = document.getElementById("openLoginBtn");
+    var registerBtn = document.getElementById("openRegisterBtn");
+
+    // Get the close buttons (the 'x' spans)
+    var closeBtns = document.getElementsByClassName("close");
+
+    // --- 1. OPEN MODALS on button click ---
+    if (loginBtn) {
+        loginBtn.onclick = function() {
+            loginModal.style.display = "block";
+        }
+    }
+
+    if (registerBtn) {
+        registerBtn.onclick = function() {
+            registerModal.style.display = "block";
+        }
+    }
+
+    // --- 2. CLOSE MODALS using the 'x' button ---
+    for (let i = 0; i < closeBtns.length; i++) {
+        closeBtns[i].onclick = function() {
+            // Find the parent modal (the element with class="modal") and hide it
+            this.closest('.modal').style.display = "none";
+        }
+    }
+
+    // --- 3. CLOSE MODALS by clicking outside of them ---
+    window.onclick = function(event) {
+        if (event.target == loginModal) {
+            loginModal.style.display = "none";
+        }
+        if (event.target == registerModal) {
+            registerModal.style.display = "none";
+        }
+    }
+</script> <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Master Programming. Get Certified. Elevate Your Career.</h1>
+            <p>Unlock your potential with our comprehensive courses, rigorous knowledge assessments, and industry-recognized credentials.</p>
+            <a href="Scroll1.html" class="btn">Explore Courses Today</a>
+        </div>
+    </section>
+
+    <section id="features" class="features container">
+        <h2>How Knowledge Check Demonstration Works</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <i class="fas fa-book-open"></i>
+                <h3>Learn Any Language</h3>
+                <p>Dive into expertly crafted courses covering Python, Java, JavaScript, C++, and more. Learn at your own pace with interactive lessons and real-world examples.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-pencil-alt"></i>
+                <h3>Assess Your Mastery</h3>
+                <p>Prove your skills with our unique knowledge check assessments. Our rigorous tests go beyond theory to ensure you've truly gained practical, applicable expertise.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-award"></i>
+                <h3>Earn Verifiable Credentials</h3>
+                <p>Receive professional, shareable certificates upon successful completion. Showcase your validated skills to employers and boost your career prospects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 40px; padding-top: 40px;">Why Choose Knowledge Check Demonstration?</h2>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; margin-bottom: 60px;">
+            <div style="flex: 1; min-width: 300px;">
+                <img src="Knowledge.jpg" alt="Students learning and assessing skills" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
+            </div>
+            <div style="flex: 1.5; min-width: 300px;">
+                <h3>Your Pathway to Professional Excellence</h3>
+                <p>We believe that true learning is about *mastery*, not just memorization. Our platform is designed to provide a seamless, end-to-end experience where you not only acquire knowledge but also definitively prove your competence through our integrated assessment system.</p>
+                <p>Join a community of ambitious learners dedicated to achieving verifiable skills and unlocking new career opportunities in the global tech landscape.</p>
+                <a href="about.html" class="btn" style="background-color: #3498DB; margin-top: 20px; display: inline-block;">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Start Your Coding Journey?</h2>
+        <p>Choose your first programming language, validate your skills, and take the next big step in your professional development.</p>
+        <a href="Scroll1.html" class="btn">View All Courses</a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-col">
+                <h4>Knowledge Check Demonstration</h4>
+                <p>Empowering the next generation of developers through verifiable education and professional credentials.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect With Us</h4>
+                <ul>
+                    <li><a href="[Link to Social Media X]" target="_blank"><i class="fab fa-twitter"></i> X (Twitter)</a></li>
+                    <li><a href="[Link to Social Media LinkedIn]" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="[Link to Social Media Facebook]" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Knowledge Check Demonstration. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

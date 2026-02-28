@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">	
+
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+ body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        h2 { color: #2c3e50; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+        code { color: #c0392b; }
+        .section { margin-bottom: 40px; }	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:300px; text-Decoration:None;font-Size:41px;}
+</style>	
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div Class="D"><a href="index1.html"><img src="Knowledge.jpg" class="logo"></a><P Class="V">Knowledge Check Demonstration</P></div>
+<BR><BR><button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button><div id="syllabus-content-area">
+
+    <div class="menu-buttons">
+    <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+    <button class="menu-btn" data-content-id="dbms-intro-content">DBMS Introduction</button>
+    <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+    <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+</div>
+
+<div class="syllabus-container">
+    <h2>Course Syllabus: Database Management Systems</h2>
+
+    <div id="prerequisites-content" class="content-panel active">
+        <h3>Module: Prerequisites (5m)</h3>
+        <ul>
+            <li><b>Basic Computer Knowledge:</b> Understanding operating systems and file systems.</li>
+            <li><b>Programming Fundamentals:</b> Familiarity with basic programming concepts (loops, functions, data types).</li>
+            <li><b>Mathematical Foundation:</b> Sets, relations, and logic basics.</li>
+        </ul>
+    </div>
+
+    <div id="dbms-intro-content" class="content-panel hidden">
+        <h3>Module: DBMS Fundamentals</h3>
+        <p>Exploring database concepts, architecture, data models, and the role of DBMS in applications.</p>
+    </div>
+
+    <div id="assessment-content" class="content-panel hidden">
+        <h3>Assessment</h3>
+        <p>Test your knowledge of DBMS concepts, SQL queries, and normalization techniques.</p>
+    </div>
+
+    <div id="summary-content" class="content-panel hidden">
+        <h3>Summary</h3>
+        <p>DBMS is software that manages databases, enabling efficient storage, retrieval, and manipulation of data. 
+        It supports data integrity, security, and concurrent access, forming the backbone of modern applications.</p>
+    </div>
+</div>
+</div>
+<div ClasS="U">
+    <h1>SQL Language Concepts Explained</h1>
+
+    <p>
+        SQL, or Structured Query Language, is the standard language used to interact with relational databases. 
+        It allows users to create, read, update, and delete data efficiently. SQL is widely supported across 
+        database systems such as MySQL, Oracle, PostgreSQL, and SQL Server.
+    </p>
+
+    <p>
+        A SQL <strong>query</strong> is a request for data from the database. Queries can filter, sort, and 
+        combine information using commands like SELECT, WHERE, ORDER BY, and JOIN. For example, a query can 
+        retrieve all students who scored above 75 marks and list them alphabetically.
+    </p>
+
+    <p>
+        SQL also supports <strong>Data Definition Language (DDL)</strong> commands such as CREATE, ALTER, and DROP. 
+        These commands define and modify the structure of database objects like tables, views, and indexes. 
+        DDL ensures that the database schema is properly designed and maintained.
+    </p>
+
+    <p>
+        <strong>Data Manipulation Language (DML)</strong> commands include INSERT, UPDATE, DELETE, and SELECT. 
+        These commands allow users to modify and retrieve data stored in tables. DML is the most commonly used 
+        part of SQL in everyday applications.
+    </p>
+
+    <p>
+        SQL provides <strong>transaction control</strong> through commands like COMMIT, ROLLBACK, and SAVEPOINT. 
+        Transactions ensure that multiple operations are executed as a single unit of work, following the ACID 
+        properties: Atomicity, Consistency, Isolation, and Durability.
+    </p>
+
+    <p>
+        <strong>Exception handling</strong> in SQL, especially in systems like SQL Server, is managed using 
+        TRY...CATCH blocks. This allows developers to catch errors during query execution and handle them 
+        gracefully without crashing the application.
+    </p>
+
+    <p>
+        SQL also supports <strong>stored procedures</strong> and <strong>functions</strong>, which are reusable 
+        blocks of code stored in the database. These improve performance and maintainability by encapsulating 
+        complex logic that can be executed with a single call.
+    </p>     <h2>Introduction to SQL Language and Its Types</h2>
+
+   
+    <p>
+        This Audio explains the basics of SQL and its types:
+        <ul>
+            <li><b>DDL</b> – Data Definition Language</li>
+            <li><b>DML</b> – Data Manipulation Language</li>
+            <li><b>DQL</b> – Data Query Language</li>
+            <li><b>TCL</b> – Transaction Control Language</li>
+            <li><b>DCL</b> – Data Control Language</li>
+        </ul>
+    </p>
+    <h1>SQL Language Categories with Examples</h1>
+
+    <div class="section">
+        <h2>DDL (Data Definition Language)</h2>
+        <p>
+            DDL commands define and modify the structure of database objects such as tables, views, and indexes. 
+            Common commands include CREATE, ALTER, and DROP.
+        </p>
+        <pre><code>
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Course VARCHAR(50),
+    Marks INT
+);
+
+ALTER TABLE Students ADD Email VARCHAR(100);
+
+DROP TABLE Students;
+        </code></pre>
+    </div>
+
+    <div class="section">
+        <h2>DML (Data Manipulation Language)</h2>
+        <p>
+            DML commands are used to manipulate data stored in tables. 
+            Common commands include INSERT, UPDATE, and DELETE.
+        </p>
+        <pre><code>
+INSERT INTO Students (StudentID, Name, Course, Marks)
+VALUES (101, 'Rahul', 'Computer Science', 85);
+
+UPDATE Students
+SET Marks = 90
+WHERE StudentID = 101;
+
+DELETE FROM Students
+WHERE StudentID = 101;
+        </code></pre>
+    </div>
+
+    <div class="section">
+        <h2>DQL (Data Query Language)</h2>
+        <p>
+            DQL is used to query and retrieve data from the database. 
+            The main command is SELECT, often combined with WHERE, ORDER BY, and JOIN.
+        </p>
+        <pre><code>
+SELECT Name, Course, Marks
+FROM Students
+WHERE Marks > 75
+ORDER BY Name ASC;
+        </code></pre>
+    </div>
+
+    <div class="section">
+        <h2>TCL (Transaction Control Language)</h2>
+        <p>
+            TCL commands manage transactions in a database. 
+            They ensure data integrity using COMMIT, ROLLBACK, and SAVEPOINT.
+        </p>
+        <pre><code>
+BEGIN TRANSACTION;
+
+UPDATE Students
+SET Marks = Marks + 5
+WHERE Course = 'Computer Science';
+
+COMMIT;
+
+-- If something goes wrong, use:
+ROLLBACK;
+        </code></pre>
+    </div>
+
+    <div class="section">
+        <h2>DCL (Data Control Language)</h2>
+        <p>
+            DCL commands control access to data in the database. 
+            Common commands include GRANT and REVOKE.
+        </p>
+        <pre><code>
+GRANT SELECT, INSERT ON Students TO User1;
+
+REVOKE INSERT ON Students FROM User1;
+        </code></pre>
+    </div>
+    
+    </div>
+    <div Style='DiSplay:Inline-Block;' >
+  <a href="Data2.html" class="I">Back</a>
+  <a href="test5.html" class="I" Style="margin-left:700px;">Take Assessment</a>
+    
+    </div>
+    
+</body>
+</html>

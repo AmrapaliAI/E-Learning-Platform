@@ -1,0 +1,227 @@
+<!-- WebContent/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Programming ChatBot</title>
+<style>
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Chat Box */
+#chatBox {
+  width: 450px;
+  max-width: 90%;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+#chatHeader {
+  background: #4a76a8;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Messages container */
+#messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  height: 300px;
+  background: #f9f9f9;
+}
+
+/* Individual message */
+.message {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+  position: relative;
+}
+
+/* Bot message */
+.bot {
+  background: #e1f0ff;
+  color: #0073e6;
+  align-self: flex-start;
+}
+
+/* User message */
+.user {
+  background: #d4f7dc;
+  color: #2d7a2d;
+  align-self: flex-end;
+}
+
+/* Timestamp */
+.message span.time {
+  font-size: 10px;
+  color: #555;
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+}
+
+/* Input area */
+#inputArea {
+  display: flex;
+  border-top: 1px solid #ccc;
+  background: #fff;
+}
+
+#userInput {
+  flex: 1;
+  border: none;
+  padding: 12px 15px;
+  font-size: 14px;
+}
+
+#userInput:focus {
+  outline: none;
+}
+
+#sendBtn {
+  background: #4a76a8;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#sendBtn:hover {
+  background: #3b5c85;
+}
+</style>
+</head>
+<body>
+
+<div id="chatBox">
+  <div id="chatHeader">💻 Programming ChatBot</div>
+  <div id="messages"></div>
+  <div id="inputArea">
+    <input type="text" id="userInput" placeholder="Ask me about Java, Python, AI...">
+    <button id="sendBtn" onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script>
+function getCurrentTime() {
+  const now = new Date();
+  return now.getHours().toString().padStart(2,'0') + ":" +
+         now.getMinutes().toString().padStart(2,'0');
+}
+
+function addMessage(text, sender) {
+  const messages = document.getElementById("messages");
+  const div = document.createElement("div");
+  div.classList.add("message", sender);
+
+  const time = document.createElement("span");
+  time.classList.add("time");
+  time.textContent = getCurrentTime();
+
+  div.textContent = text;
+  div.appendChild(time);
+  messages.appendChild(div);
+  messages.scrollTop = messages.scrollHeight;
+}
+
+function sendMessage() {
+  const inputField = document.getElementById("userInput");
+  const input = inputField.value.trim();
+  if(!input) return;
+
+  // Add user message
+  addMessage(input, "user");
+
+  // Fetch response from servlet
+  fetch("ChatServlet?message=" + encodeURIComponent(input))
+    .then(res => res.text())
+    .then(data => {
+      addMessage(data, "bot");
+    })
+    .catch(err => {
+      addMessage("❌ Failed to get response", "bot");
+    });
+
+  inputField.value = "";
+  inputField.focus();
+}
+
+// Press Enter to send
+document.getElementById("userInput").addEventListener("keypress", function(e){
+  if(e.key === "Enter") sendMessage();
+});
+</script>
+<script>
+function getCurrentTime() {
+  const now = new Date();
+  return now.getHours().toString().padStart(2,'0') + ":" +
+         now.getMinutes().toString().padStart(2,'0');
+}
+
+function addMessage(text, sender) {
+  const messages = document.getElementById("messages");
+  const div = document.createElement("div");
+  div.classList.add("message", sender);
+
+  const time = document.createElement("span");
+  time.classList.add("time");
+  time.textContent = getCurrentTime();
+
+  div.textContent = text;
+  div.appendChild(time);
+  messages.appendChild(div);
+  messages.scrollTop = messages.scrollHeight;
+}
+
+function sendMessage() {
+  const inputField = document.getElementById("userInput");
+  const input = inputField.value.trim();
+  if(!input) return;
+
+  // Add user message
+  addMessage(input, "user");
+
+  // Fetch response from servlet
+  fetch("ChatServlet?message=" + encodeURIComponent(input))
+    .then(res => res.text())
+    .then(data => {
+      addMessage(data, "bot");
+    })
+    .catch(err => {
+      addMessage("❌ Failed to get response", "bot");
+    });
+
+  inputField.value = "";
+  inputField.focus();
+}
+
+// Press Enter to send
+document.getElementById("userInput").addEventListener("keypress", function(e){
+  if(e.key === "Enter") sendMessage();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Fundamentals Syllabus</title>
+  <style>
+   .D { display: flex; }
+.logo { height: 111px; width: 100px; }
+
+.V {
+    color: HotPink;
+    border-color: Yellow;
+    outline-color: Violet;
+    font-size: 21px;
+    text-shadow: 3px 2px 4px grey;
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+.V:hover {
+    color: Blue;
+    text-shadow: 3px 2px 4px grey;
+}
+
+.U {
+    border: 4px solid orange;
+    width: 840px;
+    font-size: 26px;
+    padding: 78px 21px 21px 67px;
+    font-family: monospace;
+    background-color: White;
+    margin-left: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-image: url("data-sciences.jpg");
+    background-attachment: fixed;
+}
+
+h2 { color: #2c3e50; }
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+code { color: #c0392b; }
+.section { margin-bottom: 40px; }
+
+.U::-webkit-scrollbar {
+    display: none;
+}
+
+.I {
+    border: 4px solid Blue;
+    background-color: lightBlue;
+    text-align: center;
+    color: white;
+    height: 45px;
+    width: 140px;
+    text-decoration: none;
+    font-size: 41px;
+}
+  </style>
+  <script>
+    function toggleVisibility() {
+      const area = document.getElementById("syllabus-content-area");
+      area.style.display = (area.style.display === "none" || area.style.display === "") ? "block" : "none";
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      const buttons = document.querySelectorAll(".menu-btn");
+      buttons.forEach(btn => {
+        btn.addEventListener("click", function() {
+          const contentId = this.getAttribute("data-content-id");
+          document.querySelectorAll(".content-panel").forEach(panel => {
+            panel.classList.remove("active");
+            panel.classList.add("hidden");
+          });
+          document.getElementById(contentId).classList.add("active");
+          document.getElementById(contentId).classList.remove("hidden");
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+ 
+
+    <div class="U">
+      <h2>Course Syllabus: AWS Fundamentals</h2>
+
+      <!-- Compute -->
+      <div id="compute-content" class="content-panel active">
+        <h3>Module: AWS Compute Services</h3>
+        <p>Explore AWS compute services that provide processing power for applications and workloads.</p>
+        <ul>
+          <li><strong>Amazon EC2:</strong> Virtual servers with customizable resources.</li>
+          <li><strong>AWS Lambda:</strong> Serverless compute triggered by events.</li>
+          <li><strong>Amazon Lightsail:</strong> Simplified compute for small workloads.</li>
+          <li><strong>Amazon ECS/EKS:</strong> Container orchestration (Docker & Kubernetes).</li>
+          <li><strong>AWS Fargate:</strong> Serverless container execution.</li>
+        </ul>
+        <ol>
+          <li>Launch an EC2 instance.</li>
+          <li>Deploy a Lambda function.</li>
+          <li>Set up Lightsail for a blog.</li>
+          <li>Run containers with ECS/EKS.</li>
+        </ol>
+      </div>
+
+      <!-- Storage -->
+      <div id="storage-content" class="content-panel hidden">
+        <h3>Module: AWS Storage Services</h3>
+        <p>Learn how AWS stores and manages data across multiple services.</p>
+        <ul>
+          <li><strong>Amazon S3:</strong> Object storage.</li>
+          <li><strong>Amazon EBS:</strong> Block storage for EC2.</li>
+          <li><strong>Amazon EFS:</strong> Shared file storage.</li>
+          <li><strong>Amazon Glacier:</strong> Archival storage.</li>
+        </ul>
+        <ol>
+          <li>Create an S3 bucket.</li>
+          <li>Attach an EBS volume.</li>
+          <li>Share files with EFS.</li>
+          <li>Archive data in Glacier.</li>
+        </ol>
+      </div>
+
+      <!-- Networking -->
+      <div id="networking-content" class="content-panel hidden">
+        <h3>Module: AWS Networking</h3>
+        <p>Understand how AWS connects resources securely and globally.</p>
+        <ul>
+          <li><strong>Amazon VPC:</strong> Isolated virtual networks.</li>
+          <li><strong>AWS Route 53:</strong> DNS and domain registration.</li>
+          <li><strong>AWS VPN:</strong> Secure hybrid connectivity.</li>
+          <li><strong>Amazon CloudFront:</strong> Content delivery network.</li>
+        </ul>
+        <ol>
+          <li>Design a VPC with subnets.</li>
+          <li>Configure Route 53 DNS.</li>
+          <li>Set up VPN Gateway.</li>
+          <li>Distribute content via CloudFront.</li>
+        </ol>
+      </div>
+
+      <!-- Databases -->
+      <div id="database-content" class="content-panel hidden">
+        <h3>Module: AWS Databases</h3>
+        <p>Explore AWS database services for structured and unstructured data.</p>
+        <ul>
+          <li><strong>Amazon RDS:</strong> Managed relational databases.</li>
+          <li><strong>Amazon DynamoDB:</strong> NoSQL database.</li>
+          <li><strong>Amazon Redshift:</strong> Data warehousing.</li>
+          <li><strong>Amazon ElastiCache:</strong> In-memory caching.</li>
+        </ul>
+        <ol>
+          <li>Launch an RDS instance.</li>
+          <li>Use DynamoDB for NoSQL.</li>
+          <li>Analyze data with Redshift.</li>
+          <li>Accelerate queries with ElastiCache.</li>
+        </ol>
+      </div>
+
+      <!-- Security -->
+      <div id="security-content" class="content-panel hidden">
+        <h3>Module: AWS Security</h3>
+        <p>Learn how AWS secures resources and data.</p>
+        <ul>
+          <li><strong>AWS IAM:</strong> Identity and access management.</li>
+          <li><strong>AWS Shield:</strong> DDoS protection.</li>
+          <li><strong>AWS KMS:</strong> Key management service.</li>
+          <li><strong>AWS CloudTrail:</strong> Logging and auditing.</li>
+        </ul>
+        <ol>
+          <li>Create IAM users and roles.</li>
+          <li>Enable Shield for protection.</li>
+          <li>Manage keys with KMS.</li>
+          <li>Track API calls with CloudTrail.</li>
+        </ol>
+      </div>
+
+      <!-- Monitoring -->
+      <div id="monitoring-content" class="content-panel hidden">
+        <h3>Module: AWS Monitoring</h3>
+        <p>Monitor and optimize AWS resources.</p>
+        <ul>
+          <li><strong>Amazon CloudWatch:</strong> Metrics and alarms.</li>
+          <li><strong>AWS Config:</strong> Resource configuration tracking.</li>
+          <li><strong>AWS X-Ray:</strong> Application tracing.</li>
+        </ul>
+        <ol>
+          <li>Set CloudWatch alarms.</li>
+          <li>Track changes with Config.</li>
+          <li>Trace requests with X-Ray.</li>
+        </ol>
+      </div>
+
+      <!-- Assessment -->
+      <div id="assessment-content" class="content-panel hidden">
+        <h3>Assessment</h3>
+        <p>Evaluate your AWS knowledge:</p>
+        <ol>
+          <li>Quizzes on AWS services.</li>
+          <li>Hands-on labs (EC2, S3, IAM).</li>
+          <li>Capstone Project: Build a cloud-native app using multiple AWS services.</li>
+        </ol>
+      </div>
+
+      <!-- Summary -->
+      <div id="summary-content" class="content-panel hidden">
+        <h3>Summary</h3>
+        <p>AWS Fundamentals cover compute, storage, networking, databases, security, and monitoring. Step by step, you learn to deploy, secure, and optimize cloud resources for scalable applications.</p>
+      </div>
+    </div></div>
+
+  
+  <div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="AWS2.html" class="I">Back</a>
+  <a href="AWS4.html" class="I" Style="margin-left:700px;">Next</a></div></body></html>

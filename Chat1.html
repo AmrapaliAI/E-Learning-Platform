@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knowledge Check ChatBot</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #2563eb;
+  --gradient-1: linear-gradient(135deg, #2563eb, #4f46e5);
+  --text-main: #1e293b;
+}
+
+* { 
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: linear-gradient(to bottom, #f8fafc 0%, #e0e7ff 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Toggle button */
+.chat-toggle-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 65px;
+  height: 65px;
+  background: var(--gradient-1);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 2s infinite;
+  transition: all 0.3s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.chat-toggle-btn:hover {
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.6);
+  transform: scale(1.1);
+  animation: none;
+}
+
+/* Chat container */
+.chat-container {
+  position: fixed;
+  bottom: 120px;
+  right: 40px;
+  width: 420px;
+  max-height: 600px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+  animation: chatSlide 0.4s ease-out;
+}
+
+.chat-container.active {
+  display: flex;
+}
+
+@keyframes chatSlide {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Chat header */
+.chat-header {
+  background: var(--gradient-1);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.close-chat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.close-chat:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Chat box */
+.chat-box { 
+  flex: 1;
+  padding: 20px; 
+  overflow-y: auto; 
+  background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px;
+  max-height: 450px;
+}
+
+.chat-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+/* Messages */
+.message { 
+  max-width: 85%; 
+  padding: 12px 16px; 
+  border-radius: 16px; 
+  font-size: 0.95rem; 
+  line-height: 1.5;
+  animation: messageSlide 0.3s ease-out;
+  word-wrap: break-word;
+}
+
+@keyframes messageSlide {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.message.user { 
+  background: var(--gradient-1); 
+  color: white; 
+  margin-left: auto; 
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  align-self: flex-end;
+}
+
+.message.bot { 
+  background: white; 
+  border: 1px solid #e2e8f0;
+  color: var(--text-main);
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  align-self: flex-start;
+}
+
+/* Question styles */
+.question-container {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 100%;
+}
+
+.question-text {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option-btn {
+  background: #f1f5f9;
+  border: 2px solid #e2e8f0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.option-btn:hover:not(:disabled) {
+  background: #e0e7ff;
+  border-color: var(--primary);
+  transform: translateX(4px);
+}
+
+.option-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.option-btn.correct {
+  background: #d1fae5;
+  border-color: #10b981;
+  color: #065f46;
+}
+
+.option-btn.wrong {
+  background: #fee2e2;
+  border-color: #ef4444;
+  color: #991b1b;
+}
+
+/* Typing indicator */
+.typing-indicator {
+  display: flex;
+  gap: 4px;
+  padding: 12px 16px;
+  background: white;
+  border-radius: 16px;
+  width: fit-content;
+  border: 1px solid #e2e8f0;
+  align-self: flex-start;
+}
+
+.typing-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 50%;
+  animation: typing 1.4s infinite;
+}
+
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+  30% { transform: translateY(-8px); opacity: 1; }
+}
+
+/* Input area */
+.input-area { 
+  display: flex; 
+  padding: 18px; 
+  border-top: 1px solid #e2e8f0;
+  background: white;
+  gap: 10px;
+}
+
+.input-area input { 
+  flex: 1; 
+  padding: 12px 16px; 
+  border-radius: 12px; 
+  border: 2px solid #e2e8f0;
+  font-size: 0.95rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-area input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+}
+
+.input-area button { 
+  background: var(--gradient-1); 
+  color: white; 
+  border: none; 
+  padding: 12px 24px; 
+  border-radius: 12px; 
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.input-area button:hover {
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.5);
+  transform: translateY(-2px);
+}
+
+.input-area button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .chat-container {
+    width: calc(100vw - 40px);
+    right: 20px;
+    bottom: 100px;
+  }
+  .chat-toggle-btn {
+    right: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Chat Toggle Button -->
+<button class="chat-toggle-btn" id="chatToggle">
+  💬
+</button>
+
+<!-- Chat Container -->
+<div class="chat-container" id="chatContainer">
+  <div class="chat-header">
+    <h3>Knowledge Check Bot</h3>
+    <button class="close-chat" id="closeChat">&times;</button>
+  </div>
+  
+  <div class="chat-box" id="chatBox">
+    <div class="message bot">
+      👋 Welcome to Knowledge Check ChatBot!<br>
+      Ask me about programming concepts, courses, or certifications.
+    </div>
+  </div>
+  
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off">
+    <button id="sendBtn">Send</button>
+  </div>
+</div>
+
+<script>
+// Knowledge Base
+const knowledgeBase = {
+  questions: {
+    python: {
+      text: "What is the output of: print(type([]))?",
+      options: [
+        "<class 'list'>",
+        "<class 'dict'>",
+        "<class 'tuple'>",
+        "<class 'set'>"
+      ],
+      correctIndex: 0,
+      explanation: "The square brackets [] create a list in Python, so type([]) returns <class 'list'>."
+    },
+    java: {
+      text: "Which keyword is used to inherit a class in Java?",
+      options: [
+        "implements",
+        "extends",
+        "inherits",
+        "super"
+      ],
+      correctIndex: 1,
+      explanation: "The 'extends' keyword is used for class inheritance in Java."
+    },
+    javascript: {
+      text: "What does '===' check in JavaScript?",
+      options: [
+        "Value only",
+        "Type only",
+        "Both value and type",
+        "Reference only"
+      ],
+      correctIndex: 2,
+      explanation: "The === operator checks for strict equality - both value and type must match."
+    },
+    web: {
+      text: "What does HTML stand for?",
+      options: [
+        "Hyper Text Markup Language",
+        "High Tech Modern Language",
+        "Home Tool Markup Language",
+        "Hyperlinks and Text Markup Language"
+      ],
+      correctIndex: 0,
+      explanation: "HTML stands for Hyper Text Markup Language."
+    }
+  },
+  
+  responses: {
+    greetings: [
+      "Hello! 👋 I'm here to help you with programming courses and certifications. What would you like to know?",
+      "Hi there! 😊 Ready to learn something new? Ask me anything about our courses!",
+      "Hey! Welcome back! How can I assist you today?"
+    ],
+    courses: "We offer comprehensive courses in Python, Java, and JavaScript. Each course includes:\n• Hands-on projects\n• Interactive lessons\n• Knowledge assessments\n• Professional certificates\n\nWhich language interests you?",
+    certification: "Our certifications are industry-recognized credentials that validate your skills. Here's how it works:\n\n✅ Complete the course\n✅ Pass the assessment\n✅ Earn a digital certificate\n✅ Share on LinkedIn!\n\nWould you like to start learning?",
+    python: "Python is perfect for beginners and professionals! Our course covers:\n• Variables & Data Types\n• Functions & OOP\n• File Handling\n• Popular Libraries\n\nWould you like to test your Python knowledge?",
+    java: "Java is one of the most popular programming languages! Learn:\n• Core Java Concepts\n• Object-Oriented Programming\n• Collections Framework\n• Exception Handling\n\nShall I give you a Java quiz question?",
+    javascript: "JavaScript powers the modern web! Our course includes:\n• ES6+ Features\n• DOM Manipulation\n• Async Programming\n• React Basics\n\nWant to test your JavaScript skills?",
+    help: "I can help you with:\n\n📚 Course information\n🎓 Certification details\n💻 Programming questions\n🎯 Learning paths\n\nJust ask me anything! Try questions like:\n• 'Tell me about Python'\n• 'Give me a Java question'\n• 'How do certifications work?'",
+    pricing: "We offer flexible pricing:\n\n💎 Individual Course: $49\n🚀 All Access Pass: $99/year\n🎓 Student Discount: 40% off\n\nAll plans include lifetime certificate access!",
+    default: "I'm not sure about that. Try asking about:\n• Programming courses (Python, Java, JavaScript)\n• Certifications\n• Quiz questions\n• Learning paths\n\nOr type 'help' for more options!"
+  }
+};
+
+// DOM Elements
+const chatToggle = document.getElementById('chatToggle');
+const chatContainer = document.getElementById('chatContainer');
+const closeChat = document.getElementById('closeChat');
+const chatBox = document.getElementById('chatBox');
+const userInput = document.getElementById('userInput');
+const sendBtn = document.getElementById('sendBtn');
+
+// Chat State
+let currentQuestion = null;
+
+// Toggle Chat
+chatToggle.addEventListener('click', () => {
+  chatContainer.classList.add('active');
+  userInput.focus();
+});
+
+closeChat.addEventListener('click', () => {
+  chatContainer.classList.remove('active');
+});
+
+// Add Message
+function addMessage(text, type) {
+  const messageDiv = document.createElement('div');
+  messageDiv.className = `message ${type}`;
+  messageDiv.innerHTML = text;
+  chatBox.appendChild(messageDiv);
+  scrollToBottom();
+}
+
+// Add Typing Indicator
+function showTypingIndicator() {
+  const typingDiv = document.createElement('div');
+  typingDiv.className = 'typing-indicator';
+  typingDiv.id = 'typingIndicator';
+  typingDiv.innerHTML = '<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';
+  chatBox.appendChild(typingDiv);
+  scrollToBottom();
+}
+
+function removeTypingIndicator() {
+  const indicator = document.getElementById('typingIndicator');
+  if (indicator) indicator.remove();
+}
+
+// Add Question
+function addQuestion(questionData, topic) {
+  const questionDiv = document.createElement('div');
+  questionDiv.className = 'question-container';
+  
+  let optionsHtml = '';
+  questionData.options.forEach((option, index) => {
+    optionsHtml += `<li><button class="option-btn" data-index="${index}">${option}</button></li>`;
+  });
+  
+  questionDiv.innerHTML = `
+    <div class="question-text">${questionData.text}</div>
+    <ul class="options-list">${optionsHtml}</ul>
+  `;
+  
+  chatBox.appendChild(questionDiv);
+  
+  // Add click handlers
+  const buttons = questionDiv.querySelectorAll('.option-btn');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      handleAnswer(parseInt(btn.dataset.index), questionData.correctIndex, buttons, questionData.explanation);
+    });
+  });
+  
+  scrollToBottom();
+}
+
+// Handle Answer
+function handleAnswer(chosen, correct, buttons, explanation) {
+  buttons.forEach((btn, idx) => {
+    btn.disabled = true;
+    if (idx === correct) {
+      btn.classList.add('correct');
+    } else if (idx === chosen && chosen !== correct) {
+      btn.classList.add('wrong');
+    }
+  });
+  
+  setTimeout(() => {
+    if (chosen === correct) {
+      addMessage("✅ Correct! " + explanation, 'bot');
+      setTimeout(() => {
+        addMessage("Would you like to try another question or learn more about our courses?", 'bot');
+      }, 500);
+    } else {
+      addMessage("❌ Not quite! " + explanation, 'bot');
+      setTimeout(() => {
+        addMessage("Don't worry! Practice makes perfect. Want to try another question?", 'bot');
+      }, 500);
+    }
+  }, 300);
+}
+
+// Detect Intent
+function detectIntent(message) {
+  const lower = message.toLowerCase();
+  
+  // Check for greetings
+  if (/\b(hi|hello|hey|greetings|good morning|good evening)\b/.test(lower)) {
+    return 'greetings';
+  }
+  
+  // Check for help
+  if (/\b(help|support|assist|guide)\b/.test(lower)) {
+    return 'help';
+  }
+  
+  // Check for pricing
+  if (/\b(price|pricing|cost|fee|pay)\b/.test(lower)) {
+    return 'pricing';
+  }
+  
+  // Check for courses
+  if (/\b(course|courses|learn|learning|study|teach)\b/.test(lower)) {
+    return 'courses';
+  }
+  
+  // Check for certification
+  if (/\b(certificate|certification|certified|credential|diploma)\b/.test(lower)) {
+    return 'certification';
+  }
+  
+  // Check for specific languages
+  if (/\b(python|py)\b/.test(lower)) {
+    return /\b(question|quiz|test|challenge)\b/.test(lower) ? 'python_question' : 'python';
+  }
+  
+  if (/\bjava\b/.test(lower) && !/javascript/.test(lower)) {
+    return /\b(question|quiz|test|challenge)\b/.test(lower) ? 'java_question' : 'java';
+  }
+  
+  if (/\b(javascript|js|node)\b/.test(lower)) {
+    return /\b(question|quiz|test|challenge)\b/.test(lower) ? 'javascript_question' : 'javascript';
+  }
+  
+  // Check for web development
+  if (/\b(html|css|web)\b/.test(lower)) {
+    return /\b(question|quiz|test|challenge)\b/.test(lower) ? 'web_question' : 'courses';
+  }
+  
+  return 'default';
+}
+
+// Get Bot Response
+async function getBotResponse(intent) {
+  showTypingIndicator();
+  
+  await new Promise(resolve => setTimeout(resolve, 800));
+  
+  removeTypingIndicator();
+  
+  if (intent === 'greetings') {
+    const responses = knowledgeBase.responses.greetings;
+    addMessage(responses[Math.floor(Math.random() * responses.length)], 'bot');
+    return;
+  }
+  
+  if (intent.endsWith('_question')) {
+    const topic = intent.replace('_question', '');
+    if (knowledgeBase.questions[topic]) {
+      addMessage(`Great! Let me test your ${topic.charAt(0).toUpperCase() + topic.slice(1)} knowledge:`, 'bot');
+      setTimeout(() => {
+        addQuestion(knowledgeBase.questions[topic], topic);
+      }, 500);
+      return;
+    }
+  }
+  
+  const response = knowledgeBase.responses[intent] || knowledgeBase.responses.default;
+  addMessage(response, 'bot');
+}
+
+// Send Message
+async function sendMessage() {
+  const message = userInput.value.trim();
+  if (!message) return;
+  
+  addMessage(message, 'user');
+  userInput.value = '';
+  
+  const intent = detectIntent(message);
+  await getBotResponse(intent);
+}
+
+// Event Listeners
+sendBtn.addEventListener('click', sendMessage);
+
+userInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    sendMessage();
+  }
+});
+
+// Scroll to bottom
+function scrollToBottom() {
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+// Add welcome suggestions after initial message
+setTimeout(() => {
+  addMessage("Try asking:\n• 'Tell me about Python'\n• 'Give me a Java question'\n• 'How do certifications work?'", 'bot');
+}, 2000);
+</script>
+
+</body>
+</html>

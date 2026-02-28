@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cloud Courses</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* HOME BUTTON */
+.home-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    transform: scale(1.08);
+}
+
+.course-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.course-card {
+    width: 340px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+    transition: 0.4s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.course-card:hover {
+    transform: translateY(-12px);
+}
+
+.course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 25px;
+}
+
+.course-tag {
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.aws {
+    background: linear-gradient(135deg, #ff9900, #ffb347);
+    color: #000;
+}
+
+.azure {
+    background: linear-gradient(135deg, #0078d4, #00a4ef);
+}
+
+.course-title {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.course-desc {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.enroll-btn {
+    margin-top: 25px;
+    display: block;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    text-align: center;
+    padding: 12px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HOME -->
+<a href="Frame.jsp" class="home-btn">🏠 Home</a>
+
+<div class="course-wrapper">
+
+    <!-- AWS COURSE -->
+    <a href="list8.html" class="course-card">
+        <img src="Cloud.png" class="course-image" alt="AWS">
+        <div class="course-content">
+            <span class="course-tag aws">AWS</span>
+            <h3 class="course-title">AWS Fundamentals</h3>
+            <p class="course-desc">
+                Learn AWS cloud services including EC2, S3, VPC, IAM, Lambda and real-world deployments.
+            </p>
+            <div class="course-info">
+                <span>&#x23F1; 1 Hour</span>
+            </div>
+            <div class="enroll-btn">Start Learning →</div>
+        </div>
+    </a>
+
+    <!-- AZURE COURSE -->
+    <a href="course=list9.html" class="course-card">
+        <img src="Azure.png" class="course-image" alt="Azure">
+        <div class="course-content">
+            <span class="course-tag azure">AZURE</span>
+            <h3 class="course-title">Azure Fundamentals</h3>
+            <p class="course-desc">
+                Master Azure core services like Virtual Machines, Storage, Networking, Security and Monitoring.
+            </p>
+            <div class="course-info">
+                <span>&#x23F1; 1 Hour</span>
+            </div>
+            <div class="enroll-btn">Start Learning →</div>
+        </div>
+    </a>
+
+</div>
+
+</body>
+</html>

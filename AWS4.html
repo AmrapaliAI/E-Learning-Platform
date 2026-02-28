@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Fundamentals Syllabus</title>
+  <style>
+   .D { display: flex; }
+.logo { height: 111px; width: 100px; }
+
+.V {
+    color: HotPink;
+    border-color: Yellow;
+    outline-color: Violet;
+    font-size: 21px;
+    text-shadow: 3px 2px 4px grey;
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+.V:hover {
+    color: Blue;
+    text-shadow: 3px 2px 4px grey;
+}
+
+.U {
+    border: 4px solid orange;
+    width: 840px;
+    font-size: 26px;
+    padding: 78px 21px 21px 67px;
+    font-family: monospace;
+    background-color: White;
+    margin-left: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-image: url("data-sciences.jpg");
+    background-attachment: fixed;
+}
+
+h2 { color: #2c3e50; }
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+code { color: #c0392b; }
+.section { margin-bottom: 40px; }
+
+.U::-webkit-scrollbar {
+    display: none;
+}
+
+.I {
+    border: 4px solid Blue;
+    background-color: lightBlue;
+    text-align: center;
+    color: white;
+    height: 45px;
+    width: 140px;
+    text-decoration: none;
+    font-size: 41px;
+}
+  </style>
+ 
+</head>
+<body>
+
+
+      <!-- Storage -->
+      <div class="U">
+        <h3>Module: AWS Storage Services</h3>
+        <p>This module covers AWS storage solutions for different workloads, from object storage to archival.</p>
+        <hr>
+
+        <h4>1. Amazon S3 (Simple Storage Service)</h4>
+        <ul>
+          <li><strong>Definition:</strong> Object storage for unstructured data.</li>
+          <li><strong>Key Features:</strong> Scalability, durability, lifecycle policies, versioning.</li>
+          <li><strong>Use Cases:</strong> Backup, static website hosting, big data storage.</li>
+        </ul>
+
+        <h4>2. Amazon EBS (Elastic Block Store)</h4>
+        <ul>
+          <li><strong>Definition:</strong> Block storage volumes for EC2.</li>
+          <li><strong>Key Features:</strong> Persistent storage, snapshots, SSD/HDD options.</li>
+          <li><strong>Use Cases:</strong> Databases, transactional workloads.</li>
+        </ul>
+
+        <h4>3. Amazon EFS (Elastic File System)</h4>
+        <ul>
+          <li><strong>Definition:</strong> Shared file storage accessible by multiple EC2 instances.</li>
+          <li><strong>Key Features:</strong> Scalable, managed NFS file system.</li>
+          <li><strong>Use Cases:</strong> Content management, shared storage for apps.</li>
+        </ul>
+
+        <h4>4. Amazon Glacier (S3 Glacier)</h4>
+        <ul>
+          <li><strong>Definition:</strong> Archival storage for long-term backups.</li>
+          <li><strong>Key Features:</strong> Low-cost, retrieval options (minutes to hours).</li>
+          <li><strong>Use Cases:</strong> Compliance archives, cold data storage.</li>
+        </ul>
+      
+      <!-- Networking -->
+      <div id="networking-content" class="content-panel hidden">
+        <h3>Module: AWS Networking</h3>
+        <p>Learn how AWS connects resources securely and globally.</p>
+        <hr>
+
+        <h4>1. Amazon VPC (Virtual Private Cloud)</h4>
+        <ul>
+          <li><strong>Definition:</strong> Isolated virtual networks in AWS.</li>
+          <li><strong>Key Features:</strong> Subnets, routing tables, security groups, NACLs.</li>
+          <li><strong>Use Cases:</strong> Secure multi-tier applications.</li>
+        </ul>
+
+        <h4>2. AWS Route 53</h4>
+        <ul>
+          <li><strong>Definition:</strong> DNS and domain registration service.</li>
+          <li><strong>Key Features:</strong> Traffic routing, health checks.</li>
+          <li><strong>Use Cases:</strong> Domain hosting, failover routing.</li>
+        </ul>
+
+        <h4>3. AWS VPN</h4>
+        <ul>
+          <li><strong>Definition:</strong> Securely connect on-premises networks to AWS.</li>
+          <li><strong>Key Features:</strong> Site-to-site VPN, Direct Connect integration.</li>
+          <li><strong>Use Cases:</strong> Hybrid cloud connectivity.</li>
+        </ul>
+
+        <h4>4. Amazon CloudFront</h4>
+        <ul>
+          <li><strong>Definition:</strong> Content delivery network (CDN).</li>
+          <li><strong>Key Features:</strong> Edge caching, HTTPS, DDoS protection.</li>
+          <li><strong>Use Cases:</strong> Media streaming, global web content delivery.</li>
+        </ul>
+      </div></div>
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="AWS3.html" class="I">Back</a>
+  <a href="AWS5.html" class="I" Style="margin-left:700px;">Next</a></div>
+</body>
+</html>

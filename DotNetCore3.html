@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;}.V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        }
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}		
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:140px;text-Decoration:None;font-Size:41px;}
+</style><script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">	
+	
+</head>
+<body >
+<BR><BR>
+<div Class="D"><a href="index1.html"><img src="Knowledge.jpg" class="logo"></a><P Class="V">Knowledge Check Demonstration</P></div>
+            
+          
+            <BR><BR><button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+<div id="syllabus-content-area">
+
+    <div class="menu-buttons">
+    <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+    <button class="menu-btn" data-content-id="dotnet-intro-content">Dot Net Core Introduction</button>
+    <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+    <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+</div>
+
+<div class="syllabus-container">
+    <h2>Course Syllabus: Dot Net Core</h2>
+
+    <div id="prerequisites-content" class="content-panel active">
+        <h3>Module: Prerequisites (5m)</h3>
+        <ul>
+            <li>*Basic C# Knowledge:* Variables, loops, classes, and methods.</li>
+            <li>*Environment Setup:* Install Visual Studio / VS Code, .NET SDK.</li>
+            <li>*Review:* Understanding CLR, Common Language Runtime, and basic OOP concepts.</li>
+        </ul>
+    </div>
+
+    <div id="dotnet-intro-content" class="content-panel hidden">
+        <h3>Module: Dot Net Core Fundamentals</h3>
+        <p>Exploring .NET Core architecture, cross-platform capabilities, and project structure.</p>
+    </div>
+
+    <div id="assessment-content" class="content-panel hidden">
+        <h3>Assessment</h3>
+        <p>Test your knowledge with quizzes.</p>
+    </div>
+
+    <div id="summary-content" class="content-panel hidden">
+        <h3>Summary</h3>
+        <p>.NET Core is a free, open-source, cross-platform framework for building modern, scalable, and high-performance applications.</p>
+    </div>
+</div>
+
+</div>
+
+<div class="U">
+<P>
+
+
+<Center style="font-family:monospace;color:Orange;font-size:31px">Dot Net Core</Center><BR>
+.NET Core provides a foundation for modern programming concepts such as multithreading, Windows Forms (via .NET Core Desktop), data types, and LINQ, while also clarifying the difference between tasks and threads.** Threads are the basic unit of execution that allow multiple operations to run concurrently, while tasks are higher-level abstractions built on threads that simplify asynchronous programming.  
+
+---
+
+ Threads in .NET Core  
+A **thread** is a lightweight process that executes code independently. Multithreading allows applications to perform multiple operations simultaneously, improving responsiveness.  
+
+**Example: Creating a thread in C#<BR>
+
+using System;<BR>
+using System.Threading;<BR>
+
+class Program<BR>
+{<BR>
+    static void PrintNumbers()<BR>
+    {<BR>
+        for (int i = 1; i <= 5; i++)<BR>
+        {<BR>
+            Console.WriteLine("Number: " + i);<BR>
+            Thread.Sleep(500);<BR>
+        }<BR>
+    }<BR>
+
+    static void Main()<BR>
+    {<BR>
+        Thread t = new Thread(PrintNumbers);<BR>
+        t.Start();<BR>
+        Console.WriteLine("Main thread continues...");<BR>
+    }<BR>
+}<BR>
+
+
+**Output:**  <BR>
+
+Main thread continues...<BR>
+Number: 1<BR>
+Number: 2<BR>
+Number: 3<BR>
+Number: 4<BR>
+Number: 5<BR>
+
+ Windows Forms in .NET Core  
+Windows Forms is supported in **.NET Core Desktop** for building GUI applications. It allows developers to create interactive applications with buttons, text boxes, and labels.  
+
+**Example: Simple Windows Form**  <BR>
+
+using System;<BR>
+using System.Windows.Forms;<BR>
+
+class MyForm : Form<BR>
+{<BR>
+    public MyForm()<BR>
+    {<BR>
+        Text = "Hello WinForms in .NET Core";<BR>
+        Button btn = new Button { Text = "Click Me", Left = 50, Top = 50 };<BR>
+        btn.Click += (sender, e) => MessageBox.Show("Button Clicked!");<BR>
+        Controls.Add(btn);<BR>
+    }<BR>
+
+   
+    static void Main()<BR>
+    {<BR>
+        Application.Run(new MyForm());<BR>
+    }<BR>
+}
+<BR>
+
+
+
+
+Data Types in .NET Core  
+.NET Core supports a wide range of **data types**:  
+- Value types: `int`, `double`, `bool`, `char`  
+- Reference types: `string`, arrays, objects  
+- Nullable types: `int?`  
+
+These types ensure type safety and efficient memory usage.  
+
+
+
+ LINQ (Language Integrated Query)  
+LINQ allows querying collections using a SQL-like syntax. It simplifies working with data in arrays, lists, and databases.  
+
+**Example: LINQ Query**  <BR>
+
+using System;<BR>
+using System.Linq;<BR>
+
+class Program<BR>
+{<BR>
+    static void Main()<BR>
+    {<BR>
+        int[] numbers = { 1, 2, 3, 4, 5, 6 };<BR>
+        var evenNumbers = from n in numbers<BR>
+                          where n % 2 == 0<BR>
+                          select n;<BR>
+
+        foreach (var num in evenNumbers)<BR>
+            Console.WriteLine(num);<BR>
+    }<BR>
+}
+<BR>
+
+**Output:**  
+
+<BR>
+2
+4
+6<BR>
+
+
+
+
+ Difference Between Task and Thread <BR> 
+- **Thread**: A low-level unit of execution. You manually manage its lifecycle.  <BR>
+- **Task**: A higher-level abstraction built on threads. It represents asynchronous work and integrates with the **Task Parallel Library (TPL)**. Tasks are easier to manage, cancel, and compose compared to raw threads.  
+<BR>
+**Example: Task vs Thread**  <BR>
+using System;
+using System.Threading;<BR>
+using System.Threading.Tasks;<BR>
+
+class Program<BR>
+{<BR>
+    static void Main()<BR>
+    {<BR>
+        // Thread example<BR>
+        Thread t = new Thread(() => Console.WriteLine("Running in a thread"));<BR>
+        t.Start();<BR>
+
+        // Task example<BR>
+        Task.Run(() => Console.WriteLine("Running in a task"));<BR>
+    }
+}<BR>
+
+
+
+In summary, **.NET Core** provides developers with powerful tools: threads for concurrency, Windows Forms for GUI, strong data types for safety, LINQ for data querying, and tasks for simplified asynchronous programming.  
+
+
+</P>
+</div>
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="DotNetCore2.html" class="I">Back</a>
+  <a href="DotNetCore4.html" class="I" Style="margin-left:700px;">Next</a>
+    
+    </div>
+
+
+
+</body>
+</html>
+
+

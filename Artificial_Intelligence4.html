@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">	
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+ body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        h2 { color: #2c3e50; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+        code { color: #c0392b; }
+        .section { margin-bottom: 40px; }	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:45px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">	
+	
+</head>
+<body >
+
+<div Class="D"><a href="index1.html"><img src="Knowledge.jpg" class="logo"></a><P Class="V">Knowledge Check Demonstration</P></div><BR>
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+<div id="syllabus-content-area">
+
+    <div class="menu-buttons">
+        <button class="menu-btn" data-content-id="prerequisites-content">Prerequisites</button>
+        <button class="menu-btn" data-content-id="ai-intro-content">AI Fundamentals</button>
+        <button class="menu-btn" data-content-id="ml-content">Machine Learning</button>
+        <button class="menu-btn" data-content-id="dl-content">Deep Learning</button>
+        <button class="menu-btn" data-content-id="nlp-content">Natural Language Processing</button>
+        <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+        <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+    </div>
+
+    <div class="syllabus-container">
+        <h2>Course Syllabus: Artificial Intelligence</h2>
+
+        <!-- Prerequisites -->
+        <div id="prerequisites-content" class="content-panel active">
+            <h3>Module: Prerequisites</h3>
+            <ul>
+                <li><strong>Programming Proficiency:</strong> Strong foundation in a language like Python, including basic data structures, control flow, and functions.</li>
+                <li><strong>Mathematical Foundations:</strong> Basics of Linear Algebra (vectors, matrices), Calculus (derivatives, gradients), Probability, and Statistics.</li>
+                <li><strong>Data Fundamentals:</strong> Understanding of data structures, algorithms, and how to perform basic Data Analysis (e.g., using libraries like Pandas).</li>
+            </ul>
+        </div>
+
+        <!-- AI Fundamentals -->
+        <div id="ai-intro-content" class="content-panel hidden">
+            <h3>Module: AI Fundamentals & Core Concepts</h3>
+            <p>This module introduces the foundations of Artificial Intelligence.</p>
+            <hr>
+            <ul>
+                <li><strong>Introduction to AI:</strong> Definition, history, types of AI (Narrow, General, Superintelligence), and philosophical issues.</li>
+                <li><strong>AI Ethics and Responsible AI:</strong> Bias, fairness, transparency, and the societal impact of AI systems.</li>
+                <li><strong>Computer Vision (CV):</strong> Image processing basics, Convolutional Neural Networks (CNNs), and applications like object detection and image classification.</li>
+            </ul>
+        </div>
+
+        <!-- Machine Learning -->
+        <div id="ml-content" class="content-panel hidden">
+            <h3>Module: Machine Learning</h3>
+            <ul>
+                <li><strong>Supervised Learning:</strong> Regression, classification, and evaluation metrics.</li>
+                <li><strong>Unsupervised Learning:</strong> Clustering, dimensionality reduction, and anomaly detection.</li>
+                <li><strong>Reinforcement Learning:</strong> Agents, environments, rewards, and policies.</li>
+                <li><strong>Model Lifecycle:</strong> Training, validation, testing, and deployment.</li>
+            </ul>
+        </div>
+
+        <!-- Deep Learning -->
+        <div id="dl-content" class="content-panel hidden">
+            <h3>Module: Deep Learning & Neural Networks</h3>
+            <ul>
+                <li><strong>Artificial Neural Networks (ANNs):</strong> Perceptrons, activation functions, and backpropagation.</li>
+                <li><strong>Deep Architectures:</strong> Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), and Transformers.</li>
+                <li><strong>Frameworks:</strong> TensorFlow, PyTorch, and Keras.</li>
+                <li><strong>Applications:</strong> Image recognition, speech processing, and generative models.</li>
+            </ul>
+        </div>
+
+        <!-- Natural Language Processing -->
+        <div id="nlp-content" class="content-panel hidden">
+            <h3>Module: Natural Language Processing (NLP)</h3>
+            <ul>
+                <li><strong>Text Representation:</strong> Bag-of-Words, TF-IDF, Word Embeddings.</li>
+                <li><strong>Core Tasks:</strong> Sentiment Analysis, Named Entity Recognition, Machine Translation.</li>
+                <li><strong>Large Language Models (LLMs):</strong> Transformers, GPT-style models, and applications in text generation.</li>
+                <li><strong>Ethical Considerations:</strong> Bias in language models, misinformation, and responsible NLP use.</li>
+            </ul>
+        </div>
+
+        <!-- Assessment -->
+        <div id="assessment-content" class="content-panel hidden">
+            <h3>Assessment</h3>
+            <p>Test your knowledge through quizzes on mathematical foundations and AI concepts, practical coding assignments in Python, and a final <strong>Capstone Project</strong> applying ML/Deep Learning techniques to a real-world dataset (e.g., building an image classifier or a text summarizer).</p>
+        </div>
+
+        <!-- Summary -->
+        <div id="summary-content" class="content-panel hidden">
+            <h3>Summary</h3>
+            <p>Artificial Intelligence is a broad field of Computer Science focused on creating intelligent agents that perceive their environment and take actions that maximize their chance of successfully achieving their goals. It encompasses core techniques like Machine Learning and Deep Learning, which enable systems to learn from data, driving innovation in areas like computer vision, NLP, and decision-making.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<BR><BR>
+<div class="U">
+<P>
+
+
+<Center style="font-family:monospace;color:Orange;font-size:31px">Introduction AI And Its Core Techniques</Center><BR>
+
+<div id="nlp-content" class="content-panel active">
+    <h3>Module: Natural Language Processing (NLP)</h3>
+    <p>
+        Natural Language Processing (NLP) is a branch of Artificial Intelligence that focuses on enabling 
+        computers to <strong>understand, interpret, generate, and interact</strong> with human language. 
+        It combines linguistics, computer science, and machine learning to process text and speech data.
+    </p>
+    <hr>
+
+    <!-- Introduction -->
+    <h4>1. Introduction to NLP</h4>
+    <ul>
+        <li><strong>Definition:</strong> NLP is the study of computational techniques for analyzing and synthesizing natural language.</li>
+        <li><strong>Goal:</strong> Bridge the gap between human communication and computer understanding.</li>
+        <li><strong>Key Components:</strong> Syntax (structure), Semantics (meaning), Pragmatics (context).</li>
+    </ul>
+
+    <!-- History -->
+    <h4>2. History of NLP</h4>
+    <ul>
+        <li><strong>1950s:</strong> Alan Turing proposes the "Turing Test" for machine intelligence.</li>
+        <li><strong>1960s:</strong> ELIZA chatbot demonstrates rule-based conversational systems.</li>
+        <li><strong>1980s-1990s:</strong> Statistical methods (Hidden Markov Models, n-grams) dominate NLP research.</li>
+        <li><strong>2000s:</strong> Machine learning approaches (SVMs, decision trees) improve NLP tasks.</li>
+        <li><strong>2010s:</strong> Deep learning revolutionizes NLP with word embeddings and RNNs/LSTMs.</li>
+        <li><strong>2017-Present:</strong> Transformers (BERT, GPT) and Large Language Models (LLMs) reshape NLP applications.</li>
+    </ul>
+
+    <!-- Techniques -->
+    <h4>3. Core NLP Techniques</h4>
+    <ul>
+        <li><strong>Text Preprocessing:</strong> Tokenization, stemming, lemmatization, stop-word removal.</li>
+        <li><strong>Text Representation:</strong> Bag-of-Words, TF-IDF, Word Embeddings (Word2Vec, GloVe).</li>
+        <li><strong>Language Models:</strong> Statistical models, neural networks, transformers.</li>
+        <li><strong>Parsing:</strong> Syntax trees, dependency parsing.</li>
+        <li><strong>Named Entity Recognition (NER):</strong> Identifying people, places, organizations in text.</li>
+    </ul>
+
+    <!-- Workflow -->
+    <h4>4. NLP Workflow</h4>
+    <ul>
+        <li><strong>Data Collection:</strong> Gathering text or speech data from sources like social media, books, or recordings.</li>
+        <li><strong>Preprocessing:</strong> Cleaning and normalizing text for analysis.</li>
+        <li><strong>Feature Extraction:</strong> Converting text into numerical representations.</li>
+        <li><strong>Model Training:</strong> Using ML/DL algorithms to learn language patterns.</li>
+        <li><strong>Evaluation:</strong> Metrics like BLEU score, perplexity, accuracy, F1-score.</li>
+        <li><strong>Deployment:</strong> Integrating NLP models into applications (chatbots, search engines).</li>
+    </ul>
+
+    <!-- Applications -->
+    <h4>5. Applications of NLP</h4>
+    <ul>
+        <li><strong>Machine Translation:</strong> Google Translate, DeepL.</li>
+        <li><strong>Sentiment Analysis:</strong> Understanding opinions in reviews or social media posts.</li>
+        <li><strong>Chatbots & Virtual Assistants:</strong> Conversational AI like Siri, Alexa, Copilot.</li>
+        <li><strong>Text Summarization:</strong> Automatic generation of concise summaries from long documents.</li>
+        <li><strong>Speech Recognition:</strong> Converting spoken language into text.</li>
+        <li><strong>Information Retrieval:</strong> Search engines and document indexing.</li>
+        <li><strong>Question Answering:</strong> Systems that provide direct answers from text corpora.</li>
+    </ul>
+
+    <!-- Modern Advances -->
+    <h4>6. Modern Advances in NLP</h4>
+    <ul>
+        <li><strong>Transformers:</strong> Attention-based models (BERT, GPT, T5) dominate NLP tasks.</li>
+        <li><strong>Large Language Models (LLMs):</strong> Capable of text generation, summarization, and reasoning.</li>
+        <li><strong>Multimodal NLP:</strong> Combining text with vision/audio for richer AI systems.</li>
+        <li><strong>Zero-shot & Few-shot Learning:</strong> Models generalize to tasks with minimal training data.</li>
+    </ul>
+
+    <!-- Challenges -->
+    <h4>7. Challenges in NLP</h4>
+    <ul>
+        <li><strong>Ambiguity:</strong> Words and sentences often have multiple meanings.</li>
+        <li><strong>Context Understanding:</strong> Capturing long-range dependencies in text.</li>
+        <li><strong>Bias:</strong> Language models may inherit societal biases from training data.</li>
+        <li><strong>Low-Resource Languages:</strong> Limited data availability for many world languages.</li>
+        <li><strong>Ethical Concerns:</strong> Misinformation, fake content generation, privacy issues.</li>
+    </ul>
+</div>
+
+
+</div>
+
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="Artificial_Intelligence3.html" class="I">Back</a>
+  <a href="test8.html" class="I" Style="margin-left:700px;">Next</a>
+    
+ 
+</body>
+</html>
+
+

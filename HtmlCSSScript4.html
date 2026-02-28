@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+
+body{background-image:url("data-sciences.jpg");Background-Attachment:Fixed;}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>	
+</head>
+<body >
+<BR><BR><div class="D">
+  <a href="index1.html"><img src="Knowledge.jpg" class="logo" alt="Knowledge Logo"></a>
+  <p class="V">Knowledge Check Demonstration</p>
+</div>
+<br>
+
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+  <div id="syllabus-content-area">
+  <div class="menu-buttons">
+      <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+      <button class="menu-btn" data-content-id="html-content">HTML Fundamentals</button>
+      <button class="menu-btn" data-content-id="css-content">CSS Fundamentals</button>
+      <button class="menu-btn" data-content-id="advanced-css-content">Advanced CSS</button>
+      <button class="menu-btn" data-content-id="js-content">JavaScript Fundamentals</button>
+      <button class="menu-btn" data-content-id="advanced-js-content">Advanced JavaScript</button>
+      <button class="menu-btn" data-content-id="browser-js-content">JavaScript in Browser</button>
+      <button class="menu-btn" data-content-id="projects-content">Projects</button>
+      <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+      <button class="menu-btn" data-content-id="summary-content">Summary</button>
+    </div>
+
+    <div class="syllabus-container">
+      <h2>Course Syllabus: HTML, CSS & JavaScript</h2>
+
+      <div id="prerequisites-content" class="content-panel active">
+        <h3>Module: Prerequisites (5m)</h3>
+        <ul>
+          <li>Basic computer knowledge: OS, browsers, file management</li>
+          <li>Programming fundamentals: variables, loops, functions</li>
+          <li>Environment setup: VS Code, browser dev tools</li>
+        </ul>
+      </div>
+
+      <div id="html-content" class="content-panel hidden">
+        <h3>Module: HTML Fundamentals</h3>
+        <p>Learn structure of HTML documents, headings, paragraphs, lists, links, images, forms, semantic tags, multimedia, and accessibility basics.</p>
+      </div>
+
+      <div id="css-content" class="content-panel hidden">
+        <h3>Module: CSS Fundamentals</h3>
+        <p>Understand selectors, box model, colors, fonts, positioning, Flexbox basics, and Grid introduction.</p>
+      </div>
+
+      <div id="advanced-css-content" class="content-panel hidden">
+        <h3>Module: Advanced CSS</h3>
+        <p>Responsive design, media queries, animations, transformations, CSS variables, and frameworks overview (Bootstrap, Tailwind).</p>
+      </div>
+
+      <div id="js-content" class="content-panel hidden">
+        <h3>Module: JavaScript Fundamentals</h3>
+        <p>Variables, data types, operators, control structures, functions, DOM manipulation, events, and form validation basics.</p>
+      </div>
+
+      <div id="advanced-js-content" class="content-panel hidden">
+        <h3>Module: Advanced JavaScript</h3>
+        <p>ES6+ features, objects, arrays, classes, closures, promises, async/await, Fetch API, error handling, and storage APIs.</p>
+      </div>
+
+      <div id="browser-js-content" class="content-panel hidden">
+        <h3>Module: JavaScript in Browser</h3>
+        <p>DOM traversal, event delegation, dynamic content, JSON handling, and API integration.</p>
+      </div>
+
+      <div id="projects-content" class="content-panel hidden">
+        <h3>Module: Projects</h3>
+        <p>Build responsive webpages, interactive apps like To-do list, image slider, form validation, and quiz app.</p>
+      </div>
+
+      <div id="assessment-content" class="content-panel hidden">
+        <h3>Assessment</h3>
+        <p>MCQs on HTML, CSS, JS basics and coding exercises to validate knowledge.</p>
+      </div>
+
+      <div id="summary-content" class="content-panel hidden">
+        <h3>Summary</h3>
+        <p>HTML provides structure, CSS adds style, and JavaScript brings interactivity — together forming the foundation of modern web development.</p>
+      </div>
+    </div>
+</div>
+
+<div class="U">
+
+
+
+
+
+
+ <Center style="font-family:monospace;color:Orange;font-size:31px">Introduction to JavaScript in Browser</Center><BR>
+<h1>JavaScript in the Browser</h1>
+
+  <h2>1. The DOM (Document Object Model)</h2>
+  <p>
+    The DOM is a tree-like structure representing the HTML of a page. Each element becomes a node that JavaScript can access and manipulate. 
+    Common methods include <code>document.getElementById()</code>, <code>document.querySelector()</code>, and updating content with <code>innerHTML</code> or <code>textContent</code>.
+  </p>
+
+  <h2>2. DOM Traversal</h2>
+  <p>
+    Traversal means moving through the DOM tree to access parent, child, or sibling nodes. Useful properties include 
+    <code>parentNode</code>, <code>children</code>, and <code>nextSibling</code>. This allows developers to dynamically update or restructure content.
+  </p>
+
+  <h2>3. Event Handling</h2>
+  <p>
+    Events are user actions like clicks, key presses, or form submissions. JavaScript listens for these events and responds with code. 
+    Methods include <code>addEventListener()</code> and inline event handlers like <code>onclick</code>.
+  </p>
+
+  <h2>4. Dynamic Content Creation</h2>
+  <p>
+    JavaScript can create new elements and insert them into the DOM. Methods like <code>document.createElement()</code> and <code>appendChild()</code> 
+    allow developers to build interactive features such as to-do lists or live updates.
+  </p>
+
+  <h2>5. Event Bubbling & Delegation</h2>
+  <p>
+    Event bubbling means events propagate up the DOM tree. Event delegation attaches one listener to a parent instead of multiple children, 
+    improving performance and simplifying code.
+  </p>
+
+  <h2>6. Working with JSON</h2>
+  <p>
+    JSON (JavaScript Object Notation) is the standard format for data exchange. Use <code>JSON.parse()</code> to convert JSON strings into objects 
+    and <code>JSON.stringify()</code> to convert objects into JSON strings.
+  </p>
+
+  <h2>7. API Integration</h2>
+  <p>
+    JavaScript can fetch data from external APIs using the Fetch API or AJAX. For example:
+    <code>fetch("https://api.example.com/data").then(res =&gt; res.json()).then(data =&gt; console.log(data));</code>
+    This allows integration of live data such as weather, news, or maps into web pages.
+  </p>
+
+  <h2>8. Best Practices</h2>
+  <p>
+    Always clean up event listeners to avoid memory leaks. Use delegation for lists or dynamic elements. Validate and sanitize data when working with APIs. 
+    Keep DOM manipulation efficient to maintain performance.
+  </p>
+
+  <h2>Summary</h2>
+  <p>
+    JavaScript in the Browser covers DOM traversal, event handling, dynamic content creation, event delegation, JSON handling, and API integration. 
+    These skills are essential for building interactive, modern web applications.
+  </p>
+</div>
+
+
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="HtmlCSSScript3.html" class="I">Back</a>
+  <a href="HtmlCSSScript5.html" class="I" Style="margin-left:700px;">Next</a>
+    
+    </div>
+ 
+</body>
+</html>
+
+

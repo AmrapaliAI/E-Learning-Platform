@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Fundamentals Syllabus</title>
+
+  
+  <style>
+.D { display: flex; }
+.logo { height: 111px; width: 100px; }
+
+.V {
+    color: HotPink;
+    border-color: Yellow;
+    outline-color: Violet;
+    font-size: 21px;
+    text-shadow: 3px 2px 4px grey;
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+.V:hover {
+    color: Blue;
+    text-shadow: 3px 2px 4px grey;
+}
+
+.U {
+    border: 4px solid orange;
+    width: 840px;
+    font-size: 26px;
+    padding: 78px 21px 21px 67px;
+    font-family: monospace;
+    background-color: White;
+    margin-left: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-image: url("data-sciences.jpg");
+    background-attachment: fixed;
+}
+
+h2 { color: #2c3e50; }
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+code { color: #c0392b; }
+.section { margin-bottom: 40px; }
+
+.U::-webkit-scrollbar {
+    display: none;
+}
+
+.I {
+    border: 4px solid Blue;
+    background-color: lightBlue;
+    text-align: center;
+    color: white;
+    height: 45px;
+    width: 140px;
+    text-decoration: none;
+    font-size: 41px;
+}
+</style>
+
+
+  <script>
+    function toggleVisibility() {
+      const area = document.getElementById("syllabus-content-area");
+      area.style.display =
+        (area.style.display === "none" || area.style.display === "")
+          ? "block"
+          : "none";
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".menu-btn");
+
+      buttons.forEach(btn => {
+        btn.addEventListener("click", function () {
+          const contentId = this.getAttribute("data-content-id");
+
+          document.querySelectorAll(".content-panel").forEach(panel => {
+            panel.classList.remove("active");
+          });
+
+          document.getElementById(contentId).classList.add("active");
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+<div class="U">
+    <h2>Course Syllabus: AWS Fundamentals</h2>
+
+    <!-- Compute -->
+ 
+      <h3>Module: AWS Compute Services</h3>
+      <p>This module explores the core compute services in AWS, which provide the processing power to run applications, workloads, and containerized environments in the cloud.</p>
+      <hr>
+
+      <h4>1. Amazon EC2 (Elastic Compute Cloud)</h4>
+      <ul>
+        <li><strong>Definition:</strong> Virtual servers in the cloud with customizable CPU, memory, and storage.</li>
+        <li><strong>Key Features:</strong> Auto Scaling, Elastic Load Balancing, multiple instance types.</li>
+        <li><strong>Use Cases:</strong> Web hosting, enterprise applications, batch processing.</li>
+      </ul>
+
+      <h4>2. AWS Lambda</h4>
+      <ul>
+        <li><strong>Definition:</strong> Serverless compute service that runs code in response to events.</li>
+        <li><strong>Key Features:</strong> No server management, automatic scaling, pay-per-execution pricing.</li>
+        <li><strong>Use Cases:</strong> Event-driven apps, API backends, real-time file processing.</li>
+      </ul>
+
+      <h4>3. Amazon Lightsail</h4>
+      <ul>
+        <li><strong>Definition:</strong> Simplified compute service for small workloads.</li>
+        <li><strong>Key Features:</strong> Pre-configured instances, predictable pricing, easy setup.</li>
+        <li><strong>Use Cases:</strong> Blogs, websites, small business apps.</li>
+      </ul>
+
+      <h4>4. Amazon ECS (Elastic Container Service)</h4>
+      <ul>
+        <li><strong>Definition:</strong> Container orchestration service for Docker containers.</li>
+        <li><strong>Key Features:</strong> Integration with EC2 and Fargate, scalable clusters.</li>
+        <li><strong>Use Cases:</strong> Microservices, containerized workloads.</li>
+      </ul>
+
+      <h4>5. Amazon EKS (Elastic Kubernetes Service)</h4>
+      <ul>
+        <li><strong>Definition:</strong> Managed Kubernetes service.</li>
+        <li><strong>Key Features:</strong> Fully compatible with upstream Kubernetes, integrates with IAM and VPC.</li>
+        <li><strong>Use Cases:</strong> Kubernetes-based applications, hybrid deployments.</li>
+      </ul>
+
+      <h4>6. AWS Fargate</h4>
+      <ul>
+        <li><strong>Definition:</strong> Serverless compute engine for containers.</li>
+        <li><strong>Key Features:</strong> No need to manage servers, scales automatically.</li>
+        <li><strong>Use Cases:</strong> Running containers without managing EC2 instances.</li>
+      </ul>
+
+      <h4>7. Best Practices</h4>
+      <ul>
+        <li>Choose the right instance type for workload efficiency.</li>
+        <li>Use Auto Scaling to handle variable traffic.</li>
+        <li>Leverage IAM roles for secure access to compute resources.</li>
+        <li>Monitor performance with CloudWatch metrics.</li>
+      </ul>
+
+      <h4>8. Hands-On Activities</h4>
+      <ol>
+        <li>Launch an EC2 instance and connect via SSH.</li>
+        <li>Deploy a Lambda function triggered by an S3 event.</li>
+        <li>Set up a Lightsail instance for a WordPress blog.</li>
+        <li>Run a containerized app using ECS or EKS.</li>
+        <li>Experiment with Fargate to deploy containers without managing servers.</li>
+      </ol>
+    </div>
+
+
+<div style="display:inline-block; padding-top:21px;">
+  <a href="Aws.html" class="I">Back</a>
+  <a href="AWS3.html" class="I" style="margin-left:700px;">Next</a>
+</div>
+
+</body>
+</html>
