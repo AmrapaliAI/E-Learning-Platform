@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+#quiz-timer {
+            color: red;font-size:21px;}
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	B{
+	font-size:19px;}
+	</style>
+</head>
+<body>
+<BR><BR>
+
+<div  id="quiz-timer">time Remaining:13:00</div>
+<HR>
+<form class="U" action="Check5">
+
+
+
+<h5>Q1: Which of the following is a primary key property?</h5>
+<B><input type="radio" name="Q1" value="Unique" onclick="toggleRadio(this)">A. Unique</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Duplicate" onclick="toggleRadio(this)">B. Duplicate</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Nullable" onclick="toggleRadio(this)">C. Nullable</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Optional" onclick="toggleRadio(this)">D. Optional</input></B><BR><BR>
+
+<h5>Q2: Which SQL command is used to remove a table?</h5>
+<B><input type="radio" name="Q2" value="DROP" onclick="toggleRadio(this)">A. DROP</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="DELETE" onclick="toggleRadio(this)">B. DELETE</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="REMOVE" onclick="toggleRadio(this)">C. REMOVE</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="TRUNCATE" onclick="toggleRadio(this)">D. TRUNCATE</input></B><BR><BR>
+
+<h5>Q3: Which of the following is a Data Manipulation Language (DML) command?</h5>
+<B><input type="radio" name="Q3" value="INSERT" onclick="toggleRadio(this)">A. INSERT</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="CREATE" onclick="toggleRadio(this)">B. CREATE</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="DROP" onclick="toggleRadio(this)">C. DROP</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="ALTER" onclick="toggleRadio(this)">D. ALTER</input></B><BR><BR>
+
+<h5>Q4: Which of the following ensures data consistency in transactions?</h5>
+<B><input type="radio" name="Q4" value="ACID" onclick="toggleRadio(this)">A. ACID properties</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="BASE" onclick="toggleRadio(this)">B. BASE properties</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="Normalization" onclick="toggleRadio(this)">C. Normalization</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="Indexing" onclick="toggleRadio(this)">D. Indexing</input></B><BR><BR>
+
+<h5>Q5: Which normal form eliminates transitive dependency?</h5>
+<B><input type="radio" name="Q5" value="3NF" onclick="toggleRadio(this)">A. Third Normal Form (3NF)</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="1NF" onclick="toggleRadio(this)">B. First Normal Form (1NF)</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="2NF" onclick="toggleRadio(this)">C. Second Normal Form (2NF)</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="BCNF" onclick="toggleRadio(this)">D. BCNF</input></B><BR><BR>
+
+<h5>Q6: Which of the following is NOT a type of database model?</h5>
+<B><input type="radio" name="Q6" value="Relational" onclick="toggleRadio(this)">A. Relational</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Hierarchical" onclick="toggleRadio(this)">B. Hierarchical</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Network" onclick="toggleRadio(this)">C. Network</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Circular" onclick="toggleRadio(this)">D. Circular</input></B><BR><BR>
+
+<h5>Q7: Which SQL clause is used to filter records?</h5>
+<B><input type="radio" name="Q7" value="WHERE" onclick="toggleRadio(this)">A. WHERE</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="ORDER BY" onclick="toggleRadio(this)">B. ORDER BY</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="GROUP BY" onclick="toggleRadio(this)">C. GROUP BY</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="HAVING" onclick="toggleRadio(this)">D. HAVING</input></B><BR><BR>
+
+<h5>Q8: Which of the following is used to speed up data retrieval?</h5>
+<B><input type="radio" name="Q8" value="Index" onclick="toggleRadio(this)">A. Index</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Trigger" onclick="toggleRadio(this)">B. Trigger</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="View" onclick="toggleRadio(this)">C. View</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Cursor" onclick="toggleRadio(this)">D. Cursor</input></B><BR><BR>
+
+<h5>Q9: Which of the following is a property of foreign keys?</h5>
+<B><input type="radio" name="Q9" value="Referential Integrity" onclick="toggleRadio(this)">A. Ensures referential integrity</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="Unique" onclick="toggleRadio(this)">B. Must be unique</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="Primary" onclick="toggleRadio(this)">C. Acts as primary key</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="Nullable" onclick="toggleRadio(this)">D. Always nullable</input></B><BR><BR>
+
+<h5>Q10: Which SQL keyword is used to combine rows from two tables?</h5>
+<B><input type="radio" name="Q10" value="JOIN" onclick="toggleRadio(this)">A. JOIN</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="UNION" onclick="toggleRadio(this)">B. UNION</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="MERGE" onclick="toggleRadio(this)">C. MERGE</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="INTERSECT" onclick="toggleRadio(this)">D. INTERSECT</input></B><BR><BR>
+
+<h5>Q11: Which SQL statement is used to remove all rows from a table but keep its structure?</h5>
+<B><input type="radio" name="Q11" value="TRUNCATE" onclick="toggleRadio(this)">A. TRUNCATE</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="DROP" onclick="toggleRadio(this)">B. DROP</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="DELETE" onclick="toggleRadio(this)">C. DELETE</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="REMOVE" onclick="toggleRadio(this)">D. REMOVE</input></B><BR><BR>
+
+<h5>Q12: Which of the following is a Data Control Language (DCL) command?</h5>
+<B><input type="radio" name="Q12" value="GRANT" onclick="toggleRadio(this)">A. GRANT</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="SELECT" onclick="toggleRadio(this)">B. SELECT</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="INSERT" onclick="toggleRadio(this)">C. INSERT</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="UPDATE" onclick="toggleRadio(this)">D. UPDATE</input></B><BR><BR>
+
+<h5>Q13: Which of the following commands is used to save a transaction permanently?</h5>
+<B><input type="radio" name="Q13" value="COMMIT" onclick="toggleRadio(this)">A. COMMIT</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="ROLLBACK" onclick="toggleRadio(this)">B. ROLLBACK</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="SAVEPOINT" onclick="toggleRadio(this)">C. SAVEPOINT</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="CHECKPOINT" onclick="toggleRadio(this)">D. CHECKPOINT</input></B><BR><BR>
+
+<h5>Q14: Which of the following is used to enforce referential integrity?</h5>
+<B><input type="radio" name="Q14" value="Foreign Key" onclick="toggleRadio(this)">A. Foreign Key</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="Primary Key" onclick="toggleRadio(this)">B. Primary Key</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="Index" onclick="toggleRadio(this)">C. Index</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="Trigger" onclick="toggleRadio(this)">D. Trigger</input></B><BR><BR>
+
+<h5>Q15: Which SQL clause is used to group rows that have the same values?</h5>
+<B><input type="radio" name="Q15" value="GROUP BY" onclick="toggleRadio(this)">A. GROUP BY</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="ORDER BY" onclick="toggleRadio(this)">B. ORDER BY</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="HAVING" onclick="toggleRadio(this)">C. HAVING</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="WHERE" onclick="toggleRadio(this)">D. WHERE</input></B><BR><BR>
+
+<h5>Q16: Which of the following is NOT part of ACID properties?</h5>
+<B><input type="radio" name="Q16" value="Atomicity" onclick="toggleRadio(this)">A. Atomicity</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="Consistency" onclick="toggleRadio(this)">B. Consistency</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="Isolation" onclick="toggleRadio(this)">C. Isolation</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="Reliability" onclick="toggleRadio(this)">D. Reliability</input></B><BR><BR>
+
+<h5>Q17: Which SQL keyword is used to remove duplicate rows in a result set?</h5>
+<B><input type="radio" name="Q17" value="DISTINCT" onclick="toggleRadio(this)">A. DISTINCT</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="UNIQUE" onclick="toggleRadio(this)">B. UNIQUE</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="REMOVE" onclick="toggleRadio(this)">C. REMOVE</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="FILTER" onclick="toggleRadio(this)">D. FILTER</input></B><BR><BR>
+
+<h5>Q18: Which of the following is used to define a default value for a column?</h5>
+<B><input type="radio" name="Q18" value="DEFAULT" onclick="toggleRadio(this)">A. DEFAULT</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="CHECK" onclick="toggleRadio(this)">B. CHECK</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="NOT NULL" onclick="toggleRadio(this)">C. NOT NULL</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="PRIMARY KEY" onclick="toggleRadio(this)">D. PRIMARY KEY</input></B><BR><BR>
+
+<h5>Q19: Which of the following is used to create a virtual table?</h5>
+<B><input type="radio" name="Q19" value="VIEW" onclick="toggleRadio(this)">A. VIEW</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="INDEX" onclick="toggleRadio(this)">B. INDEX</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="TRIGGER" onclick="toggleRadio(this)">C. TRIGGER</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="CURSOR" onclick="toggleRadio(this)">D. CURSOR</input></B><BR><BR>
+
+<h5>Q20: Which of the following is used to automatically perform an action when an event occurs?</h5>
+<B><input type="radio" name="Q20" value="Trigger" onclick="toggleRadio(this)">A. Trigger</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="Index" onclick="toggleRadio(this)">B. Index</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="View" onclick="toggleRadio(this)">C. View</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="Procedure" onclick="toggleRadio(this)">D. Procedure</input></B><BR><BR>
+
+
+
+<h5>Q21: Which SQL keyword is used to sort results?</h5>
+<B><input type="radio" name="Q21" value="ORDER BY" onclick="toggleRadio(this)">A. ORDER BY</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="GROUP BY" onclick="toggleRadio(this)">B. GROUP BY</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="HAVING" onclick="toggleRadio(this)">C. HAVING</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="WHERE" onclick="toggleRadio(this)">D. WHERE</input></B><BR><BR>
+
+<h5>Q22: Which of the following is used to ensure a column cannot have NULL values?</h5>
+<B><input type="radio" name="Q22" value="NOT NULL" onclick="toggleRadio(this)">A. NOT NULL</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="DEFAULT" onclick="toggleRadio(this)">B. DEFAULT</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="CHECK" onclick="toggleRadio(this)">C. CHECK</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="UNIQUE" onclick="toggleRadio(this)">D. UNIQUE</input></B><BR><BR>
+<h5>Q23: Which SQL command is used to change the structure of a table?</h5>
+<B><input type="radio" name="Q23" value="ALTER" onclick="toggleRadio(this)">A. ALTER</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="UPDATE" onclick="toggleRadio(this)">B. UPDATE</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="MODIFY" onclick="toggleRadio(this)">C. MODIFY</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="CHANGE" onclick="toggleRadio(this)">D. CHANGE</input></B><BR><BR>
+
+<h5>Q24: Which of the following is used to enforce a condition on a column?</h5>
+<B><input type="radio" name="Q24" value="CHECK" onclick="toggleRadio(this)">A. CHECK</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="DEFAULT" onclick="toggleRadio(this)">B. DEFAULT</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="NOT NULL" onclick="toggleRadio(this)">C. NOT NULL</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="INDEX" onclick="toggleRadio(this)">D. INDEX</input></B><BR><BR>
+
+<h5>Q25: Which SQL keyword is used to combine the results of two queries?</h5>
+<B><input type="radio" name="Q25" value="UNION" onclick="toggleRadio(this)">A. UNION</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="JOIN" onclick="toggleRadio(this)">B. JOIN</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="INTERSECT" onclick="toggleRadio(this)">C. INTERSECT</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="MERGE" onclick="toggleRadio(this)">D. MERGE</input></B><BR><BR>
+
+<h5>Q26: Which of the following is used to rollback part of a transaction?</h5>
+<B><input type="radio" name="Q26" value="SAVEPOINT" onclick="toggleRadio(this)">A. SAVEPOINT</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="ROLLBACK" onclick="toggleRadio(this)">B. ROLLBACK</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="COMMIT" onclick="toggleRadio(this)">C. COMMIT</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="CHECKPOINT" onclick="toggleRadio(this)">D. CHECKPOINT</input></B><BR><BR>
+
+<h5>Q27: Which SQL keyword is used to rename a column or table in the result set?</h5>
+<B><input type="radio" name="Q27" value="AS" onclick="toggleRadio(this)">A. AS</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="RENAME" onclick="toggleRadio(this)">B. RENAME</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="CHANGE" onclick="toggleRadio(this)">C. CHANGE</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="ALTER" onclick="toggleRadio(this)">D. ALTER</input></B><BR><BR>
+
+<h5>Q28: Which of the following is used to remove duplicate rows when combining queries?</h5>
+<B><input type="radio" name="Q28" value="UNION" onclick="toggleRadio(this)">A. UNION</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="UNION ALL" onclick="toggleRadio(this)">B. UNION ALL</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="JOIN" onclick="toggleRadio(this)">C. JOIN</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="INTERSECT" onclick="toggleRadio(this)">D. INTERSECT</input></B><BR><BR>
+
+<h5>Q29: Which SQL keyword is used to count the number of rows?</h5>
+<B><input type="radio" name="Q29" value="COUNT" onclick="toggleRadio(this)">A. COUNT</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="SUM" onclick="toggleRadio(this)">B. SUM</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="AVG" onclick="toggleRadio(this)">C. AVG</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="MAX" onclick="toggleRadio(this)">D. MAX</input></B><BR><BR>
+
+<h5>Q30: Which SQL function is used to find the highest value in a column?</h5>
+<B><input type="radio" name="Q30" value="MAX" onclick="toggleRadio(this)">A. MAX</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="MIN" onclick="toggleRadio(this)">B. MIN</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="SUM" onclick="toggleRadio(this)">C. SUM</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="AVG" onclick="toggleRadio(this)">D. AVG</input></B><BR><BR>
+
+<h5>Q31: Which SQL clause is used to filter groups after aggregation?</h5>
+<B><input type="radio" name="Q31" value="HAVING" onclick="toggleRadio(this)">A. HAVING</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="WHERE" onclick="toggleRadio(this)">B. WHERE</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="GROUP BY" onclick="toggleRadio(this)">C. GROUP BY</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="ORDER BY" onclick="toggleRadio(this)">D. ORDER BY</input></B><BR><BR>
+
+<h5>Q32: Which SQL keyword is used to remove a database entirely?</h5>
+<B><input type="radio" name="Q32" value="DROP DATABASE" onclick="toggleRadio(this)">A. DROP DATABASE</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="DELETE DATABASE" onclick="toggleRadio(this)">B. DELETE DATABASE</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="REMOVE DATABASE" onclick="toggleRadio(this)">C. REMOVE DATABASE</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="TRUNCATE DATABASE" onclick="toggleRadio(this)">D. TRUNCATE DATABASE</input></B><BR><BR>
+
+<h5>Q33: Which SQL keyword is used to create a new database?</h5>
+<B><input type="radio" name="Q33" value="CREATE DATABASE" onclick="toggleRadio(this)">A. CREATE DATABASE</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="NEW DATABASE" onclick="toggleRadio(this)">B. NEW DATABASE</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="MAKE DATABASE" onclick="toggleRadio(this)">C. MAKE DATABASE</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="ADD DATABASE" onclick="toggleRadio(this)">D. ADD DATABASE</input></B><BR><BR>
+
+<h5>Q34: Which SQL keyword is used to update existing data in a table?</h5>
+<B><input type="radio" name="Q34" value="UPDATE" onclick="toggleRadio(this)">A. UPDATE</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="ALTER" onclick="toggleRadio(this)">B. ALTER</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="INSERT" onclick="toggleRadio(this)">C. INSERT</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="MODIFY" onclick="toggleRadio(this)">D. MODIFY</input></B><BR><BR>
+<h5>Q35: Which SQL keyword is used to delete specific rows from a table?</h5>
+<B><input type="radio" name="Q35" value="DELETE" onclick="toggleRadio(this)">A. DELETE</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="DROP" onclick="toggleRadio(this)">B. DROP</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="TRUNCATE" onclick="toggleRadio(this)">C. TRUNCATE</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="REMOVE" onclick="toggleRadio(this)">D. REMOVE</input></B><BR><BR>
+
+<h5>Q36: Which SQL function is used to calculate the average of values in a column?</h5>
+<B><input type="radio" name="Q36" value="AVG" onclick="toggleRadio(this)">A. AVG</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="SUM" onclick="toggleRadio(this)">B. SUM</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="COUNT" onclick="toggleRadio(this)">C. COUNT</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="MAX" onclick="toggleRadio(this)">D. MAX</input></B><BR><BR>
+
+<h5>Q37: Which SQL keyword is used to remove all rows from a table without logging individual row deletions?</h5>
+<B><input type="radio" name="Q37" value="TRUNCATE" onclick="toggleRadio(this)">A. TRUNCATE</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="DELETE" onclick="toggleRadio(this)">B. DELETE</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="DROP" onclick="toggleRadio(this)">C. DROP</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="REMOVE" onclick="toggleRadio(this)">D. REMOVE</input></B><BR><BR>
+
+<h5>Q38: Which SQL keyword is used to add new rows into a table?</h5>
+<B><input type="radio" name="Q38" value="INSERT" onclick="toggleRadio(this)">A. INSERT</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="UPDATE" onclick="toggleRadio(this)">B. UPDATE</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="ALTER" onclick="toggleRadio(this)">C. ALTER</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="ADD" onclick="toggleRadio(this)">D. ADD</input></B><BR><BR>
+
+<h5>Q39: Which SQL keyword is used to remove a column from a table?</h5>
+<B><input type="radio" name="Q39" value="ALTER TABLE DROP COLUMN" onclick="toggleRadio(this)">A. ALTER TABLE DROP COLUMN</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="DELETE COLUMN" onclick="toggleRadio(this)">B. DELETE COLUMN</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="REMOVE COLUMN" onclick="toggleRadio(this)">C. REMOVE COLUMN</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="TRUNCATE COLUMN" onclick="toggleRadio(this)">D. TRUNCATE COLUMN</input></B><BR><BR>
+
+<h5>Q40: Which SQL keyword is used to assign permissions to users?</h5>
+<B><input type="radio" name="Q40" value="GRANT" onclick="toggleRadio(this)">A. GRANT</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="REVOKE" onclick="toggleRadio(this)">B. REVOKE</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="ALLOW" onclick="toggleRadio(this)">C. ALLOW</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="PERMIT" onclick="toggleRadio(this)">D. PERMIT</input></B><BR><BR>
+
+
+
+<Center><input type="Submit" style="height:49px;width:100px;border:3px solid Blue;color:Green;font-size:21px;Border-radius:21px;"></Center>
+</form>
+
+<script src="time1.js"></script><script>
+let R=null;
+function toggleRadio(currentRadio)
+{
+	if(currentRadio===R){
+		currentRadio.checked=false;
+		R=null;
+	}
+	else{
+		R=currentRadio;
+	}}</script>
+
+</div>
+</body>
+</html>

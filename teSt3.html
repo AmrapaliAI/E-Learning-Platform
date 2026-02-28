@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+#quiz-timer {
+            color: red;font-size:21px;}
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	B{
+	font-size:19px;}
+	</style>
+</head>
+<body>
+
+
+<div  id="quiz-timer">time Remaining:40:00</div>
+<HR>
+<form class="U" action="Check4">
+
+<h5>Q1:Which article of the Indian Constitution guarantees the Right to Equality?</h5>
+<B><input type="radio" name="Q1" value="Article14" onclick="toggleRadio(this)">A.Article 14</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Article19" onclick="toggleRadio(this)">B.Article 19</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Article21" onclick="toggleRadio(this)">C.Article 21</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Article32" onclick="toggleRadio(this)">D.Article 32</input></B><BR><BR>
+
+<h5>Q2:Which part of the Constitution contains Directive Principles of State Policy?</h5>
+<B><input type="radio" name="Q2" value="PartIII" onclick="toggleRadio(this)">A.Part III</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="PartIV" onclick="toggleRadio(this)">B.Part IV</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="PartV" onclick="toggleRadio(this)">C.Part V</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="PartVI" onclick="toggleRadio(this)">D.Part VI</input></B><BR><BR>
+
+<h5>Q3:Fundamental Duties were added to the Constitution by which amendment?</h5>
+<B><input type="radio" name="Q3" value="42nd" onclick="toggleRadio(this)">A.42nd Amendment</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="44th" onclick="toggleRadio(this)">B.44th Amendment</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="52nd" onclick="toggleRadio(this)">C.52nd Amendment</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="73rd" onclick="toggleRadio(this)">D.73rd Amendment</input></B><BR><BR>
+
+<h5>Q4:Which principle ensures that no one is above the law?</h5>
+<B><input type="radio" name="Q4" value="RuleOfLaw" onclick="toggleRadio(this)">A.Rule of Law</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="JudicialReview" onclick="toggleRadio(this)">B.Judicial Review</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="Federalism" onclick="toggleRadio(this)">C.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q5:Which organ of government interprets the Constitution?</h5>
+<B><input type="radio" name="Q5" value="Legislature" onclick="toggleRadio(this)">A.Legislature</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="Executive" onclick="toggleRadio(this)">B.Executive</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="Judiciary" onclick="toggleRadio(this)">C.Judiciary</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="President" onclick="toggleRadio(this)">D.President</input></B><BR><BR>
+
+<h5>Q6:Which article provides the Right to Constitutional Remedies?</h5>
+<B><input type="radio" name="Q6" value="Article32" onclick="toggleRadio(this)">A.Article 32</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Article21" onclick="toggleRadio(this)">B.Article 21</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Article19" onclick="toggleRadio(this)">C.Article 19</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Article14" onclick="toggleRadio(this)">D.Article 14</input></B><BR><BR>
+
+<h5>Q7:Which fundamental duty requires citizens to protect the environment?</h5>
+<B><input type="radio" name="Q7" value="DutyToEnvironment" onclick="toggleRadio(this)">A.To protect environment</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="DutyToNation" onclick="toggleRadio(this)">B.To defend nation</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="DutyToProperty" onclick="toggleRadio(this)">C.To safeguard public property</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="DutyToConstitution" onclick="toggleRadio(this)">D.To respect Constitution</input></B><BR><BR>
+
+<h5>Q8:Which principle divides power among Legislature, Executive, and Judiciary?</h5>
+<B><input type="radio" name="Q8" value="SeparationOfPowers" onclick="toggleRadio(this)">A.Separation of Powers</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q9:Which part of the Constitution deals with Fundamental Rights?</h5>
+<B><input type="radio" name="Q9" value="PartII" onclick="toggleRadio(this)">A.Part II</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="PartIII" onclick="toggleRadio(this)">B.Part III</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="PartIV" onclick="toggleRadio(this)">C.Part IV</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="PartV" onclick="toggleRadio(this)">D.Part V</input></B><BR><BR>
+
+<h5>Q10:Which constitutional principle ensures state neutrality in religion?</h5>
+<B><input type="radio" name="Q10" value="Secularism" onclick="toggleRadio(this)">A.Secularism</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="Democracy" onclick="toggleRadio(this)">B.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="Federalism" onclick="toggleRadio(this)">C.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="RuleOfLaw" onclick="toggleRadio(this)">D.Rule of Law</input></B><BR><BR>
+
+<h5>Q11:Which principle prevents concentration of power in one branch of government?</h5>
+<B><input type="radio" name="Q11" value="SeparationOfPowers" onclick="toggleRadio(this)">A.Separation of Powers</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Secularism" onclick="toggleRadio(this)">C.Secularism</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Democracy" onclick="toggleRadio(this)">D.Democracy</input></B><BR><BR>
+
+<h5>Q12:Which principle ensures equality before law?</h5>
+<B><input type="radio" name="Q12" value="RuleOfLaw" onclick="toggleRadio(this)">A.Rule of Law</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="JudicialReview" onclick="toggleRadio(this)">B.Judicial Review</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="Federalism" onclick="toggleRadio(this)">C.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q13:Which principle states that ultimate power rests with citizens?</h5>
+<B><input type="radio" name="Q13" value="SovereigntyOfPeople" onclick="toggleRadio(this)">A.Sovereignty of the People</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="Secularism" onclick="toggleRadio(this)">C.Secularism</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="RuleOfLaw" onclick="toggleRadio(this)">D.Rule of Law</input></B><BR><BR>
+
+<h5>Q14:Which constitutional fundamental aims to reduce inequalities in society?</h5>
+<B><input type="radio" name="Q14" value="SocialEconomicJustice" onclick="toggleRadio(this)">A.Social and Economic Justice</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q15:Which principle ensures state neutrality in matters of religion?</h5>
+<B><input type="radio" name="Q15" value="Secularism" onclick="toggleRadio(this)">A.Secularism</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="RuleOfLaw" onclick="toggleRadio(this)">D.Rule of Law</input></B><BR><BR>
+
+<h5>Q16:Which principle divides power between Union and State governments?</h5>
+<B><input type="radio" name="Q16" value="Federalism" onclick="toggleRadio(this)">A.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="SeparationOfPowers" onclick="toggleRadio(this)">B.Separation of Powers</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q17:Which organ of government safeguards fundamental rights?</h5>
+<B><input type="radio" name="Q17" value="Judiciary" onclick="toggleRadio(this)">A.Judiciary</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="Legislature" onclick="toggleRadio(this)">B.Legislature</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="Executive" onclick="toggleRadio(this)">C.Executive</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="President" onclick="toggleRadio(this)">D.President</input></B><BR><BR>
+
+<h5>Q18:Which principle ensures courts are free from political influence?</h5>
+<B><input type="radio" name="Q18" value="IndependentJudiciary" onclick="toggleRadio(this)">A.Independent Judiciary</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="RuleOfLaw" onclick="toggleRadio(this)">B.Rule of Law</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="Federalism" onclick="toggleRadio(this)">C.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q19:Which principle protects cultural, linguistic, and religious minorities?</h5>
+<B><input type="radio" name="Q19" value="MinorityProtection" onclick="toggleRadio(this)">A.Protection of Minorities</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q20:Which principle commits nations to peace and cooperation globally?</h5>
+<B><input type="radio" name="Q20" value="InternationalOutlook" onclick="toggleRadio(this)">A.International Outlook</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q21:Which principle ensures accountability of government to people?</h5>
+<B><input type="radio" name="Q21" value="SovereigntyOfPeople" onclick="toggleRadio(this)">A.Sovereignty of the People</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="RuleOfLaw" onclick="toggleRadio(this)">C.Rule of Law</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+
+
+<h5>Q22:Which principle balances rights and duties of citizens?</h5>
+<B><input type="radio" name="Q22" value="FundamentalDuties" onclick="toggleRadio(this)">A.Fundamental Duties</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q23:Which principle ensures no one is above the law?</h5>
+<B><input type="radio" name="Q23" value="RuleOfLaw" onclick="toggleRadio(this)">A.Rule of Law</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q24:Which principle divides power among Legislature, Executive, and Judiciary?</h5>
+<B><input type="radio" name="Q24" value="SeparationOfPowers" onclick="toggleRadio(this)">A.Separation of Powers</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q25:Which principle ensures impartial justice by courts?</h5>
+<B><input type="radio" name="Q25" value="IndependentJudiciary" onclick="toggleRadio(this)">A.Independent Judiciary</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="RuleOfLaw" onclick="toggleRadio(this)">B.Rule of Law</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="Federalism" onclick="toggleRadio(this)">C.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="Democracy" onclick="toggleRadio(this)">D.Democracy</input></B><BR><BR>
+
+<h5>Q26:Which principle emphasizes reducing inequalities and protecting marginalized groups?</h5>
+<B><input type="radio" name="Q26" value="SocialEconomicJustice" onclick="toggleRadio(this)">A.Social and Economic Justice</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="Secularism" onclick="toggleRadio(this)">C.Secularism</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="Democracy" onclick="toggleRadio(this)">D.Democracy</input></B><BR><BR>
+
+<h5>Q27:Which principle ensures freedom of belief and expression?</h5>
+<B><input type="radio" name="Q27" value="Liberty" onclick="toggleRadio(this)">A.Liberty</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="RuleOfLaw" onclick="toggleRadio(this)">C.Rule of Law</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q28:Which principle ensures harmony in diverse societies?</h5>
+<B><input type="radio" name="Q28" value="Secularism" onclick="toggleRadio(this)">A.Secularism</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="RuleOfLaw" onclick="toggleRadio(this)">D.Rule of Law</input></B><BR><BR>
+
+<h5>Q29:Which principle guides the state to promote welfare policies?</h5>
+<B><input type="radio" name="Q29" value="DirectivePrinciples" onclick="toggleRadio(this)">A.Directive Principles of State Policy</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="FundamentalRights" onclick="toggleRadio(this)">B.Fundamental Rights</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="FundamentalDuties" onclick="toggleRadio(this)">C.Fundamental Duties</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="Federalism" onclick="toggleRadio(this)">D.Federalism</input></B><BR><BR>
+
+<h5>Q30:Which principle ensures citizens actively contribute to national unity?</h5>
+<B><input type="radio" name="Q30" value="FundamentalDuties" onclick="toggleRadio(this)">A.Fundamental Duties</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="RuleOfLaw" onclick="toggleRadio(this)">D.Rule of Law</input></B><BR><BR>
+
+<h5>Q31:Which principle ensures stability while allowing flexibility for progress?</h5>
+<B><input type="radio" name="Q31" value="ConstitutionalFundamentals" onclick="toggleRadio(this)">A.Constitutional Fundamentals</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q32:Which principle ensures government policies reflect the will of the majority?</h5>
+<B><input type="radio" name="Q32" value="SovereigntyOfPeople" onclick="toggleRadio(this)">A.Sovereignty of the People</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="RuleOfLaw" onclick="toggleRadio(this)">C.Rule of Law</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q33:Which principle ensures citizens respect the Constitution?</h5>
+<B><input type="radio" name="Q33" value="FundamentalDuties" onclick="toggleRadio(this)">A.Fundamental Duties</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="RuleOfLaw" onclick="toggleRadio(this)">D.Rule of Law</input></B><BR><BR>
+
+<h5>Q34:Which principle ensures protection of cultural and linguistic minorities?</h5>
+<B><input type="radio" name="Q34" value="MinorityProtection" onclick="toggleRadio(this)">A.Protection of Minorities</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q35:Which principle ensures impartial interpretation of laws?</h5>
+<B><input type="radio" name="Q35" value="IndependentJudiciary" onclick="toggleRadio(this)">A.Independent Judiciary</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="RuleOfLaw" onclick="toggleRadio(this)">B.Rule of Law</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="Federalism" onclick="toggleRadio(this)">C.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="Democracy" onclick="toggleRadio(this)">D.Democracy</input></B><BR><BR>
+
+<h5>Q36:Which principle ensures harmony among citizens of different religions?</h5>
+<B><input type="radio" name="Q36" value="Secularism" onclick="toggleRadio(this)">A.Secularism</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="RuleOfLaw" onclick="toggleRadio(this)">D.Rule of Law</input></B><BR><BR>
+
+<h5>Q37:Which principle ensures government policies aim at welfare of people?</h5>
+<B><input type="radio" name="Q37" value="DirectivePrinciples" onclick="toggleRadio(this)">A.Directive Principles of State Policy</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="FundamentalRights" onclick="toggleRadio(this)">B.Fundamental Rights</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="FundamentalDuties" onclick="toggleRadio(this)">C.Fundamental Duties</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="Federalism" onclick="toggleRadio(this)">D.Federalism</input></B><BR><BR>
+
+<h5>Q38:Which principle ensures citizens protect public property?</h5>
+<B><input type="radio" name="Q38" value="FundamentalDuties" onclick="toggleRadio(this)">A.Fundamental Duties</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="RuleOfLaw" onclick="toggleRadio(this)">D.Rule of Law</input></B><BR><BR>
+
+<h5>Q39:Which principle ensures citizens defend the nation?</h5>
+<B><input type="radio" name="Q39" value="FundamentalDuties" onclick="toggleRadio(this)">A.Fundamental Duties</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="Secularism" onclick="toggleRadio(this)">D.Secularism</input></B><BR><BR>
+
+<h5>Q40:Which principle ensures the Constitution acts as the supreme law of the land?</h5>
+<B><input type="radio" name="Q40" value="SupremacyOfConstitution" onclick="toggleRadio(this)">A.Supremacy of the Constitution</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="Federalism" onclick="toggleRadio(this)">B.Federalism</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="Democracy" onclick="toggleRadio(this)">C.Democracy</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="RuleOfLaw" onclick="toggleRadio(this)">D.Rule of Law</input></B><BR><BR>
+<Center><input type="Submit" style="height:49px;width:100px;border:3px solid Blue;color:Green;font-size:21px;Border-radius:21px;"></Center>
+<script src="time1.js"></script><script>
+let R=null;
+function toggleRadio(currentRadio)
+{
+	if(currentRadio===R){
+		currentRadio.checked=false;
+		R=null;
+	}
+	else{
+		R=currentRadio;
+	}}</script>
+</form>
+</div>
+</body>
+</html>

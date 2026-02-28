@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>	
+</head>
+<body >
+<BR><BR>
+<div class="D">
+  <a href="index1.html"><img src="Knowledge.jpg" class="logo" alt="Knowledge Logo"></a>
+  <p class="V">Knowledge Check Demonstration</p>
+</div>
+<br>
+
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+<div id="syllabus-content-area">
+  <div class="menu-buttons">
+    <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+    <button class="menu-btn" data-content-id="python-intro-content">Python Introduction</button>
+    <button class="menu-btn" data-content-id="multithreading-content">Multithreading</button>
+    <button class="menu-btn" data-content-id="django-content">Django Framework</button>
+    <button class="menu-btn" data-content-id="tkinter-content">Tkinter GUI</button>
+    <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+    <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+  </div>
+
+  <div class="syllabus-container">
+    <h2>Course Syllabus: Python Programming</h2>
+
+    <div id="prerequisites-content" class="content-panel active">
+      <h3>Module: Prerequisites (5m)</h3>
+      <ul>
+        <li><b>Basic Computer Knowledge:</b> Familiarity with operating systems and command line usage.</li>
+        <li><b>Programming Fundamentals:</b> Understanding of loops, functions, and object-oriented concepts.</li>
+        <li><b>Environment Setup:</b> Install Python 3.x, pip, and a code editor (VS Code/PyCharm).</li>
+      </ul>
+    </div>
+
+    <div id="python-intro-content" class="content-panel hidden">
+      <h3>Module: Python Fundamentals</h3>
+      <p>Learn Python syntax, variables, data types, control structures, functions, and modules. Explore Python’s interpreter and package ecosystem.</p>
+    </div>
+
+    <div id="multithreading-content" class="content-panel hidden">
+      <h3>Module: Multithreading in Python</h3>
+      <p>Understand concurrency, threading module, synchronization, and how to manage parallel tasks efficiently in Python.</p>
+    </div>
+
+    <div id="django-content" class="content-panel hidden">
+      <h3>Module: Django Framework</h3>
+      <p>Explore Django’s MVC architecture, models, views, templates, and ORM. Build dynamic web applications with routing, forms, and authentication.</p>
+    </div>
+
+    <div id="tkinter-content" class="content-panel hidden">
+      <h3>Module: Tkinter GUI Development</h3>
+      <p>Learn how to create desktop applications using Tkinter. Work with widgets, layouts, event handling, and menus.</p>
+    </div>
+
+    <div id="assessment-content" class="content-panel hidden">
+      <h3>Assessment</h3>
+      <p>Test your knowledge with coding exercises on Python basics, multithreading, Django projects, and Tkinter GUI tasks.</p>
+    </div>
+
+    <div id="summary-content" class="content-panel hidden">
+      <h3>Summary</h3>
+      <p>Python is a versatile language used for web development, data science, automation, and GUI applications. 
+      With multithreading, Django, and Tkinter, learners gain skills to build scalable, interactive, and modern applications.</p>
+    </div>
+  </div>
+</div>
+
+<div class="U">
+<P>
+
+
+<Center style="font-family:monospace;color:Orange;font-size:31px">Python</Center><BR>
+
+**Tkinter is Python's standard library for building graphical user interfaces (GUIs), offering a simple yet powerful way to create desktop applications.**  
+<BR><BR>
+Tkinter acts as a Python interface to the Tk GUI toolkit, which is widely used across platforms like Windows, macOS, and Linux. Because it comes pre-installed with Python, developers don’t need to install extra packages to start building GUIs. Tkinter applications are built around the concept of **widgets**, which are the building blocks of any interface. Widgets include buttons, labels, text boxes, menus, and frames, all of which can be combined to create interactive applications.  
+<BR><BR>
+One of the strengths of Tkinter is its **geometry managers**, which control how widgets are arranged in a window. The three main geometry managers are `pack`, `grid`, and `place`. The `pack` manager arranges widgets in blocks before placing them in the parent widget, `grid` organizes widgets in a table-like structure, and `place` allows precise positioning using coordinates. This flexibility makes it possible to design both simple and complex layouts.  
+
+<BR><BR>
+Tkinter also supports **event-driven programming**, meaning applications respond to user actions such as button clicks, key presses, or mouse movements. Developers can bind events to functions, allowing the program to react dynamically. For example, clicking a button can trigger a function that processes data or updates the interface. This event-driven model is what makes GUIs interactive and user-friendly.  
+<BR><BR>
+Beyond basic widgets, Tkinter provides advanced features like **canvas**, which allows drawing shapes, images, and complex graphics. It also supports menus, dialogs, and message boxes, enabling developers to build complete desktop applications. While Tkinter’s default look is sometimes considered outdated compared to modern frameworks, it remains popular because of its simplicity, portability, and integration with Python’s ecosystem. Many beginners use Tkinter as their first step into GUI programming, while professionals employ it for lightweight tools and prototypes.  
+<BR><BR>
+In practice, Tkinter can be used to build applications such as calculators, text editors, or even small games. Its combination of ease of use, cross-platform compatibility, and direct integration with Python makes it a valuable tool for anyone interested in desktop application development.  
+
+
+
+
+
+### Example Tkinter Program  
+<BR><BR>
+python<BR>
+import tkinter as tk<BR>
+
+# Create the main window<BR>
+root = tk.Tk()<BR>
+root.title("Simple Tkinter App")<BR>
+root.geometry("300x200")<BR>
+
+# Function to display greeting<BR>
+def greet():<BR>
+    <P Style="Margin-left:67px;">label.config(text="Hello, welcome to Tkinter!")</P><BR>
+
+# Create a label<BR>
+label = tk.Label(root, text="Click the button below")<BR>
+label.pack(pady=10)<BR>
+
+# Create a button<BR>
+button = tk.Button(root, text="Greet Me", command=greet)<BR>
+button.pack(pady=10)<BR>
+
+# Run the application<BR>
+root.mainloop()<BR>
+
+<BR>
+### Paragraph Rewrite in Detail  
+
+This program begins by importing the `tkinter` module, which provides all the tools needed to build a graphical interface. The first step is to create the main application window using `Tk()`. We set its title to “Simple Tkinter App” and define its size with the `geometry` method, giving the window a fixed dimension of 300 by 200 pixels.  
+<BR>
+Next, we define a function called `greet()`. Functions in Tkinter are often linked to user actions, and in this case, the function updates the text of a label when the user clicks a button. The `label.config()` method changes the label's text dynamically, demonstrating how Tkinter responds to events.  
+
+<BR>
+We then create a label widget using `Label()`. A label is a simple text display element, and here it initially shows the message "Click the button below." The `pack()` method is used to place the label in the window, with some padding to make it visually neat.  
+<BR>
+Following the label, we create a button widget using `Button()`. The button is labeled 'Greet Me' and is connected to the `greet()` function through the `command` parameter. This means that when the button is clicked, the function executes and updates the label's text.  
+<BR>
+Finally, the program calls `root.mainloop()`. This is the event loop that keeps the window open and responsive. Without it, the window would appear and immediately close. The loop listens for user actions such as clicks or key presses and ensures the application responds accordingly.  
+
+
+
+<BR><BR>
+
+
+
+
+</P>
+</Div>
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="Python2.html" class="I">Back</a>
+  <a href="teSt4.html" class="I" Style="margin-left:700px;">Take Assessment</a>
+    
+ 
+</body>
+</html>
+
+
+
+
+</body>
+</html>

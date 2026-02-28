@@ -1,0 +1,423 @@
+.I
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .I:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+        /* General Body & Typography */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            color: #2C3E50;
+            font-weight: 700;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        a {
+            color: #3498DB;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #2980B9;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+             Height:100px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            
+            height:141px;width:104px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display:flex;
+        }
+        nav ul li {
+            margin-left: 10px;
+        }
+        nav ul li a {
+            color: white;
+            font-weight: 500;
+            padding: 5px 0;
+            position: relative;
+        }
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #3498DB;
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s ease-in-out;
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+       
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #3498DB, #2980B9);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before { /* Subtle background pattern */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.1;
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            color: white;
+            font-size: 3.2em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero .btn {
+            background-color: #E74C3C;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .hero .btn:hover {
+            background-color: #C0392B;
+            transform: translateY(-3px);
+        }
+
+        /* Key Features / How it Works */
+        .features {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .features h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .feature-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .feature-item {
+            background-color: #fcfcfc;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 30px;
+            flex-basis: calc(33% - 20px); /* 3 items per row */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+        .feature-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .feature-item i { /* For icons */
+            font-size: 3em;
+            color: #3498DB;
+            margin-bottom: 20px;
+            display: block;
+            text-align: center;
+        }
+        .feature-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .feature-item p {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        /* Call to Action Section */
+        .cta {
+            background-color: #E74C3C;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 40px;
+        }
+        .cta h2 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta .btn {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .cta .btn:hover {
+            background-color: #34495E;
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .footer-col {
+            flex-basis: calc(33% - 40px); /* Adjust as needed */
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .footer-col h4 {
+            color: #3498DB;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+        .footer-col a {
+            color: #ecf0f1;
+            transition: color 0.3s ease;
+        }
+        .footer-col a:hover {
+            color: #3498DB;
+        }
+        .footer-bottom {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .feature-item {
+                flex-basis: calc(50% - 20px); /* 2 items per row */
+            }
+            .footer-col {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 13px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 5px 10px;
+            }
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .hero .btn {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+            .features h2, .cta h2 {
+                font-size: 2em;
+            }
+            .feature-item {
+                flex-basis: 100%; /* 1 item per row */
+            }
+            .footer-col {
+                flex-basis: 100%;
+                text-align: center;
+            }
+            .footer-col h4 {
+                text-align: center;
+            }
+            .footer-col ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .footer-col ul li {
+                margin: 0 10px 10px 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.5em;
+            }
+            nav ul li {
+                margin: 5px 10px;
+            }
+            .nav-button {
+                margin-top: 15px;
+            }
+            .hero {
+                padding: 60px 15px;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+        }
+       /* --- Navigation Button Styling --- */
+/* (This targets the new span elements) */
+.nav-Button-js {
+    color: white; /* Match your other nav links */
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer; /* Important: shows it's clickable */
+    transition: background-color 0.3s;
+    display: inline-block; /* Allows padding/margin to work correctly */
+}
+.nav-Button-js:hover {
+    background-color: #555; /* Slight hover effect */
+}.nav-Button {
+			
+            background-color: #E74C3C;
+            padding: 8px 19px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-Button:hover {
+            background-color: #C0392B;
+        }
+
+
+/* --- Modal Pop-up Styling --- */
+/* This is essential to make the forms appear as overlays */
+
+/* The Modal (background overlay) */
+.modal {margin-left:500px;
+    /* Initially hidden */
+    display: none;       
+    /* Position fixed to cover the whole viewport */
+    position: fixed;     
+    z-index: 100;        /* Always on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;         /* Full width */
+    height: 100%;        /* Full height */
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); /* Dark semi-transparent background */
+}
+
+/* Modal Content Box */
+.modal-content {
+    /* White background for the form box */
+    /* 10% from the top and centered */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+   
+   max-Height:200px;
+    max-width: 450px;    /* Standard form size */
+   
+}
+
+/* Close Button (the 'x') */
+.close {
+    color: White;
+    
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: Blue;
+}#Content-frame{DiSplay:NoNe;}

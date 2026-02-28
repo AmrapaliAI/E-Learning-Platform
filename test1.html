@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+ #quiz-timer {
+            color: red;font-size:21px;
+        }.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	B{
+	font-size:19px;}
+	</style>
+</head>
+<body>
+
+
+<div  id="quiz-timer">time Remaining:13:00</div>
+<HR>
+<form class="U" action="Check2">
+
+<h5>Q1:Which of the following is a value type in C#?</h5>
+<B ><input type="radio" name="Q1" value="String" onclick="toggleRadio(this)">A.String</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Int" onclick="toggleRadio(this)">B.Int</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Object" onclick="toggleRadio(this)">C.Object</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Array" onclick="toggleRadio(this)">D.Array</input></B><BR><BR>
+
+<h5>Q2:What keyword is used to define an interface in C#?</h5>
+<B ><input type="radio" name="Q2" value="class"  onclick="toggleRadio(this)">A.class</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="Interface"onclick="toggleRadio(this)">B.Interface</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="abstract"onclick="toggleRadio(this)">C.abstract</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="delegate"onclick="toggleRadio(this)">D.delegate</input></B><BR><BR>
+
+
+<h5>Q3:Which access specifier makes a member accessible everywhere?</h5>
+<B><input type="radio" name="Q3" value="Private" onclick="toggleRadio(this)">A.Private</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="Protected" onclick="toggleRadio(this)">B.Protected</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="Internal" onclick="toggleRadio(this)">C.Internal</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="Public" onclick="toggleRadio(this)">D.Public</input></B><BR><BR>
+
+
+<h5>Q4:Which of the following cannot be inherited?</h5>
+<B><input type="radio" name="Q4" value="Abstract" onclick="toggleRadio(this)">A.Abstract</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="Sealed" onclick="toggleRadio(this)">B.Sealed</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="Concrete" onclick="toggleRadio(this)">C.Concrete</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="Interface" onclick="toggleRadio(this)">D.Interface</input></B><BR><BR>
+
+<h5>Q5:Which delegate type always returns a boolean?</h5>
+<B><input type="radio" name="Q5" value="Func" onclick="toggleRadio(this)">A.Func</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="Action" onclick="toggleRadio(this)">B.Action</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="Predicate" onclick="toggleRadio(this)">C.Predicate</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="MultiCast" onclick="toggleRadio(this)">D.MultiCast</input></B><BR><BR>
+
+<h5>Q6:Which keyword is used to prevent a class from being inherited?</h5>
+<B><input type="radio" name="Q6" value="sealed" onclick="toggleRadio(this)">A.sealed</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="abstract" onclick="toggleRadio(this)">B.abstract</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="static" onclick="toggleRadio(this)">C.static</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="readonly" onclick="toggleRadio(this)">D.readonly</input></B><BR><BR>
+
+<h5>Q7:Which of the following is NOT a value type?</h5>
+<B><input type="radio" name="Q7" value="Int" onclick="toggleRadio(this)">A.Int</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="Double" onclick="toggleRadio(this)">B.Double</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="String" onclick="toggleRadio(this)">C.String</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="Char" onclick="toggleRadio(this)">D.Char</input></B><BR><BR>
+
+<h5>Q8:Which built-in delegate type does not return a value?</h5>
+<B><input type="radio" name="Q8" value="Func" onclick="toggleRadio(this)">A.Func</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Action" onclick="toggleRadio(this)">B.Action</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Predicate" onclick="toggleRadio(this)">C.Predicate</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Thread" onclick="toggleRadio(this)">D.Thread</input></B><BR><BR>
+
+<h5>Q9:Which keyword is used to define an interface?</h5>
+<B><input type="radio" name="Q9" value="class" onclick="toggleRadio(this)">A.class</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="interface" onclick="toggleRadio(this)">B.interface</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="abstract" onclick="toggleRadio(this)">C.abstract</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="delegate" onclick="toggleRadio(this)">D.delegate</input></B><BR><BR>
+
+<h5>Q10:Which of the following is true about threads?</h5>
+<B><input type="radio" name="Q10" value="Sequential" onclick="toggleRadio(this)">A.They run sequentially only</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="Concurrent" onclick="toggleRadio(this)">B.They allow concurrent execution</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="CannotCreate" onclick="toggleRadio(this)">C.They cannot be created</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="SameAsTask" onclick="toggleRadio(this)">D.They are same as tasks</input></B><BR><BR>
+
+<h5>Q11:Which of the following is a higher-level abstraction built on threads?</h5>
+<B><input type="radio" name="Q11" value="Task" onclick="toggleRadio(this)">A.Task</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Thread" onclick="toggleRadio(this)">B.Thread</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Delegate" onclick="toggleRadio(this)">C.Delegate</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Interface" onclick="toggleRadio(this)">D.Interface</input></B><BR><BR>
+
+<h5>Q12:Which of the following is used for querying collections in C#?</h5>
+<B><input type="radio" name="Q12" value="LINQ" onclick="toggleRadio(this)">A.LINQ</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="Thread" onclick="toggleRadio(this)">B.Thread</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="Delegate" onclick="toggleRadio(this)">C.Delegate</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="Task" onclick="toggleRadio(this)">D.Task</input></B><BR><BR>
+
+<h5>Q13:Which access specifier allows access in derived classes only?</h5>
+<B><input type="radio" name="Q13" value="Public" onclick="toggleRadio(this)">A.Public</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="Private" onclick="toggleRadio(this)">B.Private</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="Protected" onclick="toggleRadio(this)">C.Protected</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="Internal" onclick="toggleRadio(this)">D.Internal</input></B><BR><BR>
+<h5>Q14:Which keyword is used to define a sealed class?</h5>
+<B><input type="radio" name="Q14" value="sealed" onclick="toggleRadio(this)">A.sealed</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="abstract" onclick="toggleRadio(this)">B.abstract</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="static" onclick="toggleRadio(this)">C.static</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="readonly" onclick="toggleRadio(this)">D.readonly</input></B><BR><BR>
+
+<h5>Q15:Which of the following is a static class property?</h5>
+<B><input type="radio" name="Q15" value="CanBeInherited" onclick="toggleRadio(this)">A.Can be inherited</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="CannotBeInstantiated" onclick="toggleRadio(this)">B.Cannot be instantiated</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="CanContainInstanceMembers" onclick="toggleRadio(this)">C.Can contain instance members</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="MustBeAbstract" onclick="toggleRadio(this)">D.Must be abstract</input></B><BR><BR>
+
+<h5>Q16:Which of the following is a reference type?</h5>
+<B><input type="radio" name="Q16" value="Int" onclick="toggleRadio(this)">A.Int</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="String" onclick="toggleRadio(this)">B.String</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="Double" onclick="toggleRadio(this)">C.Double</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="Char" onclick="toggleRadio(this)">D.Char</input></B><BR><BR>
+
+<h5>Q17:Which keyword is used to define a static class?</h5>
+<B><input type="radio" name="Q17" value="sealed" onclick="toggleRadio(this)">A.sealed</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="abstract" onclick="toggleRadio(this)">B.abstract</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="static" onclick="toggleRadio(this)">C.static</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="readonly" onclick="toggleRadio(this)">D.readonly</input></B><BR><BR>
+
+<h5>Q18:Which of the following is true about abstract classes?</h5>
+<B><input type="radio" name="Q18" value="CannotBeInherited" onclick="toggleRadio(this)">A.Cannot be inherited</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="CannotBeInstantiated" onclick="toggleRadio(this)">B.Cannot be instantiated</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="MustContainOnlyStatic" onclick="toggleRadio(this)">C.Must contain only static methods</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="AlwaysSealed" onclick="toggleRadio(this)">D.Always sealed</input></B><BR><BR>
+
+<h5>Q19:Which access specifier allows access only within the same class?</h5>
+<B><input type="radio" name="Q19" value="Public" onclick="toggleRadio(this)">A.Public</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="Private" onclick="toggleRadio(this)">B.Private</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="Protected" onclick="toggleRadio(this)">C.Protected</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="Internal" onclick="toggleRadio(this)">D.Internal</input></B><BR><BR>
+
+<h5>Q20:Which of the following is true about delegates?</h5>
+<B><input type="radio" name="Q20" value="CanReferenceMethods" onclick="toggleRadio(this)">A.Can reference methods with specific signature</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="CannotBeUsedForEvents" onclick="toggleRadio(this)">B.Cannot be used for events</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="AlwaysAbstract" onclick="toggleRadio(this)">C.Always abstract</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="StoresData" onclick="toggleRadio(this)">D.Stores data only</input></B><BR><BR>
+
+<h5>Q21:Which delegate type can call multiple methods?</h5>
+<B><input type="radio" name="Q21" value="SingleCast" onclick="toggleRadio(this)">A.Single-cast</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="MultiCast" onclick="toggleRadio(this)">B.Multi-cast</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="Func" onclick="toggleRadio(this)">C.Func</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="Action" onclick="toggleRadio(this)">D.Action</input></B><BR><BR>
+
+<h5>Q22:Which built-in delegate type can return any type?</h5>
+<B><input type="radio" name="Q22" value="Func" onclick="toggleRadio(this)">A.Func</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="Action" onclick="toggleRadio(this)">B.Action</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="Predicate" onclick="toggleRadio(this)">C.Predicate</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="Thread" onclick="toggleRadio(this)">D.Thread</input></B><BR><BR>
+
+<h5>Q23:Which of the following is true about LINQ?</h5>
+<B><input type="radio" name="Q23" value="UsedForThreads" onclick="toggleRadio(this)">A.Used for threads</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="UsedForQuerying" onclick="toggleRadio(this)">B.Used for querying collections</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="UsedForDelegates" onclick="toggleRadio(this)">C.Used for delegates</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="UsedForAccessSpecifiers" onclick="toggleRadio(this)">D.Used for access specifiers</input></B><BR><BR>
+
+<h5>Q24:Which keyword is used to define a delegate?</h5>
+<B><input type="radio" name="Q24" value="delegate" onclick="toggleRadio(this)">A.delegate</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="class" onclick="toggleRadio(this)">B.class</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="interface" onclick="toggleRadio(this)">C.interface</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="abstract" onclick="toggleRadio(this)">D.abstract</input></B><BR><BR>
+
+<h5>Q25:Which of the following is true about tasks?</h5>
+<B><input type="radio" name="Q25" value="LowerLevel" onclick="toggleRadio(this)">A.Lower-level than threads</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="HigherLevel" onclick="toggleRadio(this)">B.Higher-level abstraction built on threads</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="SameAsThread" onclick="toggleRadio(this)">C.Same as thread</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="CannotRunAsync" onclick="toggleRadio(this)">D.Cannot run asynchronously</input></B><BR><BR>
+
+<h5>Q26:Which of the following is a value type?</h5>
+<B><input type="radio" name="Q26" value="Int" onclick="toggleRadio(this)">A.Int</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="String" onclick="toggleRadio(this)">B.String</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="Object" onclick="toggleRadio(this)">C.Object</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="Array" onclick="toggleRadio(this)">D.Array</input></B><BR><BR>
+
+<h5>Q27:Which of the following is true about sealed classes?</h5>
+<B><input type="radio" name="Q27" value="CannotBeInherited" onclick="toggleRadio(this)">A.Cannot be inherited</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="MustBeAbstract" onclick="toggleRadio(this)">B.Must be abstract</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="CanBeInstantiated" onclick="toggleRadio(this)">C.Can be instantiated</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="OnlyStatic" onclick="toggleRadio(this)">D.Only static</input></B><BR><BR>
+
+<h5>Q28:Which of the following is true about static classes?</h5>
+<B><input type="radio" name="Q28" value="CannotBeInstantiated" onclick="toggleRadio(this)">A.Cannot be instantiated</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="CanBeInherited" onclick="toggleRadio(this)">B.Can be inherited</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="ContainInstanceMembers" onclick="toggleRadio(this)">C.Can contain instance members</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="MustBeAbstract" onclick="toggleRadio(this)">D.Must be abstract</input></B><BR><BR>
+
+<h5>Q29:Which of the following is true about interfaces?</h5>
+<B><input type="radio" name="Q29" value="CanContainImplementation" onclick="toggleRadio(this)">A.Can contain implementation</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="OnlySignatures" onclick="toggleRadio(this)">B.Can only contain method signatures</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="CannotBeInherited" onclick="toggleRadio(this)">C.Cannot be inherited</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="MustBeSealed" onclick="toggleRadio(this)">D.Must be sealed</input></B><BR><BR>
+
+<h5>Q30:Which of the following is a correct built-in delegate type?</h5>
+<B><input type="radio" name="Q30" value="Func" onclick="toggleRadio(this)">A.Func</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="Action" onclick="toggleRadio(this)">B.Action</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="Predicate" onclick="toggleRadio(this)">C.Predicate</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="AllAbove" onclick="toggleRadio(this)">D.All of the above</input></B><BR><BR>
+
+<h5>Q31:Which access specifier allows access within the same assembly only?</h5>
+<B><input type="radio" name="Q31" value="Public" onclick="toggleRadio(this)">A.Public</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="Internal" onclick="toggleRadio(this)">B.Internal</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="Private" onclick="toggleRadio(this)">C.Private</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="Protected" onclick="toggleRadio(this)">D.Protected</input></B><BR><BR>
+
+<h5>Q32:Which of the following is the primary purpose of calling the Join() method on a C# thread instance?</h5>
+<B><input type="radio" name="Q32" value="ConcurrentExecution" onclick="toggleRadio(this)">A.to Block the calling thread until the thread on which Join() is called has finished its execution.</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="SequentialOnly" onclick="toggleRadio(this)">B.to immediately terminate the execution of the thread.</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="CannotBeCreated" onclick="toggleRadio(this)">C.to pause the currently executing thread for a specified amount of time.</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="SameAsTask" onclick="toggleRadio(this)">D.to prevent the garBage collector from collecting the thread object.</input></B><BR><BR>
+
+<h5>Q33:Which of the following is true about tasks?</h5>
+<B><input type="radio" name="Q33" value="HigherLevel" onclick="toggleRadio(this)">A.Public</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="Internal" onclick="toggleRadio(this)">B.Internal</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="Private" onclick="toggleRadio(this)">C.Private</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="Protected" onclick="toggleRadio(this)">D.Protected</input></B><BR><BR>
+
+<h5>Q32:Which of the following is true about threads?</h5>
+<B><input type="radio" name="Q32" value="ConcurrentExecution" onclick="toggleRadio(this)">A.They allow concurrent execution</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="SequentialOnly" onclick="toggleRadio(this)">B.They run sequentially only</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="CannotBeCreated" onclick="toggleRadio(this)">C.They cannot be created</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="SameAsTask" onclick="toggleRadio(this)">D.They are same as tasks</input></B><BR><BR>
+
+<h5>Q33:Which of the following is true about tasks?</h5>
+<B><input type="radio" name="Q33" value="HigherLevel" onclick="toggleRadio(this)">A.Higher-level abstraction built on threads</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="LowerLevel" onclick="toggleRadio(this)">B.Lower-level than threads</input></B><BR><BR>
+
+<B><input type="radio" name="Q33" value="SameAsThread" onclick="toggleRadio(this)">C.Same as thread</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="CannotRunAsync" onclick="toggleRadio(this)">D.Cannot run asynchronously</input></B><BR><BR>
+
+
+<h5>Q34:Which of the following is a correct LINQ query keyword?</h5>
+<B><input type="radio" name="Q34" value="select" onclick="toggleRadio(this)">A.select</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="insert" onclick="toggleRadio(this)">B.insert</input></B><BR><BR>
+
+<B><input type="radio" name="Q34" value="update" onclick="toggleRadio(this)">C.update</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="delete" onclick="toggleRadio(this)">D.delete</input></B><BR><BR>
+
+
+<h5>Q35:Which of the following is true about Windows Forms in .NET Core?</h5>
+<B><input type="radio" name="Q35" value="UsedForConsole" onclick="toggleRadio(this)">A.Used for console apps</input></B><BR><BR>
+
+<B><input type="radio" name="Q35" value="UsedForGUI" onclick="toggleRadio(this)">B.Used for GUI applications</input></B><BR><BR>
+
+<B><input type="radio" name="Q35" value="UsedForThreads" onclick="toggleRadio(this)">C.Used for threads</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="UsedForDelegates" onclick="toggleRadio(this)">D.Used for delegates</input></B><BR><BR>
+
+
+<h5>Q36:Which of the following is true about abstract methods?</h5>
+
+<B><input type="radio" name="Q36" value="MustBeImplemented" onclick="toggleRadio(this)">A.Must be implemented in derived classes</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="CanHaveBody" onclick="toggleRadio(this)">B.Can have a body</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="AlwaysStatic" onclick="toggleRadio(this)">C.Always static</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="CannotBeInherited" onclick="toggleRadio(this)">D.Cannot be inherited</input></B><BR><BR>
+
+
+<h5>Q37:Which of the following is true about multi-cast delegates?</h5>
+<B><input type="radio" name="Q37" value="SingleMethod" onclick="toggleRadio(this)">A.Can call only one method</input></B></BR></BR>
+
+<B><input type="radio" name="Q37" value="MultipleMethods" onclick="toggleRadio(this)">B.Can call multiple methods</input></B></BR></BR>
+<B><input type="radio" name="Q37" value="CannotBeCreated" onclick="toggleRadio(this)">C.Cannot be created</input></B></BR></BR>
+<B><input type="radio" name="Q37" value="AlwaysAbstract" onclick="toggleRadio(this)">D.Always abstract</input></B><BR><BR>
+
+
+<h5>Q38:Which of the following is true about Func delegate?</h5>
+
+<B><input type="radio" name="Q38" value="ReturnsValue" onclick="toggleRadio(this)">A.Returns a value</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="NoReturnValue" onclick="toggleRadio(this)">B.Does not return a value</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="AlwaysBoolean" onclick="toggleRadio(this)">C.Always returns boolean</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="UsedForThreads" onclick="toggleRadio(this)">D.Used for threads</input></B><BR><BR>
+
+<h5>Q39:Which of the following is true about Action delegate?</h5>
+<B><input type="radio" name="Q39" value="ReturnsValue" onclick="toggleRadio(this)">A.Returns a value</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="NoReturnValue" onclick="toggleRadio(this)">B.Does not return a value</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="AlwaysBoolean" onclick="toggleRadio(this)">C.Always returns boolean</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="UsedForLINQ" onclick="toggleRadio(this)">D.Used for LINQ</input></B><BR><BR>
+
+<h5>Q40:Which of the following is true about Predicate delegate?</h5>
+<B><input type="radio" name="Q40" value="ReturnsValue" onclick="toggleRadio(this)">A.Returns a value of any type</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="NoReturnValue" onclick="toggleRadio(this)">B.Does not return a value</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="AlwaysBoolean" onclick="toggleRadio(this)">C.Always returns a boolean</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="UsedForThreads" onclick="toggleRadio(this)">D.Used for threads</input></B><BR><BR>
+
+<Center><input type="Submit" style="height:49px;width:100px;border:3px solid Blue;color:Green;font-size:21px;Border-radius:21px;"></Center>
+<script src="time1.js"></script><script>
+let R=null;
+function toggleRadio(currentRadio)
+{
+	if(currentRadio===R){
+		currentRadio.checked=false;
+		R=null;
+	}
+	else{
+		R=currentRadio;
+	}}</script>
+</form>
+</div>
+</body>
+</html>

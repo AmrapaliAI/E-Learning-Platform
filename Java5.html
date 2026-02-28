@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+
+body{background-image:url("data-sciences.jpg");Background-Attachment:Fixed;}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>	
+</head>
+<body >
+<BR><BR><div class="D">
+  <a href="index1.html"><img src="Knowledge.jpg" class="logo" alt="Knowledge Logo"></a>
+  <p class="V">Knowledge Check Demonstration</p>
+</div>
+<br>
+
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+<div id="syllabus-content-area">
+  <div class="menu-buttons">
+    <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+    <button class="menu-btn" data-content-id="java-intro-content">Java Introduction</button>
+    <button class="menu-btn" data-content-id="oop-content">Object-Oriented Programming</button>
+    <button class="menu-btn" data-content-id="collections-content">Collections Framework</button>
+    <button class="menu-btn" data-content-id="multithreading-content">Multithreading</button>
+    <button class="menu-btn" data-content-id="jdbc-content">JDBC & Database Connectivity</button>
+    <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+    <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+  </div>
+
+  <div class="syllabus-container">
+    <h2>Course Syllabus: Java Programming</h2>
+
+    <div id="prerequisites-content" class="content-panel active">
+      <h3>Module: Prerequisites (5m)</h3>
+      <ul>
+        <li><b>Basic Computer Knowledge:</b> Understanding of operating systems and command line usage.</li>
+        <li><b>Programming Fundamentals:</b> Familiarity with loops, functions, and basic data structures.</li>
+        <li><b>Environment Setup:</b> Install JDK, configure PATH, and set up an IDE (Eclipse/IntelliJ/VS Code).</li>
+      </ul>
+    </div>
+
+    <div id="java-intro-content" class="content-panel hidden">
+      <h3>Module: Java Introduction</h3>
+      <p>Learn about Java’s history, features, JVM, JRE, and the compilation-execution process. Understand platform independence and bytecode.</p>
+    </div>
+
+    <div id="oop-content" class="content-panel hidden">
+      <h3>Module: Object-Oriented Programming</h3>
+      <p>Explore classes, objects, inheritance, polymorphism, abstraction, and encapsulation. Learn how OOP principles make Java modular and reusable.</p>
+    </div>
+
+    <div id="collections-content" class="content-panel hidden">
+      <h3>Module: Collections Framework</h3>
+      <p>Understand Java Collections such as List, Set, Map, and Queue. Learn about generics, iterators, and utility classes.</p>
+    </div>
+
+    <div id="multithreading-content" class="content-panel hidden">
+      <h3>Module: Multithreading</h3>
+      <p>Learn how to create and manage threads, synchronization, inter-thread communication, and concurrency utilities in Java.</p>
+    </div>
+
+    <div id="jdbc-content" class="content-panel hidden">
+      <h3>Module: JDBC & Database Connectivity</h3>
+      <p>Explore Java Database Connectivity (JDBC), connecting to databases, executing queries, and handling result sets.</p>
+    </div>
+
+    <div id="assessment-content" class="content-panel hidden">
+      <h3>Assessment</h3>
+      <p>Test your knowledge with coding exercises on Java basics, OOP concepts, collections, multithreading, and JDBC.</p>
+    </div>
+
+    <div id="summary-content" class="content-panel hidden">
+      <h3>Summary</h3>
+      <p>Java is a robust, object-oriented, and platform-independent language widely used for enterprise, mobile, and web applications. 
+      With OOP, collections, multithreading, and JDBC, learners gain skills to build scalable and efficient software solutions.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="U">
+<P>
+
+
+
+
+
+ <Center style="font-family:monospace;color:Orange;font-size:31px">Introduction to Java</Center><BR>
+<div id="jdbc-content" class="content-panel active">
+  <h3>Module 6: JDBC & Database Connectivity (Detailed)</h3>
+
+  <h4>1. Introduction to JDBC</h4>
+  <ul>
+    <li>JDBC (Java Database Connectivity) is an API for connecting Java applications to relational databases.</li>
+    <li>Provides a standard interface for executing SQL queries and managing results.</li>
+    <li>Part of the <code>java.sql</code> package.</li>
+  </ul>
+
+  <h4>2. Steps in JDBC</h4>
+  <ol>
+    <li>Load the database driver.</li>
+    <li>Establish a connection using <code>DriverManager</code>.</li>
+    <li>Create a <code>Statement</code> or <code>PreparedStatement</code>.</li>
+    <li>Execute SQL queries.</li>
+    <li>Process results using <code>ResultSet</code>.</li>
+    <li>Close the connection.</li>
+  </ol>
+
+  <h4>3. Key Classes & Interfaces</h4>
+  <ul>
+    <li><b>DriverManager:</b> Manages database drivers and connections.</li>
+    <li><b>Connection:</b> Represents a session with the database.</li>
+    <li><b>Statement:</b> Executes static SQL queries.</li>
+    <li><b>PreparedStatement:</b> Executes parameterized queries, prevents SQL injection.</li>
+    <li><b>ResultSet:</b> Stores results of queries.</li>
+  </ul>
+
+  <h4>4. CRUD Operations</h4>
+  <ul>
+    <li><b>Insert:</b> Add new records.</li>
+    <li><b>Select:</b> Retrieve records.</li>
+    <li><b>Update:</b> Modify existing records.</li>
+    <li><b>Delete:</b> Remove records.</li>
+  </ul>
+  <pre><code>Connection con = DriverManager.getConnection(
+    "jdbc:mysql://localhost:3306/testdb", "root", "password");
+Statement stmt = con.createStatement();
+ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+while(rs.next()) {
+    System.out.println(rs.getString("name"));
+}
+</code></pre>
+
+  <h4>5. Transactions</h4>
+  <ul>
+    <li>Group multiple operations into a single unit of work.</li>
+    <li>Use <code>commit()</code> to save changes.</li>
+    <li>Use <code>rollback()</code> to undo changes if errors occur.</li>
+  </ul>
+
+  <h4>6. Best Practices</h4>
+  <ul>
+    <li>Always close connections, statements, and result sets.</li>
+    <li>Use <code>PreparedStatement</code> to prevent SQL injection.</li>
+    <li>Implement connection pooling for efficiency.</li>
+    <li>Handle exceptions properly with try-catch-finally blocks.</li>
+  </ul>
+
+  <h4>Key Takeaways</h4>
+  <ul>
+    <li>JDBC enables Java applications to interact with databases seamlessly.</li>
+    <li>CRUD operations form the backbone of database programming.</li>
+    <li>Transactions ensure data integrity and consistency.</li>
+    <li>Best practices improve performance and security.</li>
+  </ul>
+</div>
+
+</div>
+</P>
+
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="Java4.html" class="I">Back</a>
+  <a href="test6.html" class="I" Style="margin-left:700px;">Next</a>
+    
+    </div>
+ 
+</body>
+</html>
+
+

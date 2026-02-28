@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>	
+</head>
+<body >
+<BR><BR>
+<div class="D">
+  <a href="index1.html"><img src="Knowledge.jpg" class="logo" alt="Knowledge Logo"></a>
+  <p class="V">Knowledge Check Demonstration</p>
+</div>
+<br>
+
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+<div id="syllabus-content-area">
+  <div class="menu-buttons">
+    <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+    <button class="menu-btn" data-content-id="python-intro-content">Python Introduction</button>
+    <button class="menu-btn" data-content-id="multithreading-content">Multithreading</button>
+    <button class="menu-btn" data-content-id="django-content">Django Framework</button>
+    <button class="menu-btn" data-content-id="tkinter-content">Tkinter GUI</button>
+    <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+    <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+  </div>
+
+  <div class="syllabus-container">
+    <h2>Course Syllabus: Python Programming</h2>
+
+    <div id="prerequisites-content" class="content-panel active">
+      <h3>Module: Prerequisites (5m)</h3>
+      <ul>
+        <li><b>Basic Computer Knowledge:</b> Familiarity with operating systems and command line usage.</li>
+        <li><b>Programming Fundamentals:</b> Understanding of loops, functions, and object-oriented concepts.</li>
+        <li><b>Environment Setup:</b> Install Python 3.x, pip, and a code editor (VS Code/PyCharm).</li>
+      </ul>
+    </div>
+
+    <div id="python-intro-content" class="content-panel hidden">
+      <h3>Module: Python Fundamentals</h3>
+      <p>Learn Python syntax, variables, data types, control structures, functions, and modules. Explore Python’s interpreter and package ecosystem.</p>
+    </div>
+
+    <div id="multithreading-content" class="content-panel hidden">
+      <h3>Module: Multithreading in Python</h3>
+      <p>Understand concurrency, threading module, synchronization, and how to manage parallel tasks efficiently in Python.</p>
+    </div>
+
+    <div id="django-content" class="content-panel hidden">
+      <h3>Module: Django Framework</h3>
+      <p>Explore Django’s MVC architecture, models, views, templates, and ORM. Build dynamic web applications with routing, forms, and authentication.</p>
+    </div>
+
+    <div id="tkinter-content" class="content-panel hidden">
+      <h3>Module: Tkinter GUI Development</h3>
+      <p>Learn how to create desktop applications using Tkinter. Work with widgets, layouts, event handling, and menus.</p>
+    </div>
+
+    <div id="assessment-content" class="content-panel hidden">
+      <h3>Assessment</h3>
+      <p>Test your knowledge with coding exercises on Python basics, multithreading, Django projects, and Tkinter GUI tasks.</p>
+    </div>
+
+    <div id="summary-content" class="content-panel hidden">
+      <h3>Summary</h3>
+      <p>Python is a versatile language used for web development, data science, automation, and GUI applications. 
+      With multithreading, Django, and Tkinter, learners gain skills to build scalable, interactive, and modern applications.</p>
+    </div>
+  </div>
+</div>
+
+<div class="U">
+<P>
+
+
+<Center style="font-family:monospace;color:Orange;font-size:31px">Python</Center><BR>
+
+**Django is a high-level Python web framework designed to make building secure, scalable, and maintainable websites faster and easier. It follows the principle of "Don’t Repeat Yourself" (DRY), meaning developers can reuse components and avoid writing redundant code.**  
+<BR><BR>
+Django is built around the **Model-View-Template (MVT) architecture**, which organizes applications into three main parts. The **Model** defines the structure of your data and interacts with the database. The **View** contains the logic that processes requests and returns responses. The **Template** is responsible for presenting data to users, usually in the form of HTML pages. This separation of concerns makes Django projects easier to manage and extend over time.  
+<BR><BR>
+
+<BR>
+
+### Step 1: Create a Django Project  
+<BR>
+Run this command in your terminal to create a new project:  
+<BR>
+django-admin startproject myproject
+
+<BR>
+This will generate a folder called `myproject` with settings and configuration files.  
+
+<BR>
+
+### Step 2: Create an App  
+Inside the project, create an app called `hello`:  
+<BR>
+python manage.py startapp hello
+
+<BR>
+
+This creates a folder `hello` where you’ll define your logic.  
+
+<BR>
+
+### Step 3: Define a View<BR>  
+In hello/views.py, add the following code: <BR> 
+python<BR>
+from django.http import HttpResponse<BR>
+
+def home(request):<BR>
+    <P Style="Margin-left:67px;">return HttpResponse("Hello, World! Welcome to Django.")</P><BR>
+<BR>
+
+This function returns a simple text response when someone visits the homepage.  
+
+<BR>
+
+### Step 4: Configure URLs  <BR>
+In `myproject/urls.py`, connect the view to a URL:  <BR>
+python<BR>
+from django.contrib import admin<BR>
+from django.urls import path<BR>
+from hello import views<BR>
+
+urlpatterns = [<BR>
+    path('admin/', admin.site.urls),<BR>
+    path('', views.home),  # Homepage points to our view<BR>
+]
+<BR>Now, when you visit the root URL, Django will call the `home` view. <BR> 
+
+Step 5: Run the Server  <BR>
+Start the development server with:  <BR>
+Bash<BR>
+python manage.py runserver
+<BR>
+
+Open your browser and go to `http://127.0.0.1:8000/`. You’ll see the message:<BR>  
+**Hello, World! Welcome to Django.**  
+<BR>
+
+
+<BR><BR>
+This is the simplest Django program, but it demonstrates the **core workflow**:  <BR>
+- Project setup  <BR>
+- App creation <BR> 
+- View definition<BR>  
+- URL routing<BR>  
+- Running the server <BR> 
+
+From here, you can expand by adding **templates** for HTML pages, **models** for database interaction, and more advanced features like forms and authentication.  
+
+One of Django's most powerful features is its **Object-Relational Mapper (ORM)**, which allows developers to interact with databases using Python code instead of SQL queries. This means you can define your database models as Python classes, and Django will automatically generate the necessary SQL commands. Django supports multiple databases such as PostgreSQL, MySQL, SQLite, and Oracle, and switching between them requires minimal changes to your code.  
+<BR><BR>
+Django also comes with a **built-in admin interface**, which is automatically generated from your models. This admin site allows developers and administrators to manage application data without writing custom interfaces. It includes features like authentication, permissions, and CRUD (Create, Read, Update, Delete) operations, saving significant development time.  
+<BR><BR>
+Security is another area where Django excels. It provides protection against common web vulnerabilities such as SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF). It also includes a robust authentication system with user accounts, groups, and permissions. Because of these built-in safeguards, Django is trusted by large organizations and is used to power websites like Instagram, Pinterest, and Mozilla.  
+<BR><BR>
+Beyond the basics, Django supports advanced features such as **middleware**, which lets you process requests globally before they reach views, and **signals**, which allow different parts of your application to communicate when certain events occur. It also integrates well with third-party packages, enabling developers to add functionality like REST APIs (using Django REST Framework), payment gateways, or real-time communication.  
+<BR><BR>
+In practice, Django is ideal for projects ranging from small websites to enterprise-level applications. Its emphasis on rapid development, security, and scalability makes it a go-to choice for developers who want to build robust applications without reinventing the wheel.  
+
+
+
+
+
+</P>
+</Div>
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="Python1.html" class="I">Back</a>
+  <a href="Python3.html" class="I" Style="margin-left:700px;">Next</a></div>
+    
+</body>
+</html>
+
+

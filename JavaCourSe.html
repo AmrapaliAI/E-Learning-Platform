@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Style> .D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+   
+.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:140px;text-Decoration:None;font-Size:41px;}
+	</Style>
+
+<title>Insert title here</title>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">	
+</head>
+<body >
+
+            
+            
+          
+            <BR><BR><button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+<div id="syllabus-content-area">
+
+    <div class="menu-buttons">
+        <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+        <button class="menu-btn" data-content-id="jsp-intro-content">JSP Introduction</button>
+        <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+        <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+    </div>
+
+    <div class="syllabus-container">
+        <h2>Course Syllabus: JavaServer Pages</h2>
+
+        <div id="prerequisites-content" class="content-panel active">
+            <h3>Module: Prerequisites (5m)</h3>
+            <ul>
+                <li>*Basic Java JSP Setup:* Ensure environment is configured.</li>
+                <li>*Review:* Understanding JSP Syntax, Use, HTTP Protocol, Client-Server Model.</li>
+            </ul>
+        </div>
+
+        <div id="jsp-intro-content" class="content-panel hidden">
+            <h3>Module: JSP Fundamentals</h3>
+            <p>Exploring the JSP architecture and implicit objects.</p>
+        </div>
+			<div id="assessment-content" class="content-panel hidden">
+            <h3>Assessment</h3>
+            <p>Check Your Gained Knowledge.</p>
+        </div><div id="summary-content" class="content-panel hidden">
+            <h3>Summary</h3>
+            <p>JSP is a Server-Side technology used to create dynamic,data-driven web pages. it is an integral part of the Java EE platform.</p>
+        </div>
+        
+			
+        </div>
+</div>
+
+
+		<BR>
+<div class="U">
+<P>
+
+
+<Center style="font-family:monospace;color:Orange;font-size:31px">JavaServer Pages</Center><BR>
+1. Introduction to JSP 
+<BR><audio controls>
+  <source src="JSP.mp3" type="audio/mpeg">
+ 
+  
+</audio><BR><BR>
+JavaServer Pages (JSP) is a server-side technology that enables the creation of dynamic web content using Java. It allows developers to embed Java code directly into HTML pages, making it easier to build interactive and data-driven websites.
+<BR><BR>
+2. How JSP Works
+When a user requests a JSP page, the server compiles it into a servlet. This servlet processes the embedded Java code and generates HTML output, which is sent back to the user's browser. This process happens on the server side, ensuring secure and efficient execution.
+
+
+<BR><BR>
+3. Advantages of JSP 
+JSP simplifies web development by separating presentation from business logic. Designers can focus on HTML layout, while developers handle backend logic using JavaBeans or Servlets. This separation improves code maintainability and collaboration.
+<BR><BR>
+4. JSP vs Servlets  
+While both JSP and Servlets are part of Java EE, JSP is more suitable for presentation logic, whereas Servlets are better for handling requests and responses. JSP offers a more readable and HTML-friendly syntax compared to Servlets.
+
+<BR><BR>
+5. Implicit Objects in JSP 
+JSP provides several built-in objects like `request`, `response`, `session`, `application`, and `out`. These objects simplify access to web context and user data, making development faster and more intuitive.
+
+<BR><BR>
+6. Expression Language (EL)  
+EL allows easy access to data stored in JavaBeans, maps, lists, and request/session attributes. It simplifies the syntax and reduces the need for scriptlets, making JSP pages cleaner and easier to read.
+
+<BR><BR>
+7. JSP Directives and Tags  
+JSP uses directives like <%-- <%@ page %>`, `<%@ include %>`, and `<%@ taglib %>`--%> to control page behavior. It also supports standard and custom tags for tasks like looping, conditionals, and data display.
+<BR><BR>
+8. Integration with JavaBeans  
+JSP can interact with JavaBeans to encapsulate business logic and data. This promotes modular design and reuse of components across multiple pages.
+<BR><BR>
+9. Deployment and Compatibility  
+JSP pages can be deployed on any Java EE-compliant server such as Apache Tomcat. They are platform-independent and integrate seamlessly with other Java technologies like JDBC and EJB.
+<BR><BR>
+10. Real-World Applications 
+JSP is widely used in enterprise applications for building user interfaces, handling form submissions, displaying database records, and managing sessions. Its flexibility and power make it a reliable choice for scalable web development.
+<BR><BR>
+Sample JSP Program
+
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!--<html>
+<head>
+    <title>Simple JSP Example</title>
+</head>
+<body>
+   
+    <%
+        String name = "Visitor";
+        out.println("Hello, " + name + "! This is your first JSP page.");
+    %>
+</body>
+</html>-->
+<BR><BR>
+</div>
+</P>
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="Frame.jsp" class="I">Back</a>
+  <a href="JSP2.html" class="I" Style="margin-left:700px;">Next</a>
+    
+    </div>
+ 
+</body>
+</html>
+
+

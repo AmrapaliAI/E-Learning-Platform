@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning Portal</title>
+<link rel="stylesheet" type="text/css" href="list.css">
+</head>
+<body>
+
+<!-- Fixed header -->
+<div class="top-fixed">
+ 
+
+  <div class="menu-bar">
+    <button class="menu-btn" onclick="loadContent('JavaCourSe.html')">📚 Notes</button>
+    
+    <button class="menu-btn" onclick="loadContent('QuizStartServlet?course=JSP/Servlet&id=1')">📝 Quiz</button>
+    <button class="menu-btn" onclick="window.location.href='Scroll.jsp'">🚪 Exit</button>
+  </div>
+</div>
+
+
+<!-- Content iframe wrapper -->
+<div class="content-wrapper">
+  <iframe id="content-frame" src="" name="A" title="Learning Content"></iframe>
+</div>
+
+<script>
+  function loadContent(page) {
+    const iframe = document.getElementById("content-frame");
+    iframe.src = page;
+    
+    // Add loading effect
+    iframe.style.opacity = '0.5';
+    iframe.onload = function() {
+      iframe.style.transition = 'opacity 0.3s ease';
+      iframe.style.opacity = '1';
+    };
+  }
+
+  // Auto-load first content on page load
+
+</script>
+
+</body>
+</html>

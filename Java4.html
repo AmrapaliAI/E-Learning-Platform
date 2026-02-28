@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+
+body{background-image:url("data-sciences.jpg");Background-Attachment:Fixed;}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>	
+</head>
+<body >
+<BR><BR><div class="D">
+  <a href="index1.html"><img src="Knowledge.jpg" class="logo" alt="Knowledge Logo"></a>
+  <p class="V">Knowledge Check Demonstration</p>
+</div>
+<br>
+
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+<div id="syllabus-content-area">
+  <div class="menu-buttons">
+    <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+    <button class="menu-btn" data-content-id="java-intro-content">Java Introduction</button>
+    <button class="menu-btn" data-content-id="oop-content">Object-Oriented Programming</button>
+    <button class="menu-btn" data-content-id="collections-content">Collections Framework</button>
+    <button class="menu-btn" data-content-id="multithreading-content">Multithreading</button>
+    <button class="menu-btn" data-content-id="jdbc-content">JDBC & Database Connectivity</button>
+    <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+    <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+  </div>
+
+  <div class="syllabus-container">
+    <h2>Course Syllabus: Java Programming</h2>
+
+    <div id="prerequisites-content" class="content-panel active">
+      <h3>Module: Prerequisites (5m)</h3>
+      <ul>
+        <li><b>Basic Computer Knowledge:</b> Understanding of operating systems and command line usage.</li>
+        <li><b>Programming Fundamentals:</b> Familiarity with loops, functions, and basic data structures.</li>
+        <li><b>Environment Setup:</b> Install JDK, configure PATH, and set up an IDE (Eclipse/IntelliJ/VS Code).</li>
+      </ul>
+    </div>
+
+    <div id="java-intro-content" class="content-panel hidden">
+      <h3>Module: Java Introduction</h3>
+      <p>Learn about Java’s history, features, JVM, JRE, and the compilation-execution process. Understand platform independence and bytecode.</p>
+    </div>
+
+    <div id="oop-content" class="content-panel hidden">
+      <h3>Module: Object-Oriented Programming</h3>
+      <p>Explore classes, objects, inheritance, polymorphism, abstraction, and encapsulation. Learn how OOP principles make Java modular and reusable.</p>
+    </div>
+
+    <div id="collections-content" class="content-panel hidden">
+      <h3>Module: Collections Framework</h3>
+      <p>Understand Java Collections such as List, Set, Map, and Queue. Learn about generics, iterators, and utility classes.</p>
+    </div>
+
+    <div id="multithreading-content" class="content-panel hidden">
+      <h3>Module: Multithreading</h3>
+      <p>Learn how to create and manage threads, synchronization, inter-thread communication, and concurrency utilities in Java.</p>
+    </div>
+
+    <div id="jdbc-content" class="content-panel hidden">
+      <h3>Module: JDBC & Database Connectivity</h3>
+      <p>Explore Java Database Connectivity (JDBC), connecting to databases, executing queries, and handling result sets.</p>
+    </div>
+
+    <div id="assessment-content" class="content-panel hidden">
+      <h3>Assessment</h3>
+      <p>Test your knowledge with coding exercises on Java basics, OOP concepts, collections, multithreading, and JDBC.</p>
+    </div>
+
+    <div id="summary-content" class="content-panel hidden">
+      <h3>Summary</h3>
+      <p>Java is a robust, object-oriented, and platform-independent language widely used for enterprise, mobile, and web applications. 
+      With OOP, collections, multithreading, and JDBC, learners gain skills to build scalable and efficient software solutions.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="U">
+<P>
+
+
+
+
+
+ <Center style="font-family:monospace;color:Orange;font-size:31px">Introduction to Java</Center><BR>
+<div id="multithreading-content" class="content-panel active">
+  <h3>Module 5: Multithreading (Detailed)</h3>
+
+  <h4>1. Introduction to Multithreading</h4>
+  <ul>
+    <li>Multithreading allows concurrent execution of two or more parts of a program.</li>
+    <li>Improves performance and responsiveness of applications.</li>
+    <li>Each thread runs independently but shares process resources.</li>
+  </ul>
+
+  <h4>2. Creating Threads</h4>
+  <ul>
+    <li><b>Extending Thread Class:</b> Override the <code>run()</code> method.</li>
+    <li><b>Implementing Runnable Interface:</b> Pass object to <code>Thread</code> constructor.</li>
+  </ul>
+  <pre><code>class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread running...");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        MyThread t1 = new MyThread();
+        t1.start();
+    }
+}
+</code></pre>
+
+  <h4>3. Thread Lifecycle</h4>
+  <ul>
+    <li>New → Runnable → Running → Waiting/Blocked → Terminated.</li>
+    <li>Managed by JVM scheduler.</li>
+  </ul>
+
+  <h4>4. Synchronization</h4>
+  <ul>
+    <li>Ensures safe access to shared resources.</li>
+    <li>Use <code>synchronized</code> methods or blocks.</li>
+  </ul>
+  <pre><code>class Counter {
+    private int count = 0;
+    public synchronized void increment() {
+        count++;
+    }
+}
+</code></pre>
+
+  <h4>5. Inter-thread Communication</h4>
+  <ul>
+    <li>Methods: <code>wait()</code>, <code>notify()</code>, <code>notifyAll()</code>.</li>
+    <li>Used for coordination between threads.</li>
+  </ul>
+
+  <h4>6. Concurrency Utilities</h4>
+  <ul>
+    <li><b>ExecutorService:</b> Manages thread pools.</li>
+    <li><b>Callable & Future:</b> Return results from threads.</li>
+    <li><b>Concurrent Collections:</b> e.g., <code>ConcurrentHashMap</code>.</li>
+  </ul>
+
+  <h4>7. Practical Use Cases</h4>
+  <ul>
+    <li>Background tasks (file download, logging).</li>
+    <li>Parallel processing (large computations).</li>
+    <li>Responsive applications (UI + worker threads).</li>
+  </ul>
+
+  <h4>Key Takeaways</h4>
+  <ul>
+    <li>Multithreading improves efficiency and responsiveness.</li>
+    <li>Synchronization prevents race conditions.</li>
+    <li>Concurrency utilities simplify thread management.</li>
+  </ul>
+</div>
+
+</div>
+</P>
+
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="Java3.html" class="I">Back</a>
+  <a href="Java5.html" class="I" Style="margin-left:700px;">Next</a>
+    
+    </div>
+ 
+</body>
+</html>
+
+

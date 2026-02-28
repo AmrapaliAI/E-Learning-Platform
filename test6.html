@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+#quiz-timer {
+            color: red;font-size:21px;}
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	B{
+	font-size:19px;}
+	</style>
+</head>
+<body>
+<BR><BR>
+
+<div  id="quiz-timer">time Remaining:13:00</div>
+<HR>
+<form class="U" action="Check6">
+
+<h5>Q1: What does HTML stand for?</h5>
+<B><input type="radio" name="Q1" value="HyperText Markup Language" onclick="toggleRadio(this)">A. HyperText Markup Language</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="HighText Machine Language" onclick="toggleRadio(this)">B. HighText Machine Language</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Hyper Transfer Markup Language" onclick="toggleRadio(this)">C. Hyper Transfer Markup Language</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="None" onclick="toggleRadio(this)">D. None of the above</input></B><BR><BR>
+
+<h5>Q2: Which tag is used to define a paragraph?</h5>
+<B><input type="radio" name="Q2" value="&lt;para&gt;" onclick="toggleRadio(this)">A. &lt;para&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="&lt;p&gt;" onclick="toggleRadio(this)">B. &lt;p&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="&lt;text&gt;" onclick="toggleRadio(this)">C. &lt;text&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="&lt;pg&gt;" onclick="toggleRadio(this)">D. &lt;pg&gt;</input></B><BR><BR>
+
+<h5>Q3: Which element is used to insert an image?</h5>
+<B><input type="radio" name="Q3" value="&lt;img&gt;" onclick="toggleRadio(this)">A. &lt;img&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="&lt;image&gt;" onclick="toggleRadio(this)">B. &lt;image&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="&lt;picture&gt;" onclick="toggleRadio(this)">C. &lt;picture&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="&lt;src&gt;" onclick="toggleRadio(this)">D. &lt;src&gt;</input></B><BR><BR>
+
+<h5>Q4: Which tag is used to create a hyperlink?</h5>
+<B><input type="radio" name="Q4" value="&lt;link&gt;" onclick="toggleRadio(this)">A. &lt;link&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="&lt;a&gt;" onclick="toggleRadio(this)">B. &lt;a&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="&lt;href&gt;" onclick="toggleRadio(this)">C. &lt;href&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="&lt;hyper&gt;" onclick="toggleRadio(this)">D. &lt;hyper&gt;</input></B><BR><BR>
+
+<h5>Q5: Which HTML5 element defines navigation links?</h5>
+<B><input type="radio" name="Q5" value="&lt;nav&gt;" onclick="toggleRadio(this)">A. &lt;nav&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="&lt;menu&gt;" onclick="toggleRadio(this)">B. &lt;menu&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="&lt;header&gt;" onclick="toggleRadio(this)">C. &lt;header&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="&lt;footer&gt;" onclick="toggleRadio(this)">D. &lt;footer&gt;</input></B><BR><BR>
+
+<!-- ================= CSS MCQs ================= -->
+<h5>Q6: What does CSS stand for?</h5>
+<B><input type="radio" name="Q6" value="Cascading Style Sheets" onclick="toggleRadio(this)">A. Cascading Style Sheets</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Creative Style System" onclick="toggleRadio(this)">B. Creative Style System</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Computer Style Sheets" onclick="toggleRadio(this)">C. Computer Style Sheets</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Colorful Style Sheets" onclick="toggleRadio(this)">D. Colorful Style Sheets</input></B><BR><BR>
+
+<h5>Q7: Which property controls text size?</h5>
+<B><input type="radio" name="Q7" value="font-style" onclick="toggleRadio(this)">A. font-style</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="font-size" onclick="toggleRadio(this)">B. font-size</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="text-size" onclick="toggleRadio(this)">C. text-size</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="size" onclick="toggleRadio(this)">D. size</input></B><BR><BR>
+
+<h5>Q8: Which layout system is best for one-dimensional layouts?</h5>
+<B><input type="radio" name="Q8" value="Flexbox" onclick="toggleRadio(this)">A. Flexbox</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Grid" onclick="toggleRadio(this)">B. Grid</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Float" onclick="toggleRadio(this)">C. Float</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Inline-block" onclick="toggleRadio(this)">D. Inline-block</input></B><BR><BR>
+
+<h5>Q9: Which property changes text color?</h5>
+<B><input type="radio" name="Q9" value="background-color" onclick="toggleRadio(this)">A. background-color</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="text-color" onclick="toggleRadio(this)">B. text-color</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="color" onclick="toggleRadio(this)">C. color</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="font-color" onclick="toggleRadio(this)">D. font-color</input></B><BR><BR>
+
+<h5>Q10: Which property controls spacing outside an element?</h5>
+<B><input type="radio" name="Q10" value="padding" onclick="toggleRadio(this)">A. padding</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="margin" onclick="toggleRadio(this)">B. margin</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="border" onclick="toggleRadio(this)">C. border</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="spacing" onclick="toggleRadio(this)">D. spacing</input></B><BR><BR>
+
+<!-- ================= JavaScript MCQs ================= -->
+<h5>Q11: What does JavaScript add to web pages?</h5>
+<B><input type="radio" name="Q11" value="Structure" onclick="toggleRadio(this)">A. Structure</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Styling" onclick="toggleRadio(this)">B. Styling</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Interactivity" onclick="toggleRadio(this)">C. Interactivity</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="None" onclick="toggleRadio(this)">D. None of the above</input></B><BR><BR>
+
+<!-- ================= JavaScript MCQs ================= -->
+
+<h5>Q12: Which keyword declares a block-scoped variable in JavaScript?</h5>
+<B><input type="radio" name="Q12" value="var" onclick="toggleRadio(this)">A. var</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="let" onclick="toggleRadio(this)">B. let</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="const" onclick="toggleRadio(this)">C. const</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="define" onclick="toggleRadio(this)">D. define</input></B><BR><BR>
+
+<h5>Q13: Which method selects the first matching element in the DOM?</h5>
+<B><input type="radio" name="Q13" value="getElementById()" onclick="toggleRadio(this)">A. getElementById()</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="querySelector()" onclick="toggleRadio(this)">B. querySelector()</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="getElementsByClassName()" onclick="toggleRadio(this)">C. getElementsByClassName()</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="queryAll()" onclick="toggleRadio(this)">D. queryAll()</input></B><BR><BR>
+
+<h5>Q14: Which event is triggered when a user clicks an element?</h5>
+<B><input type="radio" name="Q14" value="onchange" onclick="toggleRadio(this)">A. onchange</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="onmouseover" onclick="toggleRadio(this)">B. onmouseover</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="onclick" onclick="toggleRadio(this)">C. onclick</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="onload" onclick="toggleRadio(this)">D. onload</input></B><BR><BR>
+
+<h5>Q15: Which operator is used for strict equality in JavaScript?</h5>
+<B><input type="radio" name="Q15" value="==" onclick="toggleRadio(this)">A. ==</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="===" onclick="toggleRadio(this)">B. ===</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="!=" onclick="toggleRadio(this)">C. !=</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="=>" onclick="toggleRadio(this)">D. =></input></B><BR><BR>
+
+<h5>Q16: Which feature was introduced in ES6?</h5>
+<B><input type="radio" name="Q16" value="Arrow Functions" onclick="toggleRadio(this)">A. Arrow Functions</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="Classes" onclick="toggleRadio(this)">B. Classes</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="Template Literals" onclick="toggleRadio(this)">C. Template Literals</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="All of the above" onclick="toggleRadio(this)">D. All of the above</input></B><BR><BR>
+
+<h5>Q17: Which method is used to convert JSON string into JavaScript object?</h5>
+<B><input type="radio" name="Q17" value="JSON.parse()" onclick="toggleRadio(this)">A. JSON.parse()</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="JSON.stringify()" onclick="toggleRadio(this)">B. JSON.stringify()</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="JSON.convert()" onclick="toggleRadio(this)">C. JSON.convert()</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="parseJSON()" onclick="toggleRadio(this)">D. parseJSON()</input></B><BR><BR>
+
+<h5>Q18: Which storage mechanism allows saving data across browser sessions?</h5>
+<B><input type="radio" name="Q18" value="SessionStorage" onclick="toggleRadio(this)">A. SessionStorage</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="LocalStorage" onclick="toggleRadio(this)">B. LocalStorage</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="Cookies" onclick="toggleRadio(this)">C. Cookies</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="Cache" onclick="toggleRadio(this)">D. Cache</input></B><BR><BR>
+
+<h5>Q19: Which keyword is used to handle errors in JavaScript?</h5>
+<B><input type="radio" name="Q19" value="catch" onclick="toggleRadio(this)">A. catch</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="error" onclick="toggleRadio(this)">B. error</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="throw" onclick="toggleRadio(this)">C. throw</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="try...catch" onclick="toggleRadio(this)">D. try...catch</input></B><BR><BR>
+
+<h5>Q20: Which API is used to fetch data from servers?</h5>
+<B><input type="radio" name="Q20" value="Fetch API" onclick="toggleRadio(this)">A. Fetch API</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="LocalStorage API" onclick="toggleRadio(this)">B. LocalStorage API</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="Session API" onclick="toggleRadio(this)">C. Session API</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="Cache API" onclick="toggleRadio(this)">D. Cache API</input></B><BR><BR>
+
+<!-- ================= JavaScript in Browser MCQs ================= -->
+
+<h5>Q21: What does DOM stand for?</h5>
+<B><input type="radio" name="Q21" value="Document Object Model" onclick="toggleRadio(this)">A. Document Object Model</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="Data Object Method" onclick="toggleRadio(this)">B. Data Object Method</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="Document Order Map" onclick="toggleRadio(this)">C. Document Order Map</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="None" onclick="toggleRadio(this)">D. None of the above</input></B><BR><BR>
+
+<h5>Q22: Which property returns the parent node of an element?</h5>
+<B><input type="radio" name="Q22" value="parentNode" onclick="toggleRadio(this)">A. parentNode</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="childNode" onclick="toggleRadio(this)">B. childNode</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="nextSibling" onclick="toggleRadio(this)">C. nextSibling</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="previousNode" onclick="toggleRadio(this)">D. previousNode</input></B><BR><BR>
+
+<h5>Q23: Which method creates a new HTML element?</h5>
+<B><input type="radio" name="Q23" value="createElement()" onclick="toggleRadio(this)">A. createElement()</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="appendChild()" onclick="toggleRadio(this)">B. appendChild()</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="newElement()" onclick="toggleRadio(this)">C. newElement()</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="insertElement()" onclick="toggleRadio(this)">D. insertElement()</input></B><
+
+
+<!-- ================= JavaScript in Browser MCQs ================= -->
+
+<h5>Q24: Which method adds a new child node to a parent element?</h5>
+<B><input type="radio" name="Q24" value="appendChild()" onclick="toggleRadio(this)">A. appendChild()</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="createChild()" onclick="toggleRadio(this)">B. createChild()</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="insertNode()" onclick="toggleRadio(this)">C. insertNode()</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="addNode()" onclick="toggleRadio(this)">D. addNode()</input></B><BR><BR>
+
+<h5>Q25: What is event bubbling in JavaScript?</h5>
+<B><input type="radio" name="Q25" value="Event flows from child to parent" onclick="toggleRadio(this)">A. Event flows from child to parent</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="Event flows from parent to child" onclick="toggleRadio(this)">B. Event flows from parent to child</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="Event stops at target" onclick="toggleRadio(this)">C. Event stops at target</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="Event only triggers once" onclick="toggleRadio(this)">D. Event only triggers once</input></B><BR><BR>
+
+<h5>Q26: Which technique allows handling events efficiently on multiple child elements?</h5>
+<B><input type="radio" name="Q26" value="Event Delegation" onclick="toggleRadio(this)">A. Event Delegation</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="Event Bubbling" onclick="toggleRadio(this)">B. Event Bubbling</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="Event Capturing" onclick="toggleRadio(this)">C. Event Capturing</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="Event Loop" onclick="toggleRadio(this)">D. Event Loop</input></B><BR><BR>
+
+<h5>Q27: Which method is used to change the text inside an element?</h5>
+<B><input type="radio" name="Q27" value="innerHTML" onclick="toggleRadio(this)">A. innerHTML</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="textContent" onclick="toggleRadio(this)">B. textContent</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="innerText" onclick="toggleRadio(this)">C. innerText</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="All of the above" onclick="toggleRadio(this)">D. All of the above</input></B><BR><BR>
+
+<h5>Q28: Which method is used to fetch data from an API?</h5>
+<B><input type="radio" name="Q28" value="fetch()" onclick="toggleRadio(this)">A. fetch()</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="getData()" onclick="toggleRadio(this)">B. getData()</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="ajax()" onclick="toggleRadio(this)">C. ajax()</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="request()" onclick="toggleRadio(this)">D. request()</input></B><BR><BR>
+
+<h5>Q29: Which format is commonly used for API data exchange?</h5>
+<B><input type="radio" name="Q29" value="XML" onclick="toggleRadio(this)">A. XML</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="JSON" onclick="toggleRadio(this)">B. JSON</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="CSV" onclick="toggleRadio(this)">C. CSV</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="HTML" onclick="toggleRadio(this)">D. HTML</input></B><BR><BR>
+
+<h5>Q30: Which method converts a JavaScript object into a JSON string?</h5>
+<B><input type="radio" name="Q30" value="JSON.stringify()" onclick="toggleRadio(this)">A. JSON.stringify()</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="JSON.parse()" onclick="toggleRadio(this)">B. JSON.parse()</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="objectToJSON()" onclick="toggleRadio(this)">C. objectToJSON()</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="stringifyJSON()" onclick="toggleRadio(this)">D. stringifyJSON()</input></B><BR><BR>
+
+<h5>Q31: Which method removes the last element from an array?</h5>
+<B><input type="radio" name="Q31" value="pop()" onclick="toggleRadio(this)">A. pop()</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="push()" onclick="toggleRadio(this)">B. push()</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="shift()" onclick="toggleRadio(this)">C. shift()</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="splice()" onclick="toggleRadio(this)">D. splice()</input></B><BR><BR>
+
+<h5>Q32: Which loop is best for iterating over arrays?</h5>
+<B><input type="radio" name="Q32" value="for loop" onclick="toggleRadio(this)">A. for loop</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="while loop" onclick="toggleRadio(this)">B. while loop</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="for...of loop" onclick="toggleRadio(this)">C. for...of loop</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="do...while loop" onclick="toggleRadio(this)">D. do...while loop</input></B><BR><BR>
+
+<h5>Q33: Which keyword is used to define a JavaScript class?</h5>
+<B><input type="radio" name="Q33" value="class" onclick="toggleRadio(this)">A. class</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="function" onclick="toggleRadio(this)">B. function</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="object" onclick="toggleRadio(this)">C. object</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="define" onclick="toggleRadio(this)">D. define</input></B><BR><BR>
+
+<h5>Q34: Which keyword is used to inherit from another class?</h5>
+<B><input type="radio" name="Q34" value="extends" onclick="toggleRadio(this)">A. extends</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="inherits" onclick="toggleRadio(this)">B. inherits</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="superclass" onclick="toggleRadio(this)">C. superclass</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="prototype" onclick="toggleRadio(this)">D. prototype</input></B><BR><BR>
+
+<h5>Q35: Which statement is used to stop a loop in JavaScript?</h5>
+<B><input type="radio" name="Q35" value="break" onclick="toggleRadio(this)">A. break</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="stop" onclick="toggleRadio(this)">B. stop</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="exit" onclick="toggleRadio(this)">C. exit</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="halt" onclick="toggleRadio(this)">D. halt</input></B><BR><BR>
+
+<h5>Q36: Which statement is used to skip the current iteration of a loop?</h5>
+<B><input type="radio" name="Q36" value="break" onclick="toggleRadio(this)">A. break</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="continue" onclick="toggleRadio(this)">B. continue</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="skip" onclick="toggleRadio(this)">C. skip</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="next" onclick="toggleRadio(this)">D. next</input></B><BR><BR>
+
+<h5>Q37: Which method adds an element at the end of an array?</h5>
+<B><input type="radio" name="Q37" value="push()" onclick="toggleRadio(this)">A. push()</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="pop()" onclick="toggleRadio(this)">B. pop()</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="shift()" onclick="toggleRadio(this)">C. shift()</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="unshift()" onclick="toggleRadio(this)">D. unshift()</input></B><BR><BR>
+
+<h5>Q38: Which JavaScript function is used to print messages to the console?</h5>
+<B><input type="radio" name="Q38" value="alert()" onclick="toggleRadio(this)">A. alert()</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="console.log()" onclick="toggleRadio(this)">B. console.log()</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="print()" onclick="toggleRadio(this)">C. print()</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="document.write()" onclick="toggleRadio(this)">D. document.write()</input></B><BR><BR>
+
+<h5>Q39: Which JavaScript method is used to attach an event handler to an element?</h5>
+<B><input type="radio" name="Q39" value="addEventListener()" onclick="toggleRadio(this)">A. addEventListener()</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="attachEvent()" onclick="toggleRadio(this)">B. attachEvent()</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="onEvent()" onclick="toggleRadio(this)">C. onEvent()</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="bindEvent()" onclick="toggleRadio(this)">D. bindEvent()</input></B><BR><BR>
+
+<h5>Q40: Which JavaScript object is used to work with browser windows?</h5>
+<B><input type="radio" name="Q40" value="document" onclick="toggleRadio(this)">A. document</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="window" onclick="toggleRadio(this)">B. window</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="navigator" onclick="toggleRadio(this)">C. navigator</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="screen" onclick="toggleRadio(this)">D. screen</input></B><BR><BR>
+
+
+<h5>Q1: Which of the following is a primary feature of Java?</h5>
+<B><input type="radio" name="Q1" value="Platform Independent" onclick="toggleRadio(this)">A. Platform Independent</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Machine Dependent" onclick="toggleRadio(this)">B. Machine Dependent</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Not Secure" onclick="toggleRadio(this)">C. Not Secure</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Low Level" onclick="toggleRadio(this)">D. Low Level</input></B><BR><BR>
+
+<h5>Q2: Which component executes Java bytecode?</h5>
+<B><input type="radio" name="Q2" value="JVM" onclick="toggleRadio(this)">A. JVM</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="JDK" onclick="toggleRadio(this)">B. JDK</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="Compiler" onclick="toggleRadio(this)">C. Compiler</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="OS" onclick="toggleRadio(this)">D. Operating System</input></B><BR><BR>
+
+<h5>Q3: Which keyword is used to define a class in Java?</h5>
+<B><input type="radio" name="Q3" value="class" onclick="toggleRadio(this)">A. class</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="object" onclick="toggleRadio(this)">B. object</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="define" onclick="toggleRadio(this)">C. define</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="new" onclick="toggleRadio(this)">D. new</input></B><BR><BR>
+
+<h5>Q4: Which of the following is NOT a primitive data type in Java?</h5>
+<B><input type="radio" name="Q4" value="int" onclick="toggleRadio(this)">A. int</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="String" onclick="toggleRadio(this)">B. String</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="boolean" onclick="toggleRadio(this)">C. boolean</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="double" onclick="toggleRadio(this)">D. double</input></B><BR><BR>
+
+<h5>Q5: Which operator is used for logical AND in Java?</h5>
+<B><input type="radio" name="Q5" value="&&" onclick="toggleRadio(this)">A. &&</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="||" onclick="toggleRadio(this)">B. ||</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="!" onclick="toggleRadio(this)">C. !</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="&" onclick="toggleRadio(this)">D. &</input></B><BR><BR>
+
+<!-- Module 3: OOP -->
+<h5>Q6: Which OOP concept allows code reuse through hierarchy?</h5>
+<B><input type="radio" name="Q6" value="Inheritance" onclick="toggleRadio(this)">A. Inheritance</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Polymorphism" onclick="toggleRadio(this)">B. Polymorphism</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Encapsulation" onclick="toggleRadio(this)">C. Encapsulation</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Abstraction" onclick="toggleRadio(this)">D. Abstraction</input></B><BR><BR>
+
+<h5>Q7: Which keyword is used to inherit a class in Java?</h5>
+<B><input type="radio" name="Q7" value="extends" onclick="toggleRadio(this)">A. extends</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="implements" onclick="toggleRadio(this)">B. implements</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="inherits" onclick="toggleRadio(this)">C. inherits</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="super" onclick="toggleRadio(this)">D. super</input></B><BR><BR>
+
+<h5>Q8: Which OOP principle hides implementation details?</h5>
+<B><input type="radio" name="Q8" value="Abstraction" onclick="toggleRadio(this)">A. Abstraction</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Encapsulation" onclick="toggleRadio(this)">B. Encapsulation</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Inheritance" onclick="toggleRadio(this)">C. Inheritance</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Polymorphism" onclick="toggleRadio(this)">D. Polymorphism</input></B><BR><BR>
+
+<h5>Q9: Which access modifier makes a member visible only within the same class?</h5>
+<B><input type="radio" name="Q9" value="private" onclick="toggleRadio(this)">A. private</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="public" onclick="toggleRadio(this)">B. public</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="protected" onclick="toggleRadio(this)">C. protected</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="default" onclick="toggleRadio(this)">D. default</input></B><BR><BR>
+
+<h5>Q10: Which OOP concept allows the same method name with different implementations?</h5>
+<B><input type="radio" name="Q10" value="Polymorphism" onclick="toggleRadio(this)">A. Polymorphism</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="Inheritance" onclick="toggleRadio(this)">B. Inheritance</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="Encapsulation" onclick="toggleRadio(this)">C. Encapsulation</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="Abstraction" onclick="toggleRadio(this)">D. Abstraction</input></B><BR><BR>
+
+<h5>Q11: Which interface allows duplicate elements and maintains order?</h5>
+<B><input type="radio" name="Q11" value="List" onclick="toggleRadio(this)">A. List</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Set" onclick="toggleRadio(this)">B. Set</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Map" onclick="toggleRadio(this)">C. Map</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Queue" onclick="toggleRadio(this)">D. Queue</input></B><BR><BR>
+
+<h5>Q12: Which collection does not allow duplicate elements?</h5>
+<B><input type="radio" name="Q12" value="Set" onclick="toggleRadio(this)">A. Set</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="List" onclick="toggleRadio(this)">B. List</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="Map" onclick="toggleRadio(this)">C. Map</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="ArrayList" onclick="toggleRadio(this)">D. ArrayList</input></B><BR><BR>
+
+<h5>Q13: Which class implements a dynamic array?</h5>
+<B><input type="radio" name="Q13" value="ArrayList" onclick="toggleRadio(this)">A. ArrayList</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="LinkedList" onclick="toggleRadio(this)">B. LinkedList</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="HashSet" onclick="toggleRadio(this)">C. HashSet</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="TreeSet" onclick="toggleRadio(this)">D. TreeSet</input></B><BR><BR>
+
+<h5>Q14: Which collection stores key-value pairs?</h5>
+<B><input type="radio" name="Q14" value="Map" onclick="toggleRadio(this)">A. Map</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="List" onclick="toggleRadio(this)">B. List</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="Set" onclick="toggleRadio(this)">C. Set</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="Queue" onclick="toggleRadio(this)">D. Queue</input></B><BR><BR>
+
+<h5>Q15: Which utility class provides methods like sort() and shuffle()?</h5>
+<B><input type="radio" name="Q15" value="Collections" onclick="toggleRadio(this)">A. Collections</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="Arrays" onclick="toggleRadio(this)">B. Arrays</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="List" onclick="toggleRadio(this)">C. List</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="HashMap" onclick="toggleRadio(this)">D. HashMap</input></B><BR><BR>
+
+<!-- Module 5: Multithreading -->
+<h5>Q16: Which method starts a thread in Java?</h5>
+<B><input type="radio" name="Q16" value="start()" onclick="toggleRadio(this)">A. start()</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="run()" onclick="toggleRadio(this)">B. run()</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="execute()" onclick="toggleRadio(this)">C. execute()</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="begin()" onclick="toggleRadio(this)">D. begin()</input></B><BR><BR>
+
+<h5>Q17: Which interface is used to create a thread?</h5>
+<B><input type="radio" name="Q17" value="Runnable" onclick="toggleRadio(this)">A. Runnable</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="Threadable" onclick="toggleRadio(this)">B. Threadable</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="Callable" onclick="toggleRadio(this)">C. Callable</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="Executor" onclick="toggleRadio(this)">D. Executor</input></B><BR><BR>
+
+<h5>Q18: Which keyword ensures safe access to shared resources?</h5>
+<B><input type="radio" name="Q18" value="synchronized" onclick="toggleRadio(this)">A. synchronized</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="volatile" onclick="toggleRadio(this)">B. volatile</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="static" onclick="toggleRadio(this)">C. static</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="final" onclick="toggleRadio(this)">D. final</input></B><BR><BR>
+
+<h5>Q19: Which methods are used for inter-thread communication?</h5>
+<B><input type="radio" name="Q19" value="wait/notify" onclick="toggleRadio(this)">A. wait()/notify()</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="sleep()" onclick="toggleRadio(this)">B. sleep()</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="pause()" onclick="toggleRadio(this)">C. pause()</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="stop()" onclick="toggleRadio(this)">D. stop()</input></B><BR><BR>
+
+<h5>Q20: Which class manages thread pools?</h5>
+<B><input type="radio" name="Q20" value="ExecutorService" onclick="toggleRadio(this)">A. ExecutorService</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="ThreadPool" onclick="toggleRadio(this)">B. ThreadPool</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="Runnable" onclick="toggleRadio(this)">C. Runnable</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="Future" onclick="toggleRadio(this)">D. Future</input></B><BR><BR>
+
+<!-- Module 6: JDBC -->
+<h5>Q21: Which package contains JDBC classes?</h5>
+<B><input type="radio" name="Q21" value="java.sql" onclick="toggleRadio(this)">A. java.sql</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="java.jdbc" onclick="toggleRadio(this)">B. java.jdbc</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="javax.db" onclick="toggleRadio(this)">C. javax.db</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="java.db" onclick="toggleRadio(this)">D. java.db</input></B><BR><BR>
+
+<h5>Q22: Which class is used to establish a database connection?</h5>
+<B><input type="radio" name="Q22" value="DriverManager" onclick="toggleRadio(this)">A. DriverManager</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="Connection" onclick="toggleRadio(this)">B. Connection</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="Statement" onclick="toggleRadio(this)">C. Statement</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="ResultSet" onclick="toggleRadio(this)">D. ResultSet</input></B><BR><BR><h5>Q23: Which SQL command is used to change the structure of a table?</h5>
+<h5>Q23: Which interface is used for parameterized queries?</h5>
+<B><input type="radio" name="Q23" value="PreparedStatement" onclick="toggleRadio(this)">A. PreparedStatement</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="Statement" onclick="toggleRadio(this)">B. Statement</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="ResultSet" onclick="toggleRadio(this)">C. ResultSet</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="Connection" onclick="toggleRadio(this)">D. Connection</input></B><BR><BR>
+
+<h5>Q24: Which object stores the results of a query?</h5>
+<B><input type="radio" name="Q24" value="ResultSet" onclick="toggleRadio(this)">A. ResultSet</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="Statement" onclick="toggleRadio(this)">B. Statement</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="PreparedStatement" onclick="toggleRadio(this)">C. PreparedStatement</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="DriverManager" onclick="toggleRadio(this)">D. DriverManager</input></B><BR><BR>
+
+<h5>Q25: Which method is used to save changes permanently in JDBC?</h5>
+<B><input type="radio" name="Q25" value="commit()" onclick="toggleRadio(this)">A. commit()</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="rollback()" onclick="toggleRadio(this)">B. rollback()</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="save()" onclick="toggleRadio(this)">C. save()</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="update()" onclick="toggleRadio(this)">D. update()</input></B><BR><BR>
+
+<h5>Q26: Which method undoes changes in JDBC transactions?</h5>
+<B><input type="radio" name="Q26" value="rollback()" onclick="toggleRadio(this)">A. rollback()</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="commit()" onclick="toggleRadio(this)">B. commit()</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="close()" onclick="toggleRadio(this)">C. close()</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="delete()" onclick="toggleRadio(this)">D. delete()</input></B><BR><BR>
+
+<h5>Q27: Which class manages database drivers?</h5>
+<B><input type="radio" name="Q27" value="DriverManager" onclick="toggleRadio(this)">A. DriverManager</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="Connection" onclick="toggleRadio(this)">B. Connection</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="Statement" onclick="toggleRadio(this)">C. Statement</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="ResultSet" onclick="toggleRadio(this)">D. ResultSet</input></B><BR><BR>
+
+<!-- Module 7: Advanced Java -->
+<h5>Q28: Which keyword is used to handle exceptions?</h5>
+<B><input type="radio" name="Q28" value="try-catch" onclick="toggleRadio(this)">A. try-catch</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="throw" onclick="toggleRadio(this)">B. throw</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="throws" onclick="toggleRadio(this)">C. throws</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="error" onclick="toggleRadio(this)">D. error</input></B><BR><BR>
+
+<h5>Q29: Which keyword is used to define an abstract class?</h5>
+<B><input type="radio" name="Q29" value="abstract" onclick="toggleRadio(this)">A. abstract</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="interface" onclick="toggleRadio(this)">B. interface</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="class" onclick="toggleRadio(this)">C. class</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="extends" onclick="toggleRadio(this)">D. extends</input></B><BR><BR>
+
+<h5>Q30: Which keyword is used to implement an interface?</h5>
+<B><input type="radio" name="Q30" value="implements" onclick="toggleRadio(this)">A. implements</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="extends" onclick="toggleRadio(this)">B. extends</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="interface" onclick="toggleRadio(this)">C. interface</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="abstract" onclick="toggleRadio(this)">D. abstract</input></B><BR><BR>
+
+<h5>Q31: Which package is used for utility classes like ArrayList and HashMap?</h5>
+<B><input type="radio" name="Q31" value="java.util" onclick="toggleRadio(this)">A. java.util</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="java.sql" onclick="toggleRadio(this)">B. java.sql</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="java.io" onclick="toggleRadio(this)">C. java.io</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="java.lang" onclick="toggleRadio(this)">D. java.lang</input></B><BR><BR>
+
+<h5>Q32: Which keyword prevents a class from being inherited?</h5>
+<B><input type="radio" name="Q32" value="final" onclick="toggleRadio(this)">A. final</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="static" onclick="toggleRadio(this)">B. static</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="private" onclick="toggleRadio(this)">C. private</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="protected" onclick="toggleRadio(this)">D. protected</input></B><BR><BR>
+
+<!-- Module 8: Practical Applications -->
+<h5>Q33: Which class is used for reading input from the console?</h5>
+<B><input type="radio" name="Q33" value="Scanner" onclick="toggleRadio(this)">A. Scanner</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="BufferedReader" onclick="toggleRadio(this)">B. BufferedReader</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="InputStream" onclick="toggleRadio(this)">C. InputStream</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="Console" onclick="toggleRadio(this)">D. Console</input></B><BR><BR>
+
+<h5>Q34: Which package is used for file handling in Java?</h5>
+<B><input type="radio" name="Q34" value="java.io" onclick="toggleRadio(this)">A. java.io</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="java.util" onclick="toggleRadio(this)">B. java.util</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="java.sql" onclick="toggleRadio(this)">C. java.sql</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="java.net" onclick="toggleRadio(this)">D. java.net</input></B><BR><BR>
+<h5>Q35: Which class is commonly used to create graphical user interfaces in Java?</h5>
+<B><input type="radio" name="Q35" value="Swing" onclick="toggleRadio(this)">A. Swing</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="AWT" onclick="toggleRadio(this)">B. AWT</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="JavaFX" onclick="toggleRadio(this)">C. JavaFX</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="JDBC" onclick="toggleRadio(this)">D. JDBC</input></B><BR><BR>
+
+<h5>Q36: Which package is used for networking in Java?</h5>
+<B><input type="radio" name="Q36" value="java.net" onclick="toggleRadio(this)">A. java.net</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="java.io" onclick="toggleRadio(this)">B. java.io</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="java.util" onclick="toggleRadio(this)">C. java.util</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="java.sql" onclick="toggleRadio(this)">D. java.sql</input></B><BR><BR>
+
+<h5>Q37: Which class is used to write data to a file?</h5>
+<B><input type="radio" name="Q37" value="FileWriter" onclick="toggleRadio(this)">A. FileWriter</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="FileReader" onclick="toggleRadio(this)">B. FileReader</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="Scanner" onclick="toggleRadio(this)">C. Scanner</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="BufferedReader" onclick="toggleRadio(this)">D. BufferedReader</input></B><BR><BR>
+
+<h5>Q38: Which keyword is used to handle resources automatically in Java 7+?</h5>
+<B><input type="radio" name="Q38" value="try-with-resources" onclick="toggleRadio(this)">A. try-with-resources</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="auto" onclick="toggleRadio(this)">B. auto</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="resource" onclick="toggleRadio(this)">C. resource</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="finally" onclick="toggleRadio(this)">D. finally</input></B><BR><BR>
+
+<h5>Q39: Which class is used for serializing objects in Java?</h5>
+<B><input type="radio" name="Q39" value="ObjectOutputStream" onclick="toggleRadio(this)">A. ObjectOutputStream</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="ObjectInputStream" onclick="toggleRadio(this)">B. ObjectInputStream</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="FileWriter" onclick="toggleRadio(this)">C. FileWriter</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="Scanner" onclick="toggleRadio(this)">D. Scanner</input></B><BR><BR>
+
+<h5>Q40: Which of the following best describes Java?</h5>
+<B><input type="radio" name="Q40" value="Object-Oriented, Platform Independent" onclick="toggleRadio(this)">A. Object-Oriented, Platform Independent</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="Low Level, Machine Dependent" onclick="toggleRadio(this)">B. Low Level, Machine Dependent</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="Not Secure, Procedural" onclick="toggleRadio(this)">C. Not Secure, Procedural</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="Assembly Based" onclick="toggleRadio(this)">D. Assembly Based</input></B><BR><BR>
+
+
+
+
+<Center><input type="Submit" style="height:49px;width:100px;border:3px solid Blue;color:Green;font-size:21px;Border-radius:21px;"></Center>
+</form>
+
+<script src="time1.js"></script><script>
+let R=null;
+function toggleRadio(currentRadio)
+{
+	if(currentRadio===R){
+		currentRadio.checked=false;
+		R=null;
+	}
+	else{
+		R=currentRadio;
+	}}</script>
+
+</div>
+</body>
+</html>

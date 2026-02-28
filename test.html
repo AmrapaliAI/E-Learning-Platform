@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+        /* Simple styling for visibility */
+        .time-display {
+            font-size: 23px;
+            font-weight: bold;
+          
+            Color:Orange;
+        }
+        #current-local-time {
+            color: green;
+        }
+        #quiz-timer {
+            color: red;font-size:21px;
+        }
+  
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:31px;
+	margin-left:0px;
+	background-color:lightBlue;
+
+	border-color:orange;
+	padding-left:67px;
+	padding-top:78px;}
+	B{
+	font-size:19px;}body{background-image:url("data-sciences.jpg");}
+	</style>
+</head>
+<body>
+
+
+
+<div  id="quiz-timer">time Remaining:13:00</div>
+<HR>
+<form class="U" action="Check" id="mcq-form">
+
+<h5>Q1:What is a JSP page compiled into before execution?</h5>
+<B ><input type="radio" name="Q1" value="HTML" onclick="toggleRadio(this)">A.HTML</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="CSS" onclick="toggleRadio(this)">B.CSS</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Servlet" onclick="toggleRadio(this)">C.Servlet</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="JSP" onclick="toggleRadio(this)">D.JSP</input></B><BR><BR>
+
+<h5>Q2:Which JSP element is used to include the content of another file during the translation phase(Compile time)?</h5>
+<B ><input type="radio" name="Q2" value="<@jsp:include page=../>"  onclick="toggleRadio(this)">A.<@jsp:include page=".."/></input></B><BR><BR>
+<B><input type="radio" name="Q2" value="<%@include file=..%>"onclick="toggleRadio(this)">B.<%@include file=".."%> </input></B><BR><BR>
+<B><input type="radio" name="Q2" value="<%@page import=.. %>"onclick="toggleRadio(this)">C.<%@page import=".." %></input></B><BR><BR>
+<B><input type="radio" name="Q2" value="<%include file=.. %>"onclick="toggleRadio(this)">D.<%include file=".." %></input></B><BR><BR>
+
+
+<h5>Q3:What is the life cycle method of a JSP that is equivalent to the init()method in a Servlet?</h5>
+<B ><input type="radio" name="Q3" value="jspInit()"onclick="toggleRadio(this)">A.jspInit()</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="_jspService()"onclick="toggleRadio(this)">B._jspService()</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="jspDestroy()"onclick="toggleRadio(this)">C.jspDestroy()</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="spLoad()"onclick="toggleRadio(this)">D.jspLoad()</input></B><BR><BR>
+
+
+<h5>Q4:Which implicit object in JSP is used to represent the current HTTP session for the user?</h5>
+<B ><input type="radio" name="Q4" value="request"onclick="toggleRadio(this)">A.request</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="response"onclick="toggleRadio(this)">B.response</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="session"onclick="toggleRadio(this)">C.session</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="application"onclick="toggleRadio(this)">D.application</input></B><BR><BR>
+
+
+<h5>Q5:What is the correct syntax for a JSP Expression, which is used to output a value directly to the response stream?</h5>
+<B ><input type="radio" name="Q5" value="<%out.print(value); %>"onclick="toggleRadio(this)">A.<%out.print("value"); %></input></B><BR><BR>
+<B><input type="radio" name="Q5" value="<%=expression %>"onclick="toggleRadio(this)">B.<%=expression %></input></B><BR><BR>
+<B><input type="radio" name="Q5" value="<%!declaration %>"onclick="toggleRadio(this)">C.<%!declaration %></input></B><BR><BR>
+<B><input type="radio" name="Q5" value="<jsp:out value=expression/>" onclick="toggleRadio(this)">D.None of the ABove<jsp:out value=expression/></input></B><BR><BR>
+
+
+<h5>Q6:Which JSP element is compiled into a method within the generated Servlet and is use for writing Java code logic?</h5>
+<B ><input type="radio" name="Q6" value="Declaration(<%!..%>)"onclick="toggleRadio(this)">A.Declaration(<%!..%>)</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Expression(<%=.. %>)"onclick="toggleRadio(this)">B.Expression(<%=.. %>)</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Directive(<%@.. %>)"onclick="toggleRadio(this)">C.Directive(<%@.. %>)</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Scriptlet(<%..%>)"onclick="toggleRadio(this)">D.Scriptlet(<%..%>)</input></B><BR><BR>
+
+
+<h5>Q7:Which Scope is used to Share data Across all users and all requests within a single web application?</h5>
+<B ><input type="radio" name="Q7" value="page scope"onclick="toggleRadio(this)">A.page scope</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="request scope"onclick="toggleRadio(this)">B.request scope</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="session scope"onclick="toggleRadio(this)">C.session scope</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="application scope"onclick="toggleRadio(this)">D.application scope</input></B><BR><BR>
+
+
+<h5>Q8:What is the purpose of the isErrorPage="true" attribute in the JSP page directive?</h5>
+<B ><input type="radio" name="Q8" value="To redirect the user to a login page if an error occurs"onclick="toggleRadio(this)">A.To redirect the user to a login page if an error occurs</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="To Specify that this page will handle and display errors from other JSP"onclick="toggleRadio(this)">B.To Specify that this page will handle and display errors from other JSP</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="To force the server to restart if an exception is thrown"onclick="toggleRadio(this)">C.To force the server to restart if an exception is thrown</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="To disable all exception handling on the current page"onclick="toggleRadio(this)">D.To disable all exception handling on the current page</input></B><BR><BR>
+
+
+<h5>Q9:Which implicit object in JSP is used to write content to the client's browser?</h5>
+<B ><input type="radio" name="Q9" value="config"onclick="toggleRadio(this)">A.config</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="pageContext"onclick="toggleRadio(this)">B.pageContext</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="out"onclick="toggleRadio(this)">C.out</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="page"onclick="toggleRadio(this)">D.page</input></B><BR><BR>
+
+<h5>Q10:which JSP implicit object provides access to all other implicit objects and is often used by tag handlers and expression language?</h5>
+<B ><input type="radio" name="Q10" value="config"onclick="toggleRadio(this)">A.config</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="page"onclick="toggleRadio(this)">B.page</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="pageContext"onclick="toggleRadio(this)">C.pageContext</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="exception"onclick="toggleRadio(this)">D.exception</input></B><BR><BR>
+
+
+<Center><input type="Submit" style="height:49px;width:100px;border:3px solid Blue;color:Green;font-size:21px;Border-radius:21px;"></Center>
+
+<script src="time.js"></script><script>
+let R=null;
+function toggleRadio(currentRadio)
+{
+	if(currentRadio===R){
+		currentRadio.checked=false;
+		R=null;
+	}
+	else{
+		R=currentRadio;
+	}}</script>
+</form>
+
+
+	
+
+
+</body>
+</html>

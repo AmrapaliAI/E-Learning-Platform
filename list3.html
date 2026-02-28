@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>DBMS Learning Portal</title>
+
+<link rel="stylesheet" type="text/css" href="list.css">
+</head>
+<body>
+
+<!-- Fixed header -->
+
+
+
+
+<!-- Menu buttons -->
+<div class="menu-bar">
+  <button class="menu-btn" onclick="loadContent('Data.html')">Notes & Assessment</button>
+  <button class="menu-btn" onclick="loadContent('QuizStartServlet?course=Database Management System&id=3')">Take Assessment</button>
+  <button class="menu-btn" onclick="window.location.href='Scroll.jsp'">Exit</button>
+</div>
+
+<!-- Content iframe -->
+<div class="content-wrapper">
+  <iframe id="content-frame" src="" name="A" title="Learning Content"></iframe>
+</div>
+
+<script>
+  function loadContent(page) {
+    const iframe = document.getElementById("content-frame");
+    iframe.src = page;
+    
+    // Add loading effect
+    iframe.style.opacity = '0.5';
+    iframe.onload = function() {
+      iframe.style.transition = 'opacity 0.3s ease';
+      iframe.style.opacity = '1';
+    };
+  }
+
+  // Auto-load first content on page load
+
+</script>
+
+</body>
+</html>

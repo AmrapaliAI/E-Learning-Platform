@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+#quiz-timer {
+            color: red;font-size:21px;}
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	B{
+	font-size:19px;}
+	</style>
+</head>
+<body>
+<BR><BR>
+
+<div  id="quiz-timer">time Remaining:13:00</div>
+<HR>
+<form class="U" action="Check3">
+
+
+
+<h5>Q1: Which of the following is a dynamically typed language?</h5>  
+<B><input type="radio" name="Q1" value="Python" onclick="toggleRadio(this)">A.Python</input></B><BR><BR>  
+<B><input type="radio" name="Q1" value="Java" onclick="toggleRadio(this)">B.Java</input></B><BR><BR>  
+<B><input type="radio" name="Q1" value="C++" onclick="toggleRadio(this)">C.C++</input></B><BR><BR>  
+<B><input type="radio" name="Q1" value="C#" onclick="toggleRadio(this)">D.C#</input></B><BR><BR>  
+
+<h5>Q2: Which keyword is used to define a function in Python?</h5>  
+<B><input type="radio" name="Q2" value="func" onclick="toggleRadio(this)">A.func</input></B><BR><BR>  
+<B><input type="radio" name="Q2" value="def" onclick="toggleRadio(this)">B.def</input></B><BR><BR>  
+<B><input type="radio" name="Q2" value="function" onclick="toggleRadio(this)">C.function</input></B><BR><BR>  
+<B><input type="radio" name="Q2" value="define" onclick="toggleRadio(this)">D.define</input></B><BR><BR>  
+
+<h5>Q3: Which of the following is NOT a Python data type?</h5>  
+<B><input type="radio" name="Q3" value="List" onclick="toggleRadio(this)">A.List</input></B><BR><BR>  
+<B><input type="radio" name="Q3" value="Dictionary" onclick="toggleRadio(this)">B.Dictionary</input></B><BR><BR>  
+<B><input type="radio" name="Q3" value="Tuple" onclick="toggleRadio(this)">C.Tuple</input></B><BR><BR>  
+<B><input type="radio" name="Q3" value="Pointer" onclick="toggleRadio(this)">D.Pointer</input></B><BR><BR>  
+
+<h5>Q4: Which module in Python is used for multithreading?</h5>  
+<B><input type="radio" name="Q4" value="threading" onclick="toggleRadio(this)">A.threading</input></B><BR><BR>  
+<B><input type="radio" name="Q4" value="multiprocessing" onclick="toggleRadio(this)">B.multiprocessing</input></B><BR><BR>  
+<B><input type="radio" name="Q4" value="asyncio" onclick="toggleRadio(this)">C.asyncio</input></B><BR><BR>  
+<B><input type="radio" name="Q4" value="os" onclick="toggleRadio(this)">D.os</input></B><BR><BR>  
+
+<h5>Q5: What does GIL stand for in Python?</h5>  
+<B><input type="radio" name="Q5" value="Global Interpreter Lock" onclick="toggleRadio(this)">A.Global Interpreter Lock</input></B><BR><BR>  
+<B><input type="radio" name="Q5" value="General Input Library" onclick="toggleRadio(this)">B.General Input Library</input></B><BR><BR>  
+<B><input type="radio" name="Q5" value="Global Internal Loop" onclick="toggleRadio(this)">C.Global Internal Loop</input></B><BR><BR>  
+<B><input type="radio" name="Q5" value="General Interpreter Language" onclick="toggleRadio(this)">D.General Interpreter Language</input></B><BR><BR>  
+
+<h5>Q6: Which of the following is best suited for CPU-bound tasks in Python?</h5>  
+<B><input type="radio" name="Q6" value="Multithreading" onclick="toggleRadio(this)">A.Multithreading</input></B><BR><BR>  
+<B><input type="radio" name="Q6" value="Multiprocessing" onclick="toggleRadio(this)">B.Multiprocessing</input></B><BR><BR>  
+<B><input type="radio" name="Q6" value="Asyncio" onclick="toggleRadio(this)">C.Asyncio</input></B><BR><BR>  
+<B><input type="radio" name="Q6" value="Tkinter" onclick="toggleRadio(this)">D.Tkinter</input></B><BR><BR>  
+
+<h5>Q7: Django follows which architecture pattern?</h5>  
+<B><input type="radio" name="Q7" value="MVC" onclick="toggleRadio(this)">A.MVC</input></B><BR><BR>  
+<B><input type="radio" name="Q7" value="MVT" onclick="toggleRadio(this)">B.MVT</input></B><BR><BR>  
+<B><input type="radio" name="Q7" value="MVVM" onclick="toggleRadio(this)">C.MVVM</input></B><BR><BR>  
+<B><input type="radio" name="Q7" value="OOP" onclick="toggleRadio(this)">D.OOP</input></B><BR><BR>  
+
+<h5>Q8: Which of the following is Django’s ORM used for?</h5>  
+<B><input type="radio" name="Q8" value="Database queries" onclick="toggleRadio(this)">A.Database queries</input></B><BR><BR>  
+<B><input type="radio" name="Q8" value="File handling" onclick="toggleRadio(this)">B.File handling</input></B><BR><BR>  
+<B><input type="radio" name="Q8" value="Networking" onclick="toggleRadio(this)">C.Networking</input></B><BR><BR>  
+<B><input type="radio" name="Q8" value="GUI design" onclick="toggleRadio(this)">D.GUI design</input></B><BR><BR>  
+
+<h5>Q9: Which of the following is NOT a feature of Django?</h5>  
+<B><input type="radio" name="Q9" value="Admin interface" onclick="toggleRadio(this)">A.Admin interface</input></B><BR><BR>  
+<B><input type="radio" name="Q9" value="Authentication system" onclick="toggleRadio(this)">B.Authentication system</input></B><BR><BR>  
+<B><input type="radio" name="Q9" value="Cross-platform GUI" onclick="toggleRadio(this)">C.Cross-platform GUI</input></B><BR><BR>  
+<B><input type="radio" name="Q9" value="Security features" onclick="toggleRadio(this)">D.Security features</input></B><BR><BR>  
+
+<h5>Q10: Tkinter is primarily used for?</h5>  
+<B><input type="radio" name="Q10" value="Web development" onclick="toggleRadio(this)">A.Web development</input></B><BR><BR>  
+<B><input type="radio" name="Q10" value="GUI development" onclick="toggleRadio(this)">B.GUI development</input></B><BR><BR>  
+<B><input type="radio" name="Q10" value="Data analysis" onclick="toggleRadio(this)">C.Data analysis</input></B><BR><BR>  
+<B><input type="radio" name="Q10" value="Machine learning" onclick="toggleRadio(this)">D.Machine learning</input></B><BR><BR>  
+
+
+<h5>Q11: Which geometry manager in Tkinter arranges widgets in a grid-like structure?</h5>  
+<B><input type="radio" name="Q11" value="pack" onclick="toggleRadio(this)">A.pack</input></B><BR><BR>  
+<B><input type="radio" name="Q11" value="grid" onclick="toggleRadio(this)">B.grid</input></B><BR><BR>  
+<B><input type="radio" name="Q11" value="place" onclick="toggleRadio(this)">C.place</input></B><BR><BR>  
+<B><input type="radio" name="Q11" value="align" onclick="toggleRadio(this)">D.align</input></B><BR><BR>  
+
+<h5>Q12: Which of the following is used to keep a Tkinter window running?</h5>  
+<B><input type="radio" name="Q12" value="loop()" onclick="toggleRadio(this)">A.loop()</input></B><BR><BR>  
+<B><input type="radio" name="Q12" value="mainloop()" onclick="toggleRadio(this)">B.mainloop()</input></B><BR><BR>  
+<B><input type="radio" name="Q12" value="run()" onclick="toggleRadio(this)">C.run()</input></B><BR><BR>  
+<B><input type="radio" name="Q12" value="execute()" onclick="toggleRadio(this)">D.execute()</input></B><BR><BR>  
+
+<h5>Q13: Which of the following is NOT a Tkinter widget?</h5>  
+<B><input type="radio" name="Q13" value="Label" onclick="toggleRadio(this)">A.Label</input></B><BR><BR>  
+<B><input type="radio" name="Q13" value="Button" onclick="toggleRadio(this)">B.Button</input></B><BR><BR>  
+<B><input type="radio" name="Q13" value="Frame" onclick="toggleRadio(this)">C.Frame</input></B><BR><BR>  
+<B><input type="radio" name="Q13" value="Router" onclick="toggleRadio(this)">D.Router</input></B><BR><BR>  
+
+<h5>Q14: Which of the following is used to handle events in Tkinter?</h5>  
+<B><input type="radio" name="Q14" value="bind()" onclick="toggleRadio(this)">A.bind()</input></B><BR><BR>  
+<B><input type="radio" name="Q14" value="connect()" onclick="toggleRadio(this)">B.connect()</input></B><BR><BR>  
+<B><input type="radio" name="Q14" value="attach()" onclick="toggleRadio(this)">C.attach()</input></B><BR><BR>  
+<B><input type="radio" name="Q14" value="listen()" onclick="toggleRadio(this)">D.listen()</input></B><BR><BR>  
+
+<h5>Q15: Which of the following is a Python web framework?</h5>  
+<B><input type="radio" name="Q15" value="Django" onclick="toggleRadio(this)">A.Django</input></B><BR><BR>  
+<B><input type="radio" name="Q15" value="Tkinter" onclick="toggleRadio(this)">B.Tkinter</input></B><BR><BR>  
+<B><input type="radio" name="Q15" value="NumPy" onclick="toggleRadio(this)">C.NumPy</input></B><BR><BR>  
+<B><input type="radio" name="Q15" value="Pandas" onclick="toggleRadio(this)">D.Pandas</input></B><BR><BR>  
+
+<h5>Q16: Which of the following is used to create models in Django?</h5>  
+<B><input type="radio" name="Q16" value="Python classes" onclick="toggleRadio(this)">A.Python classes</input></B><BR><BR>  
+<B><input type="radio" name="Q16" value="SQL queries" onclick="toggleRadio(this)">B.SQL queries</input></B><BR><BR>  
+<B><input type="radio" name="Q16" value="HTML forms" onclick="toggleRadio(this)">C.HTML forms</input></B><BR><BR>  
+<B><input type="radio" name="Q16" value="JavaScript objects" onclick="toggleRadio(this)">D.JavaScript objects</input></B><BR><BR>  
+
+<h5>Q17: Which of the following is used to run a Django development server?</h5>  
+<B><input type="radio" name="Q17" value="python manage.py runserver" onclick="toggleRadio(this)">A.python manage.py runserver</input></B><BR><BR>  
+<B><input type="radio" name="Q17" value="django runserver" onclick="toggleRadio(this)">B.django runserver</input></B><BR><BR>  
+<B><input type="radio" name="Q17" value="python runserver" onclick="toggleRadio(this)">C.python runserver</input></B><BR><BR>  
+<B><input type="radio" name="Q17" value="django-admin runserver" onclick="toggleRadio(this)">D.django-admin runserver</input></B><BR><BR>  
+
+<h5>Q18: Which of the following is NOT a feature of Django ORM?</h5>  
+<B><input type="radio" name="Q18" value="Database abstraction" onclick="toggleRadio(this)">A.Database abstraction</input></B><BR><BR>  
+<B><input type="radio" name="Q18" value="Automatic SQL generation" onclick="toggleRadio(this)">B.Automatic SQL generation</input></B><BR><BR>  
+<B><input type="radio" name="Q18" value="GUI creation" onclick="toggleRadio(this)">C.GUI creation</input></B><BR><BR>  
+<B><input type="radio" name="Q18" value="Cross-database support" onclick="toggleRadio(this)">D.Cross-database support</input></B><BR><BR>  
+
+<h5>Q19: Which of the following is used to create a new Django app?</h5>  
+<B><input type="radio" name="Q19" value="python manage.py startapp" onclick="toggleRadio(this)">A.python manage.py startapp</input></B><BR><BR>  
+<B><input type="radio" name="Q19" value="django-admin startapp" onclick="toggleRadio(this)">B.django-admin startapp</input></B><BR><BR>  
+<B><input type="radio" name="Q19" value="python startapp" onclick="toggleRadio(this)">C.python startapp</input></B><BR><BR>  
+<B><input type="radio" name="Q19" value="django startapp" onclick="toggleRadio(this)">D.django startapp</input></B><BR><BR>  
+
+<h5>Q20: Which of the following is used to secure Django applications against CSRF?</h5>  
+<B><input type="radio" name="Q20" value="CSRF token" onclick="toggleRadio(this)">A.CSRF token</input></B><BR><BR>  
+<B><input type="radio" name="Q20" value="SQL injection filter" onclick="toggleRadio(this)">B.SQL injection filter</input></B><BR><BR>  
+<B><input type="radio" name="Q20" value="XSS filter" onclick="toggleRadio(this)">C.XSS filter</input></B><BR><BR>  
+<B><input type="radio" name="Q20" value="Firewall" onclick="toggleRadio(this)">D.Firewall</input></B><BR><BR>  
+
+
+
+-
+
+<h5>Q21: Which of the following is used to define URL patterns in Django?</h5>  
+<B><input type="radio" name="Q21" value="urls.py" onclick="toggleRadio(this)">A.urls.py</input></B><BR><BR>  
+<B><input type="radio" name="Q21" value="views.py" onclick="toggleRadio(this)">B.views.py</input></B><BR><BR>  
+<B><input type="radio" name="Q21" value="models.py" onclick="toggleRadio(this)">C.models.py</input></B><BR><BR>  
+<B><input type="radio" name="Q21" value="settings.py" onclick="toggleRadio(this)">D.settings.py</input></B><BR><BR>  
+
+<h5>Q22: Which of the following is used to create HTML templates in Django?</h5>  
+<B><input type="radio" name="Q22" value="templates folder" onclick="toggleRadio(this)">A.templates folder</input></B><BR><BR>  
+<B><input type="radio" name="Q22" value="static folder" onclick="toggleRadio(this)">B.static folder</input></B><BR><BR>  
+<B><input type="radio" name="Q22" value="media folder" onclick="toggleRadio(this)">C.media folder</input></B><BR><BR>  
+<B><input type="radio" name="Q22" value="admin folder" onclick="toggleRadio(this)">D.admin folder</input></B><BR><BR>  
+
+<h5>Q23: Which of the following is used to manage static files in Django?</h5>  
+<B><input type="radio" name="Q23" value="STATIC_URL" onclick="toggleRadio(this)">A.STATIC_URL</input></B><BR><BR>  
+<B><input type="radio" name="Q23" value="MEDIA_URL" onclick="toggleRadio(this)">B.MEDIA_URL</input></B><BR><BR>  
+<B><input type="radio" name="Q23" value="STATICFILES_DIRS" onclick="toggleRadio(this)">C.STATICFILES_DIRS</input></B><BR><BR>  
+<B><input type="radio" name="Q23" value="STATIC_ROOT" onclick="toggleRadio(this)">D.STATIC_ROOT</input></B><BR><BR>  
+
+<h5>Q24: Which of the following is used to create forms in Django?</h5>  
+<B><input type="radio" name="Q24" value="django.forms" onclick="toggleRadio(this)">A.django.forms</input></B><BR><BR>  
+<B><input type="radio" name="Q24" value="django.models" onclick="toggleRadio(this)">B.django.models</input></B><BR><BR>  
+<B><input type="radio" name="Q24" value="django.views" onclick="toggleRadio(this)">C.django.views</input></B><BR><BR>  
+<B><input type="radio" name="Q24" value="django.admin" onclick="toggleRadio(this)">D.django.admin</input></B><BR><BR>  
+
+<h5>Q25: Which of the following is used to create a new Django project?</h5>  
+<B><input type="radio" name="Q25" value="django-admin startproject" onclick="toggleRadio(this)">A.django-admin startproject</input></B><BR><BR>  
+<B><input type="radio" name="Q25" value="python manage.py startproject" onclick="toggleRadio(this)">B.python manage.py startproject</input></B><BR><BR>  
+<B><input type="radio" name="Q25" value="django startproject" onclick="toggleRadio(this)">C.django startproject</input></B><BR><BR>  
+<B><input type="radio" name="Q25" value="python startproject" onclick="toggleRadio(this)">D.python startproject</input></B><BR><BR>  
+
+<h5>Q26: Which of the following is used to create responsive Tkinter applications?</h5>  
+<B><input type="radio" name="Q26" value="Multithreading" onclick="toggleRadio(this)">A.Multithreading</input></B><BR><BR>  
+<B><input type="radio" name="Q26" value="Multiprocessing" onclick="toggleRadio(this)">B.Multiprocessing</input></B><BR><BR>  
+<B><input type="radio" name="Q26" value="Asyncio" onclick="toggleRadio(this)">C.Asyncio</input></B><BR><BR>  
+<B><input type="radio" name="Q26" value="ORM" onclick="toggleRadio(this)">D.ORM</input></B><BR><BR>  
+
+<h5>Q27: Which of the following is used to draw shapes in Tkinter?</h5>  
+<B><input type="radio" name="Q27" value="Canvas" onclick="toggleRadio(this)">A.Canvas</input></B><BR><BR>  
+<B><input type="radio" name="Q27" value="Frame" onclick="toggleRadio(this)">B.Frame</input></B><BR><BR>  
+<B><input type="radio" name="Q27" value="Label" onclick="toggleRadio(this)">C.Label</input></B><BR><BR>  
+<B><input type="radio" name="Q27" value="Button" onclick="toggleRadio(this)">D.Button</input></B><BR><BR>  
+
+<h5>Q28: Which of the following is used to create menus in Tkinter?</h5>  
+<B><input type="radio" name="Q28" value="Menu" onclick="toggleRadio(this)">A.Menu</input></B><BR><BR>  
+<B><input type="radio" name="Q28" value="Label" onclick="toggleRadio(this)">B.Label</input></B><BR><BR>  
+<B><input type="radio" name="Q28" value="Button" onclick="toggleRadio(this)">C.Button</input></B><BR><BR>  
+<B><input type="radio" name="Q28" value="Frame" onclick="toggleRadio(this)">D.Frame</input></B><BR><BR>  
+
+<h5>Q29: Which of the following is used to create message boxes in Tkinter?</h5>  
+<B><input type="radio" name="Q29" value="messagebox" onclick="toggleRadio(this)">A.messagebox</input></B><BR><BR>  
+<B><input type="radio" name="Q29" value="alertbox" onclick="toggleRadio(this)">B.alertbox</input></B><BR><BR>  
+<B><input type="radio" name="Q29" value="dialogbox" onclick="toggleRadio(this)">C.dialogbox</input></B><BR><BR>  
+<B><input type="radio" name="Q29" value="infobox" onclick="toggleRadio(this)">D.infobox</input></B><BR><BR>  
+
+<h5>Q30: Which of the following is used to create multiple threads in Python?</h5>  
+<B><input type="radio" name="Q30" value="Thread class" onclick="toggleRadio(this)">A.Thread class</input></B><BR><BR>  
+<B><input type="radio" name="Q30" value="Process class" onclick="toggleRadio(this)">B.Process class</input></B><BR><BR>  
+<B><input type="radio" name="Q30" value="Task class" onclick="toggleRadio(this)">C.Task class</input></B><BR><BR>  
+<B><input type="radio" name="Q30" value="Job class" onclick="toggleRadio(this)">D.Job class</input></B><BR><BR>  
+
+<h5>Q31: Which of the following is used to prevent race conditions in multithreading?</h5>  
+<B><input type="radio" name="Q31" value="Lock" onclick="toggleRadio(this)">A.Lock</input></B><BR><BR>  
+<B><input type="radio" name="Q31" value="Semaphore" onclick="toggleRadio(this)">B.Semaphore</input></B><BR><BR>  
+<B><input type="radio" name="Q31" value="Queue" onclick="toggleRadio(this)">C.Queue</input></B><BR><BR>  
+<B><input type="radio" name="Q31" value="All of the above" onclick="toggleRadio(this)">D.All of the above</input></B><BR><BR>  
+
+<h5>Q32: Which of the following is used to run background tasks in Django?</h5>  
+<B><input type="radio" name="Q32" value="Celery" onclick="toggleRadio(this)">A.Celery</input></B><BR><BR>  
+<B><input type="radio" name="Q32" value="Tkinter" onclick="toggleRadio(this)">B.Tkinter</input></B><BR><BR>  
+<B><input type="radio" name="Q32" value="NumPy" onclick="toggleRadio(this)">C.NumPy</input></B><BR><BR>  
+<B><input type="radio" name="Q32" value="Pandas" onclick="toggleRadio(this)">
+
+
+
+<h5>Q32: Which of the following is used to run background tasks in Django?</h5>  
+<B><input type="radio" name="Q32" value="Celery" onclick="toggleRadio(this)">A.Celery</input></B><BR><BR>  
+<B><input type="radio" name="Q32" value="Tkinter" onclick="toggleRadio(this)">B.Tkinter</input></B><BR><BR>  
+<B><input type="radio" name="Q32" value="NumPy" onclick="toggleRadio(this)">C.NumPy</input></B><BR><BR>  
+<B><input type="radio" name="Q32" value="Pandas" onclick="toggleRadio(this)">D.Pandas</input></B><BR><BR>  
+
+<h5>Q33: Which of the following is used to handle asynchronous tasks in Python?</h5>  
+<B><input type="radio" name="Q33" value="asyncio" onclick="toggleRadio(this)">A.asyncio</input></B><BR><BR>  
+<B><input type="radio" name="Q33" value="threading" onclick="toggleRadio(this)">B.threading</input></B><BR><BR>  
+<B><input type="radio" name="Q33" value="multiprocessing" onclick="toggleRadio(this)">C.multiprocessing</input></B><BR><BR>  
+<B><input type="radio" name="Q33" value="tkinter" onclick="toggleRadio(this)">D.tkinter</input></B><BR><BR>  
+
+<h5>Q34: Which of the following is used to create REST APIs in Django?</h5>  
+<B><input type="radio" name="Q34" value="Django REST Framework" onclick="toggleRadio(this)">A.Django REST Framework</input></B><BR><BR>  
+<B><input type="radio" name="Q34" value="Tkinter" onclick="toggleRadio(this)">B.Tkinter</input></B><BR><BR>  
+<B><input type="radio" name="Q34" value="NumPy" onclick="toggleRadio(this)">C.NumPy</input></B><BR><BR>  
+<B><input type="radio" name="Q34" value="Pandas" onclick="toggleRadio(this)">D.Pandas</input></B><BR><BR>  
+
+<h5>Q35: Which of the following is used to create responsive GUIs in Tkinter?</h5>  
+<B><input type="radio" name="Q35" value="pack" onclick="toggleRadio(this)">A.pack</input></B><BR><BR>  
+<B><input type="radio" name="Q35" value="grid" onclick="toggleRadio(this)">B.grid</input></B><BR><BR>  
+<B><input type="radio" name="Q35" value="place" onclick="toggleRadio(this)">C.place</input></B><BR><BR>  
+<B><input type="radio" name="Q35" value="All of the above" onclick="toggleRadio(this)">D.All of the above</input></B><BR><BR>  
+
+<h5>Q36: Which of the following is used to create admin panels in Django?</h5>  
+<B><input type="radio" name="Q36" value="Admin interface" onclick="toggleRadio(this)">A.Admin interface</input></B><BR><BR>  
+<B><input type="radio" name="Q36" value="Tkinter interface" onclick="toggleRadio(this)">B.Tkinter interface</input></B><BR><BR>  
+<B><input type="radio" name="Q36" value="NumPy interface" onclick="toggleRadio(this)">C.NumPy interface</input></B><BR><BR>  
+<B><input type="radio" name="Q36" value="Pandas interface" onclick="toggleRadio(this)">D.Pandas interface</input></B><BR><BR>  
+
+<h5>Q37: Which of the following is used to secure Django applications against SQL injection?</h5>  
+<B><input type="radio" name="Q37" value="ORM" onclick="toggleRadio(this)">A.ORM</input></B><BR><BR>  
+<B><input type="radio" name="Q37" value="Firewall" onclick="toggleRadio(this)">B.Firewall</input></B><BR><BR>  
+<B><input type="radio" name="Q37" value="Antivirus" onclick="toggleRadio(this)">C.Antivirus</input></B><BR><BR>  
+<B><input type="radio" name="Q37" value="Router" onclick="toggleRadio(this)">D.Router</input></B><BR><BR>  
+
+<h5>Q38: Which of the following is used to create loops in Python?</h5>  
+<B><input type="radio" name="Q38" value="for" onclick="toggleRadio(this)">A.for</input></B><BR><BR>  
+<B><input type="radio" name="Q38" value="while" onclick="toggleRadio(this)">B.while</input></B><BR><BR>  
+<B><input type="radio" name="Q38" value="loop" onclick="toggleRadio(this)">C.loop</input></B><BR><BR>  
+<B><input type="radio" name="Q38" value="repeat" onclick="toggleRadio(this)">D.repeat</input></B><BR><BR>  
+
+<h5>Q39: Which of the following is used to create conditions in Python?</h5>  
+<B><input type="radio" name="Q39" value="if" onclick="toggleRadio(this)">A.if</input></B><BR><BR>  
+<B><input type="radio" name="Q39" value="switch" onclick="toggleRadio(this)">B.switch</input></B><BR><BR>  
+<B><input type="radio" name="Q39" value="case" onclick="toggleRadio(this)">C.case</input></B><BR><BR>  
+<B><input type="radio" name="Q39" value="when" onclick="toggleRadio(this)">D.when</input></B><BR><BR>  
+
+<h5>Q40: Which of the following is used to create GUI applications in Python without external libraries?</h5>  
+<B><input type="radio" name="Q40" value="Tkinter" onclick="toggleRadio(this)">A.Tkinter</input></B><BR><BR>  
+<B><input type="radio" name="Q40" value="Django" onclick="toggleRadio(this)">B.Django</input></B><BR><BR>  
+<B><input type="radio" name="Q40" value="Flask" onclick="toggleRadio(this)">C.Flask</input></B><BR><BR>  
+<B><input type="radio" name="Q40" value="NumPy" onclick="toggleRadio(this)">D.NumPy</input></B><BR><BR>  
+
+<Center><input type="Submit" style="height:49px;width:100px;border:3px solid Blue;color:Green;font-size:21px;Border-radius:21px;"></Center>
+<script src="time1.js"></script><script>
+let R=null;
+function toggleRadio(currentRadio)
+{
+	if(currentRadio===R){
+		currentRadio.checked=false;
+		R=null;
+	}
+	else{
+		R=currentRadio;
+	}}</script>
+</form>
+</div>
+</body>
+</html>

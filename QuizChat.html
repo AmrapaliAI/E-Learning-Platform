@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertiQuiz - Knowledge Check</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="U.css">
+    
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <!-- Your existing page content here -->
+    
+    <!-- ==========================================
+         QUIZ CHATBOT CONTAINER
+         ========================================== -->
+    
+    <!-- Chat Toggle Button (Fixed Bottom Right) -->
+    <button id="chatToggleBtn" title="Open Quiz Chat">💬</button>
+    
+    <!-- Chat Container -->
+    <div id="chatContainer" style="display: none;">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <h3>🎯 CertiQuiz Bot</h3>
+            <button id="chatCloseBtn">×</button>
+        </div>
+        
+        <!-- Chat Messages Area -->
+        <div id="chatBox"></div>
+        
+        <!-- Chat Input Area -->
+        <div class="chat-input-area">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Type 'java question' or 'help'..." 
+                autocomplete="off"
+            >
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+    
+    <!-- ==========================================
+         SCRIPTS
+         ========================================== -->
+    
+    
+</body>
+</html>

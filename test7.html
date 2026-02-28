@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+#quiz-timer {
+            color: red;font-size:21px;}
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	B{
+	font-size:19px;}
+	</style>
+</head>
+<body>
+<BR><BR>
+
+<div  id="quiz-timer">time Remaining:40:00</div>
+<HR>
+<form class="U" action="Check7">
+
+<h5>Q1: What does HTML stand for?</h5>
+<B><input type="radio" name="Q1" value="HyperText Markup Language" onclick="toggleRadio(this)">A. HyperText Markup Language</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="HighText Machine Language" onclick="toggleRadio(this)">B. HighText Machine Language</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="Hyper Transfer Markup Language" onclick="toggleRadio(this)">C. Hyper Transfer Markup Language</input></B><BR><BR>
+<B><input type="radio" name="Q1" value="None" onclick="toggleRadio(this)">D. None of the above</input></B><BR><BR>
+
+<h5>Q2: Which tag is used to define a paragraph?</h5>
+<B><input type="radio" name="Q2" value="&lt;para&gt;" onclick="toggleRadio(this)">A. &lt;para&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="&lt;p&gt;" onclick="toggleRadio(this)">B. &lt;p&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="&lt;text&gt;" onclick="toggleRadio(this)">C. &lt;text&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q2" value="&lt;pg&gt;" onclick="toggleRadio(this)">D. &lt;pg&gt;</input></B><BR><BR>
+
+<h5>Q3: Which element is used to insert an image?</h5>
+<B><input type="radio" name="Q3" value="&lt;img&gt;" onclick="toggleRadio(this)">A. &lt;img&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="&lt;image&gt;" onclick="toggleRadio(this)">B. &lt;image&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="&lt;picture&gt;" onclick="toggleRadio(this)">C. &lt;picture&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q3" value="&lt;src&gt;" onclick="toggleRadio(this)">D. &lt;src&gt;</input></B><BR><BR>
+
+<h5>Q4: Which tag is used to create a hyperlink?</h5>
+<B><input type="radio" name="Q4" value="&lt;link&gt;" onclick="toggleRadio(this)">A. &lt;link&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="&lt;a&gt;" onclick="toggleRadio(this)">B. &lt;a&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="&lt;href&gt;" onclick="toggleRadio(this)">C. &lt;href&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q4" value="&lt;hyper&gt;" onclick="toggleRadio(this)">D. &lt;hyper&gt;</input></B><BR><BR>
+
+<h5>Q5: Which HTML5 element defines navigation links?</h5>
+<B><input type="radio" name="Q5" value="&lt;nav&gt;" onclick="toggleRadio(this)">A. &lt;nav&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="&lt;menu&gt;" onclick="toggleRadio(this)">B. &lt;menu&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="&lt;header&gt;" onclick="toggleRadio(this)">C. &lt;header&gt;</input></B><BR><BR>
+<B><input type="radio" name="Q5" value="&lt;footer&gt;" onclick="toggleRadio(this)">D. &lt;footer&gt;</input></B><BR><BR>
+
+<!-- ================= CSS MCQs ================= -->
+<h5>Q6: What does CSS stand for?</h5>
+<B><input type="radio" name="Q6" value="Cascading Style Sheets" onclick="toggleRadio(this)">A. Cascading Style Sheets</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Creative Style System" onclick="toggleRadio(this)">B. Creative Style System</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Computer Style Sheets" onclick="toggleRadio(this)">C. Computer Style Sheets</input></B><BR><BR>
+<B><input type="radio" name="Q6" value="Colorful Style Sheets" onclick="toggleRadio(this)">D. Colorful Style Sheets</input></B><BR><BR>
+
+<h5>Q7: Which property controls text size?</h5>
+<B><input type="radio" name="Q7" value="font-style" onclick="toggleRadio(this)">A. font-style</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="font-size" onclick="toggleRadio(this)">B. font-size</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="text-size" onclick="toggleRadio(this)">C. text-size</input></B><BR><BR>
+<B><input type="radio" name="Q7" value="size" onclick="toggleRadio(this)">D. size</input></B><BR><BR>
+
+<h5>Q8: Which layout system is best for one-dimensional layouts?</h5>
+<B><input type="radio" name="Q8" value="Flexbox" onclick="toggleRadio(this)">A. Flexbox</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Grid" onclick="toggleRadio(this)">B. Grid</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Float" onclick="toggleRadio(this)">C. Float</input></B><BR><BR>
+<B><input type="radio" name="Q8" value="Inline-block" onclick="toggleRadio(this)">D. Inline-block</input></B><BR><BR>
+
+<h5>Q9: Which property changes text color?</h5>
+<B><input type="radio" name="Q9" value="background-color" onclick="toggleRadio(this)">A. background-color</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="text-color" onclick="toggleRadio(this)">B. text-color</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="color" onclick="toggleRadio(this)">C. color</input></B><BR><BR>
+<B><input type="radio" name="Q9" value="font-color" onclick="toggleRadio(this)">D. font-color</input></B><BR><BR>
+
+<h5>Q10: Which property controls spacing outside an element?</h5>
+<B><input type="radio" name="Q10" value="padding" onclick="toggleRadio(this)">A. padding</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="margin" onclick="toggleRadio(this)">B. margin</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="border" onclick="toggleRadio(this)">C. border</input></B><BR><BR>
+<B><input type="radio" name="Q10" value="spacing" onclick="toggleRadio(this)">D. spacing</input></B><BR><BR>
+
+<!-- ================= JavaScript MCQs ================= -->
+<h5>Q11: What does JavaScript add to web pages?</h5>
+<B><input type="radio" name="Q11" value="Structure" onclick="toggleRadio(this)">A. Structure</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Styling" onclick="toggleRadio(this)">B. Styling</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="Interactivity" onclick="toggleRadio(this)">C. Interactivity</input></B><BR><BR>
+<B><input type="radio" name="Q11" value="None" onclick="toggleRadio(this)">D. None of the above</input></B><BR><BR>
+
+<!-- ================= JavaScript MCQs ================= -->
+
+<h5>Q12: Which keyword declares a block-scoped variable in JavaScript?</h5>
+<B><input type="radio" name="Q12" value="var" onclick="toggleRadio(this)">A. var</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="let" onclick="toggleRadio(this)">B. let</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="const" onclick="toggleRadio(this)">C. const</input></B><BR><BR>
+<B><input type="radio" name="Q12" value="define" onclick="toggleRadio(this)">D. define</input></B><BR><BR>
+
+<h5>Q13: Which method selects the first matching element in the DOM?</h5>
+<B><input type="radio" name="Q13" value="getElementById()" onclick="toggleRadio(this)">A. getElementById()</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="querySelector()" onclick="toggleRadio(this)">B. querySelector()</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="getElementsByClassName()" onclick="toggleRadio(this)">C. getElementsByClassName()</input></B><BR><BR>
+<B><input type="radio" name="Q13" value="queryAll()" onclick="toggleRadio(this)">D. queryAll()</input></B><BR><BR>
+
+<h5>Q14: Which event is triggered when a user clicks an element?</h5>
+<B><input type="radio" name="Q14" value="onchange" onclick="toggleRadio(this)">A. onchange</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="onmouseover" onclick="toggleRadio(this)">B. onmouseover</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="onclick" onclick="toggleRadio(this)">C. onclick</input></B><BR><BR>
+<B><input type="radio" name="Q14" value="onload" onclick="toggleRadio(this)">D. onload</input></B><BR><BR>
+
+<h5>Q15: Which operator is used for strict equality in JavaScript?</h5>
+<B><input type="radio" name="Q15" value="==" onclick="toggleRadio(this)">A. ==</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="===" onclick="toggleRadio(this)">B. ===</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="!=" onclick="toggleRadio(this)">C. !=</input></B><BR><BR>
+<B><input type="radio" name="Q15" value="=>" onclick="toggleRadio(this)">D. =></input></B><BR><BR>
+
+<h5>Q16: Which feature was introduced in ES6?</h5>
+<B><input type="radio" name="Q16" value="Arrow Functions" onclick="toggleRadio(this)">A. Arrow Functions</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="Classes" onclick="toggleRadio(this)">B. Classes</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="Template Literals" onclick="toggleRadio(this)">C. Template Literals</input></B><BR><BR>
+<B><input type="radio" name="Q16" value="All of the above" onclick="toggleRadio(this)">D. All of the above</input></B><BR><BR>
+
+<h5>Q17: Which method is used to convert JSON string into JavaScript object?</h5>
+<B><input type="radio" name="Q17" value="JSON.parse()" onclick="toggleRadio(this)">A. JSON.parse()</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="JSON.stringify()" onclick="toggleRadio(this)">B. JSON.stringify()</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="JSON.convert()" onclick="toggleRadio(this)">C. JSON.convert()</input></B><BR><BR>
+<B><input type="radio" name="Q17" value="parseJSON()" onclick="toggleRadio(this)">D. parseJSON()</input></B><BR><BR>
+
+<h5>Q18: Which storage mechanism allows saving data across browser sessions?</h5>
+<B><input type="radio" name="Q18" value="SessionStorage" onclick="toggleRadio(this)">A. SessionStorage</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="LocalStorage" onclick="toggleRadio(this)">B. LocalStorage</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="Cookies" onclick="toggleRadio(this)">C. Cookies</input></B><BR><BR>
+<B><input type="radio" name="Q18" value="Cache" onclick="toggleRadio(this)">D. Cache</input></B><BR><BR>
+
+<h5>Q19: Which keyword is used to handle errors in JavaScript?</h5>
+<B><input type="radio" name="Q19" value="catch" onclick="toggleRadio(this)">A. catch</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="error" onclick="toggleRadio(this)">B. error</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="throw" onclick="toggleRadio(this)">C. throw</input></B><BR><BR>
+<B><input type="radio" name="Q19" value="try...catch" onclick="toggleRadio(this)">D. try...catch</input></B><BR><BR>
+
+<h5>Q20: Which API is used to fetch data from servers?</h5>
+<B><input type="radio" name="Q20" value="Fetch API" onclick="toggleRadio(this)">A. Fetch API</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="LocalStorage API" onclick="toggleRadio(this)">B. LocalStorage API</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="Session API" onclick="toggleRadio(this)">C. Session API</input></B><BR><BR>
+<B><input type="radio" name="Q20" value="Cache API" onclick="toggleRadio(this)">D. Cache API</input></B><BR><BR>
+
+<!-- ================= JavaScript in Browser MCQs ================= -->
+
+<h5>Q21: What does DOM stand for?</h5>
+<B><input type="radio" name="Q21" value="Document Object Model" onclick="toggleRadio(this)">A. Document Object Model</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="Data Object Method" onclick="toggleRadio(this)">B. Data Object Method</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="Document Order Map" onclick="toggleRadio(this)">C. Document Order Map</input></B><BR><BR>
+<B><input type="radio" name="Q21" value="None" onclick="toggleRadio(this)">D. None of the above</input></B><BR><BR>
+
+<h5>Q22: Which property returns the parent node of an element?</h5>
+<B><input type="radio" name="Q22" value="parentNode" onclick="toggleRadio(this)">A. parentNode</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="childNode" onclick="toggleRadio(this)">B. childNode</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="nextSibling" onclick="toggleRadio(this)">C. nextSibling</input></B><BR><BR>
+<B><input type="radio" name="Q22" value="previousNode" onclick="toggleRadio(this)">D. previousNode</input></B><BR><BR>
+
+<h5>Q23: Which method creates a new HTML element?</h5>
+<B><input type="radio" name="Q23" value="createElement()" onclick="toggleRadio(this)">A. createElement()</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="appendChild()" onclick="toggleRadio(this)">B. appendChild()</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="newElement()" onclick="toggleRadio(this)">C. newElement()</input></B><BR><BR>
+<B><input type="radio" name="Q23" value="insertElement()" onclick="toggleRadio(this)">D. insertElement()</input></B><
+
+
+<!-- ================= JavaScript in Browser MCQs ================= -->
+
+<h5>Q24: Which method adds a new child node to a parent element?</h5>
+<B><input type="radio" name="Q24" value="appendChild()" onclick="toggleRadio(this)">A. appendChild()</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="createChild()" onclick="toggleRadio(this)">B. createChild()</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="insertNode()" onclick="toggleRadio(this)">C. insertNode()</input></B><BR><BR>
+<B><input type="radio" name="Q24" value="addNode()" onclick="toggleRadio(this)">D. addNode()</input></B><BR><BR>
+
+<h5>Q25: What is event bubbling in JavaScript?</h5>
+<B><input type="radio" name="Q25" value="Event flows from child to parent" onclick="toggleRadio(this)">A. Event flows from child to parent</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="Event flows from parent to child" onclick="toggleRadio(this)">B. Event flows from parent to child</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="Event stops at target" onclick="toggleRadio(this)">C. Event stops at target</input></B><BR><BR>
+<B><input type="radio" name="Q25" value="Event only triggers once" onclick="toggleRadio(this)">D. Event only triggers once</input></B><BR><BR>
+
+<h5>Q26: Which technique allows handling events efficiently on multiple child elements?</h5>
+<B><input type="radio" name="Q26" value="Event Delegation" onclick="toggleRadio(this)">A. Event Delegation</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="Event Bubbling" onclick="toggleRadio(this)">B. Event Bubbling</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="Event Capturing" onclick="toggleRadio(this)">C. Event Capturing</input></B><BR><BR>
+<B><input type="radio" name="Q26" value="Event Loop" onclick="toggleRadio(this)">D. Event Loop</input></B><BR><BR>
+
+<h5>Q27: Which method is used to change the text inside an element?</h5>
+<B><input type="radio" name="Q27" value="innerHTML" onclick="toggleRadio(this)">A. innerHTML</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="textContent" onclick="toggleRadio(this)">B. textContent</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="innerText" onclick="toggleRadio(this)">C. innerText</input></B><BR><BR>
+<B><input type="radio" name="Q27" value="All of the above" onclick="toggleRadio(this)">D. All of the above</input></B><BR><BR>
+
+<h5>Q28: Which method is used to fetch data from an API?</h5>
+<B><input type="radio" name="Q28" value="fetch()" onclick="toggleRadio(this)">A. fetch()</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="getData()" onclick="toggleRadio(this)">B. getData()</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="ajax()" onclick="toggleRadio(this)">C. ajax()</input></B><BR><BR>
+<B><input type="radio" name="Q28" value="request()" onclick="toggleRadio(this)">D. request()</input></B><BR><BR>
+
+<h5>Q29: Which format is commonly used for API data exchange?</h5>
+<B><input type="radio" name="Q29" value="XML" onclick="toggleRadio(this)">A. XML</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="JSON" onclick="toggleRadio(this)">B. JSON</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="CSV" onclick="toggleRadio(this)">C. CSV</input></B><BR><BR>
+<B><input type="radio" name="Q29" value="HTML" onclick="toggleRadio(this)">D. HTML</input></B><BR><BR>
+
+<h5>Q30: Which method converts a JavaScript object into a JSON string?</h5>
+<B><input type="radio" name="Q30" value="JSON.stringify()" onclick="toggleRadio(this)">A. JSON.stringify()</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="JSON.parse()" onclick="toggleRadio(this)">B. JSON.parse()</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="objectToJSON()" onclick="toggleRadio(this)">C. objectToJSON()</input></B><BR><BR>
+<B><input type="radio" name="Q30" value="stringifyJSON()" onclick="toggleRadio(this)">D. stringifyJSON()</input></B><BR><BR>
+
+<h5>Q31: Which method removes the last element from an array?</h5>
+<B><input type="radio" name="Q31" value="pop()" onclick="toggleRadio(this)">A. pop()</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="push()" onclick="toggleRadio(this)">B. push()</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="shift()" onclick="toggleRadio(this)">C. shift()</input></B><BR><BR>
+<B><input type="radio" name="Q31" value="splice()" onclick="toggleRadio(this)">D. splice()</input></B><BR><BR>
+
+<h5>Q32: Which loop is best for iterating over arrays?</h5>
+<B><input type="radio" name="Q32" value="for loop" onclick="toggleRadio(this)">A. for loop</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="while loop" onclick="toggleRadio(this)">B. while loop</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="for...of loop" onclick="toggleRadio(this)">C. for...of loop</input></B><BR><BR>
+<B><input type="radio" name="Q32" value="do...while loop" onclick="toggleRadio(this)">D. do...while loop</input></B><BR><BR>
+
+<h5>Q33: Which keyword is used to define a JavaScript class?</h5>
+<B><input type="radio" name="Q33" value="class" onclick="toggleRadio(this)">A. class</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="function" onclick="toggleRadio(this)">B. function</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="object" onclick="toggleRadio(this)">C. object</input></B><BR><BR>
+<B><input type="radio" name="Q33" value="define" onclick="toggleRadio(this)">D. define</input></B><BR><BR>
+
+<h5>Q34: Which keyword is used to inherit from another class?</h5>
+<B><input type="radio" name="Q34" value="extends" onclick="toggleRadio(this)">A. extends</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="inherits" onclick="toggleRadio(this)">B. inherits</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="superclass" onclick="toggleRadio(this)">C. superclass</input></B><BR><BR>
+<B><input type="radio" name="Q34" value="prototype" onclick="toggleRadio(this)">D. prototype</input></B><BR><BR>
+
+<h5>Q35: Which statement is used to stop a loop in JavaScript?</h5>
+<B><input type="radio" name="Q35" value="break" onclick="toggleRadio(this)">A. break</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="stop" onclick="toggleRadio(this)">B. stop</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="exit" onclick="toggleRadio(this)">C. exit</input></B><BR><BR>
+<B><input type="radio" name="Q35" value="halt" onclick="toggleRadio(this)">D. halt</input></B><BR><BR>
+
+<h5>Q36: Which statement is used to skip the current iteration of a loop?</h5>
+<B><input type="radio" name="Q36" value="break" onclick="toggleRadio(this)">A. break</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="continue" onclick="toggleRadio(this)">B. continue</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="skip" onclick="toggleRadio(this)">C. skip</input></B><BR><BR>
+<B><input type="radio" name="Q36" value="next" onclick="toggleRadio(this)">D. next</input></B><BR><BR>
+
+<h5>Q37: Which method adds an element at the end of an array?</h5>
+<B><input type="radio" name="Q37" value="push()" onclick="toggleRadio(this)">A. push()</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="pop()" onclick="toggleRadio(this)">B. pop()</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="shift()" onclick="toggleRadio(this)">C. shift()</input></B><BR><BR>
+<B><input type="radio" name="Q37" value="unshift()" onclick="toggleRadio(this)">D. unshift()</input></B><BR><BR>
+
+<h5>Q38: Which JavaScript function is used to print messages to the console?</h5>
+<B><input type="radio" name="Q38" value="alert()" onclick="toggleRadio(this)">A. alert()</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="console.log()" onclick="toggleRadio(this)">B. console.log()</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="print()" onclick="toggleRadio(this)">C. print()</input></B><BR><BR>
+<B><input type="radio" name="Q38" value="document.write()" onclick="toggleRadio(this)">D. document.write()</input></B><BR><BR>
+
+<h5>Q39: Which JavaScript method is used to attach an event handler to an element?</h5>
+<B><input type="radio" name="Q39" value="addEventListener()" onclick="toggleRadio(this)">A. addEventListener()</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="attachEvent()" onclick="toggleRadio(this)">B. attachEvent()</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="onEvent()" onclick="toggleRadio(this)">C. onEvent()</input></B><BR><BR>
+<B><input type="radio" name="Q39" value="bindEvent()" onclick="toggleRadio(this)">D. bindEvent()</input></B><BR><BR>
+
+<h5>Q40: Which JavaScript object is used to work with browser windows?</h5>
+<B><input type="radio" name="Q40" value="document" onclick="toggleRadio(this)">A. document</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="window" onclick="toggleRadio(this)">B. window</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="navigator" onclick="toggleRadio(this)">C. navigator</input></B><BR><BR>
+<B><input type="radio" name="Q40" value="screen" onclick="toggleRadio(this)">D. screen</input></B><BR><BR>
+
+
+
+
+
+<Center><input type="Submit" style="height:49px;width:100px;border:3px solid Blue;color:Green;font-size:21px;Border-radius:21px;"></Center>
+</form>
+
+<script src="time1.js"></script><script>
+let R=null;
+function toggleRadio(currentRadio)
+{
+	if(currentRadio===R){
+		currentRadio.checked=false;
+		R=null;
+	}
+	else{
+		R=currentRadio;
+	}}</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="tagj.js"></script>
+<script src="tagj1.js"></script>
+<link rel="stylesheet" href="JSP.css">
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.D{Display:Flex;}.logo{Height:111px;Width:100px;} 
+        .V
+        {color:HotPink;
+        Border-Color:Yellow;
+        Outline-Color:Violet;
+        font-size:21px;
+        text-Shadow:3px 2px 4px grey;
+        font-family:Hevetica Neue;
+        font-style:italic;
+        letter-spacing:0.1em;
+        }
+        .V:hover
+        {color:Blue;text-Shadow:3px 2px 4px grey;
+        
+        }
+
+.U
+{
+	border:4px solid lightblue;
+	width:840px;
+	font-size:26px;
+	padding:21px;
+	padding-left:67px;
+	
+	padding-top:78px;
+	font-family:monospace;
+	background-color:White;
+	border-color:orange;
+	margin-left:0px;
+	padding-top:78px;}
+	
+U::-webkit-scrollbar {
+  display: none;
+}
+body{background-image:url("data-sciences.jpg");Background-Attachment:fixed;
+}	
+	.I
+	{
+	border:4px solid Blue;background-color:lightBlue;text-align:Center;color:white;height:34px;width:140px;text-Decoration:None;font-Size:41px;}
+</style>	
+</head>
+<body >
+<BR><BR>
+<div class="D">
+  <a href="index1.html"><img src="Knowledge.jpg" class="logo" alt="Knowledge Logo"></a>
+  <p class="V">Knowledge Check Demonstration</p>
+</div>
+<br>
+
+<button id="show-syllabus-btn" onclick="toggleVisibility()">Show Course Syllabus</button>
+
+<div id="syllabus-content-area">
+  <div class="menu-buttons">
+    <button class="menu-btn active" data-content-id="prerequisites-content">Prerequisites</button>
+    <button class="menu-btn" data-content-id="python-intro-content">Python Introduction</button>
+    <button class="menu-btn" data-content-id="multithreading-content">Multithreading</button>
+    <button class="menu-btn" data-content-id="django-content">Django Framework</button>
+    <button class="menu-btn" data-content-id="tkinter-content">Tkinter GUI</button>
+    <button class="menu-btn" data-content-id="assessment-content">Assessment</button>
+    <button class="menu-btn" data-content-id="summary-content">Course Summary</button>
+  </div>
+
+  <div class="syllabus-container">
+    <h2>Course Syllabus: Python Programming</h2>
+
+    <div id="prerequisites-content" class="content-panel active">
+      <h3>Module: Prerequisites (5m)</h3>
+      <ul>
+        <li><b>Basic Computer Knowledge:</b> Familiarity with operating systems and command line usage.</li>
+        <li><b>Programming Fundamentals:</b> Understanding of loops, functions, and object-oriented concepts.</li>
+        <li><b>Environment Setup:</b> Install Python 3.x, pip, and a code editor (VS Code/PyCharm).</li>
+      </ul>
+    </div>
+
+    <div id="python-intro-content" class="content-panel hidden">
+      <h3>Module: Python Fundamentals</h3>
+      <p>Learn Python syntax, variables, data types, control structures, functions, and modules. Explore Python’s interpreter and package ecosystem.</p>
+    </div>
+
+    <div id="multithreading-content" class="content-panel hidden">
+      <h3>Module: Multithreading in Python</h3>
+      <p>Understand concurrency, threading module, synchronization, and how to manage parallel tasks efficiently in Python.</p>
+    </div>
+
+    <div id="django-content" class="content-panel hidden">
+      <h3>Module: Django Framework</h3>
+      <p>Explore Django’s MVC architecture, models, views, templates, and ORM. Build dynamic web applications with routing, forms, and authentication.</p>
+    </div>
+
+    <div id="tkinter-content" class="content-panel hidden">
+      <h3>Module: Tkinter GUI Development</h3>
+      <p>Learn how to create desktop applications using Tkinter. Work with widgets, layouts, event handling, and menus.</p>
+    </div>
+
+    <div id="assessment-content" class="content-panel hidden">
+      <h3>Assessment</h3>
+      <p>Test your knowledge with coding exercises on Python basics, multithreading, Django projects, and Tkinter GUI tasks.</p>
+    </div>
+
+    <div id="summary-content" class="content-panel hidden">
+      <h3>Summary</h3>
+      <p>Python is a versatile language used for web development, data science, automation, and GUI applications. 
+      With multithreading, Django, and Tkinter, learners gain skills to build scalable, interactive, and modern applications.</p>
+    </div>
+  </div>
+</div>
+
+<div class="U">
+<P>
+
+
+<Center style="font-family:monospace;color:Orange;font-size:31px">Python</Center><BR>
+
+**Multithreading in Python allows multiple threads to run concurrently within a single process, making programs more efficient and responsive, especially for tasks like file handling, network requests, or user interactions.**  
+<BR><BR>
+Multithreading is built on the idea of dividing a program into smaller units of execution called threads. A **process** is an executing program that contains code, data, and its execution state. Within a process, a **thread** is the smallest unit of execution. Threads share the same memory space and global data but maintain their own local variables and registers. This makes threads lightweight compared to processes, which require separate memory allocation.  
+<BR><BR>
+In Python, the `threading` module provides tools to create and manage threads. You can start a new thread by creating a `Thread` object and passing it a target function. Threads can be set as **daemon threads**, meaning they run in the background and terminate when the main program ends. Synchronization mechanisms such as **Locks**, **Semaphores**, and **Queues** are used to prevent race conditions, where multiple threads try to access shared resources simultaneously. Without proper synchronization, programs may produce inconsistent or incorrect results.  
+<BR><BR>
+Multithreading is particularly useful for **I/O-bound tasks** like reading files, handling user input, or making API calls, because while one thread waits for input/output operations to complete, other threads can continue executing. However, Python’s **Global Interpreter Lock (GIL)** limits true parallel execution of threads for CPU-bound tasks. This means that multithreading does not speed up heavy computations like mathematical processing. For CPU-intensive tasks, Python developers often use **multiprocessing**, which runs separate processes with independent memory spaces.  
+<BR><BR>
+A simple example of Python multithreading looks like this:  
+
+<BR>
+
+import threading
+
+
+<BR>import time
+
+<BR>def print_numbers():
+    <P Style="Margin-left:31px;">for i in range(5):<BR>
+       <P Style="Margin-left:61px;">print("Number:", i)<BR>
+        time.sleep(1)<BR></P>
+
+def print_letters():<BR>
+    <P Style="Margin-left:31px;">for letter in ['A', 'B', 'C', 'D', 'E']:<BR>
+        <P Style="Margin-left:67px;">print("Letter:", letter)<BR>
+time.sleep(1)<BR></P>
+
+# Creating threads<BR>
+t1 = threading.Thread(target=print_numbers)<BR>
+t2 = threading.Thread(target=print_letters)<BR>
+
+# Starting threads<BR>
+t1.start()<BR>
+t2.start()<BR>
+
+# Waiting for threads to finish<BR>
+t1.join()<BR>
+t2.join()<BR>
+
+print("Both threads have finished execution.")<BR>
+
+
+In this program, two threads run concurrently: one prints numbers while the other prints letters. Because they run in parallel, the output interleaves numbers and letters instead of finishing one task before starting the other.  
+
+Multithreading is a cornerstone of building responsive applications in Python, especially when combined with frameworks like **Django** for web servers or **Tkinter** for GUIs, where background tasks must run without freezing the interface.  
+
+
+</P>
+</Div>
+</Div>
+<div Style='DiSplay:Inline-Block;Padding-top:21px;' >
+  <a href="Python.html" class="I">Back</a>
+  <a href="Python2.html" class="I" Style="margin-left:700px;">Next</a>
+    
+    </div>
+ 
+</body>
+</html>
+
+
+
+
+</body>
+</html>
